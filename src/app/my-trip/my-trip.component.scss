@@ -1,0 +1,91 @@
+form textarea {
+    min-height: 100px;
+    width: 400px;
+  }
+  
+  form button {
+    background-color: rgb(6, 230, 6);
+    color: #ffffff;
+    padding: 10px 30px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+  }
+  
+  .trip-map {
+    padding: 70px 0px;
+  }
+  .trip-map h3 {
+    text-transform: capitalize;
+    color: black;
+    font-weight: bold;
+  }
+  .trip-map h4 {
+    text-transform: uppercase;
+    color: black;
+    margin: 20px 0px;
+  }
+  .trip-map .card {
+    background-color: #fff;
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+  .trip-map .card-body h5 {
+    color: rgb(6, 230, 6);
+  }
+  .trip-map .card-body p .price {
+    display: inline-block;
+    font-weight: 500;
+    color: #999;
+  }
+  .trip-map .card-body p .price strong {
+    color: #32a067;
+  }
+  
+  .user-information {
+    background-color: lavender;
+    padding: 50px 0px;
+  }
+  
+  .user-information .card {
+    padding: 10px 0px;
+    border-radius: 25px;
+  }
+  .user-information .card .image p {
+    color: rgb(26, 224, 26);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .user-information .card .image img {
+    width: 90px;
+    padding: 2px;
+    border-radius: 20px;
+  }
+  .user-information .card .image input {
+    position: relative;
+    bottom: 43px;
+    left: 50px;
+    opacity: 0;
+  }
+  
+  .user-information .card h5 {
+    position: relative;
+    bottom: 30px;
+  }
+  
+  .user-information .card a {
+    text-decoration: none;
+    color: #5e5b5b;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+  }
+  .user-information .card a:hover {
+    color: green;
+  }
+  .user-information .card .col-4 {
+    padding: 20px 0px;
+  }
+  

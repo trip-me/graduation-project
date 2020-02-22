@@ -1,0 +1,39 @@
+<section class="popular-hotel">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-left ">
+                    <span>
+                        <span></span>
+                    </span>
+                    <h3>Popular Hotels and Accommodations</h3>
+                    <p>Most recommended Hotels in the City.</p>
+                </div>
+            </div>
+            <div *ngFor="let popvisit of popularVisits " class="col-lg-3 col-md-6">
+                <a routerLink="/Alexandria/hotels/{{popvisit.id}}">
+
+                <figure class="hotel-img__content wow fadeInUp" data-wow-delay="0.5s">
+                    <span class="rate">{{popvisit.rate}}</span>
+                        <img src="{{popvisit.img}}" class="w-100" alt="">
+
+                    <figcaption>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>
+                            {{popvisit.name}}
+                        </p>
+                    </figcaption>
+                </figure>
+            </a>
+
+            </div>
+         
+            <div *ngIf="myvisits" class="view-all__hotels">
+                <a routerLink="/AllHotels">view all ({{myvisits.length}})</a>
+            </div>
+        </div>
+    </div>
+</section>

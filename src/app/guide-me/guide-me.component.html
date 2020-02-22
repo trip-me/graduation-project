@@ -1,0 +1,51 @@
+<section class="tour-guide-page">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 tour-guide__title text-center text-white">
+                <h2 class="h1">Guid me </h2>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-sm-12 col-md-8">
+                <!-- start  user post -->
+                <div *ngFor="let userPost of usersPosts">
+                    <div class="userPost">
+                        <div class="d-flex  user-info">
+                            <figure class="mr-3">
+                                <img src="./../../assets/images/avatar.png" class="img-fluid">
+                            </figure>
+                            <a 
+                                class="user-name text-dark font-weight-bold">{{userPost.userName}}</a>
+                        </div>
+                        <div class="user-message my-3">
+                            <h3 class="text-dark">{{userPost.message}}</h3>
+                        </div>
+                        <hr>
+                        <!-- end  user post  -->
+                        <!-- start a tour guide reply -->
+                        <div *ngFor=" let reply of  guideReplies" class="tour-guide-reply my-4">
+                            <div *ngIf="userPost.id == reply.postUserId" #DelReply class="d-flex">
+                                <figure class="mr-5">
+                                    <img src="./../../assets/images/user_review_photo.png" alt="">
+                                </figure>
+                                <div class="tour-message d-flex">
+                                    <p class=" px-5 py-2 mr-3">{{reply.message}}</p>
+                                    <button class=" delBtn btn btn-outline-danger" (click)='deleteReply(DelReply,reply.id)'>delete</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-0">
+                            <form [id]="userPost.id" [formGroup]="myForm" (ngSubmit)="onSubmit($event,myForm)">
+                                <input (input)="makeBtnAbled($event)" formControlName="message"
+                                    placeholder="Your Comment" class="mr-3 mb-4 pl-5">
+                                <button type="submit" disabled class="btn text-white">Reply</button>
+                            </form>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

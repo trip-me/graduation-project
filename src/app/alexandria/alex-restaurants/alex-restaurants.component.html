@@ -1,0 +1,33 @@
+<section class="popular-resturant">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-12">
+                <div class="section-header text-left ">
+                    <span>
+                        <span></span>
+                    </span>
+                    <h3>Popular Restaurants</h3>
+                    <p>Most recommended restaurants in the City.</p>
+                </div>
+            </div>
+            <div *ngFor="let popvisit of popularVisits " class="col-lg-3 col-md-6">
+                <a routerLink="/Alexandria/restaurants/{{popvisit.id}}">
+                <figure class="resturant-img__content wow fadeInUp" data-wow-delay="0.5s">
+                    <span class="rate">{{popvisit.rate}}</span>
+                        <img src="{{popvisit.img}}" class="w-100" alt="">
+                    <figcaption>
+                        <p>
+                            {{popvisit.name}}
+                        </p>
+                    </figcaption>
+                </figure>
+            </a>
+            </div>
+         
+            <div  *ngIf="myvisits" class="view-all__hotels">
+                <a routerLink="/AllRestaurants">view all ({{myvisits.length}})</a>
+            </div>
+        </div>
+    </div>
+</section>

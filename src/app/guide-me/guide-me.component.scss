@@ -1,0 +1,69 @@
+.tour-guide-page {
+    background-color: #f0f2f5;
+    min-height: 500px;
+  }
+  .userPost {
+    margin: 2rem 0;
+    background: white;
+    border-radius: 20px;
+  }
+  .user-info {
+    align-items: baseline;
+    figure {
+      width: 60px;
+      border-radius: 50%;
+    }
+    .user-name {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .tour-guide-reply {
+    figure {
+      width: 30px;
+    }
+    .tour-message {
+      p {
+        background-color: #f0f2f5;
+        word-break: break-all;
+        line-height: 1.7;
+        border-radius: 30px;
+        width: fit-content;
+        height: fit-content;
+      }
+    }
+    img {
+      border-radius: 50%;
+      border: 1px solid #0e843c;
+    }
+    .delBtn {
+      height: 2rem;
+      line-height: 0.7;
+    }
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  form input {
+    min-height: 4.2rem;
+    width: 30rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #f0f2f5;
+  }
+  
+  form button {
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #0e843c;
+    border-radius: 10px;
+    position: relative;
+    top: -1px;
+  }
+  

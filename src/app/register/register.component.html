@@ -1,0 +1,56 @@
+<section class="register">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="register-box">
+          <h2 class="pt-4 pb-4">Create Account</h2>
+          <form [formGroup]="registerForm" (ngSubmit)="onSubmit(registerForm)">
+            <p>
+              <input formControlName="userName" placeholder="Your Name">
+            </p>
+            <div *ngIf="registerForm.controls.userName.hasError('pattern')" class="error-msg mb-3">
+              Only letters accepted without spacing.
+            </div>
+            <p>
+              <input formControlName="email" placeholder="Your Email">
+            </p>
+            <div *ngIf="registerForm.controls.email.hasError('pattern')" class="error-msg mb-3">
+              Email should have "@ gmail or yahoo" and "."
+            </div>
+            <div id="emailError" class="error-msg mb-3">
+            </div>
+            <p>
+              <input type="password" formControlName="password" placeholder="Your Password">
+            </p>
+            <div *ngIf="registerForm.controls.password.hasError('pattern')" class="error-msg mb-3">
+              Password should have upperletter and lowerletter and special charachter and more than 5 charachter.
+            </div>
+            <p>
+              <input type="password" formControlName="confirmPassword" placeholder="Repeat Password">
+            </p>
+
+
+            <div *ngIf="registerForm.controls.confirmPassword.hasError('myconfirmation')" 
+              class="error-msg mb-3">
+              Password doesn't match
+            </div>
+
+            <div class="check-role pb-4">
+              <input type="radio" formControlName="role" value="tourguide">
+              <label for="tourGuid">tourguide</label>
+              <input type="radio" formControlName="role" value="tourist">
+              <label for="tourist">Tourist</label>
+            </div>
+            <button type="submit" class="mb-4" [disabled]="!registerForm.valid">
+              Sign up
+              </button>
+              
+          </form>
+          <div class="have-account">
+            <p>Already have an account ? <a routerLink="/login">Login</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
