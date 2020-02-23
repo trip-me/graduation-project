@@ -1,0 +1,45 @@
+.container{
+    padding: 100px 0
+}
+.dicription{
+    color: #999;
+}
+h5{
+    font-weight: bold
+}
+p{
+    margin-bottom: 7px
+}
+.card{
+    box-shadow: 1px 1px 11px 2px rgba(158, 158, 158, 0.3);
+    border: none;
+}
+rating{
+    padding-bottom: 7px;
+    color: gold;
+    font-size: 1.5rem;
+    padding-left: 8px
+}
+strong{
+    color: #0e843c
+}
+a{
+    background: #0e843c;
+    padding: 2px 12px;
+    border-color: #0e843c;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.card-body{
+font-size: 1.5rem;
+}
+
+.btn{
+    padding: 7px 20px 7px 20px;
+    font-size: 1.5rem;
+}

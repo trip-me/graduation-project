@@ -39,6 +39,9 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyTripComponent } from './my-trip/my-trip.component';
 import { GuideMeComponent } from './guide-me/guide-me.component';
+import { ComapanyPackageComponent } from './comapany-package/comapany-package.component';
+import { RatingModule } from 'ngx-bootstrap/rating';
+import { ComapanyDataComponent } from './comapany-data/comapany-data.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +72,8 @@ import { GuideMeComponent } from './guide-me/guide-me.component';
     RegisterComponent,
     MyTripComponent,
     GuideMeComponent,
-
+    ComapanyPackageComponent,
+    ComapanyDataComponent
   ],
   imports: [
     BrowserModule,
@@ -82,7 +86,8 @@ import { GuideMeComponent } from './guide-me/guide-me.component';
     NgbModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RatingModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

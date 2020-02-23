@@ -1,0 +1,28 @@
+<div *ngIf="companyPackage">
+  <!-- <ngb-rating [rate]="4" [readonly]="isReadonly"></ngb-rating> -->
+</div>
+<div class="container">
+  <div class="row" *ngIf="companyPackage">
+    <div class="col-md-4" *ngFor="let a of companyPackage">
+      <div *ngFor="let i of a.travelPlan">
+        <div class="card text-center mb-4">
+          <img src="{{i.countryImg}}" class="card-img-top" alt="">
+          <div class="card-body">
+            <h2 class="card-title">{{i.country}}</h2>
+            <p class="discription"> {{i.activity}}</p>
+            <p>Depature Date : {{i.depatureDate}}</p>
+            <p>Arrival Date : {{i.arrivalDate}}</p>
+            <p> {{i.dayNumber}} Days</p>
+            <rating [(ngModel)]="rate" [max]="4" [readonly]="isReadonly"></rating>
+            <p>
+              <strong>
+                {{i.price}}
+              </strong>
+              for person</p>
+            <a href="#" class="btn btn-primary">Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -16,6 +16,7 @@ export class UsersService {
   getCompanyData(){
     return this.http.get("http://localhost:3000/company");
   }
+
   getCompanyPackage(id){
     return this.http.get(`http://localhost:3000/company/${id}`);
   }

@@ -585,5 +585,124 @@
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.8680133362673!2d29.90000051447403!3d31.196672770176903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e8655eff5d%3A0x5a5908a5e8f225f8!2sPotasta!5e0!3m2!1sen!2seg!4v1582010070848!5m2!1sen!2seg",
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     }
+  ],
+  "company": [
+    {
+      "id": 1,
+      "name": "Ramasside Tours Egypt",
+      "location": "Alexandria",
+      "rate": 4,
+      "companyLogo": "../../assets/ramasside.jpg",
+      "travelPlan": [
+        {
+          "countryImg": "../../assets/cairo.jpg",
+          "depatureDate": "2-5-2020",
+          "arrivalDate": "2-6-2020",
+          "price": "2000$",
+          "dayNumber": 7,
+          "best-buy": "handmade wooden accessories ",
+          "activity": "Egypt Classical Tours Explore Egypt The Classic 7 Days Egypt Tour of Cairo",
+          "country": "Cairo"
+        },
+        {
+          "countryImg": "../../assets/aswan.jpg",
+          "depatureDate": "2-5-2020",
+          "arrivalDate": "2-6-2020",
+          "price": "5000$",
+          "dayNumber": 7,
+          "best-buy": "handmade wooden accessories ",
+          "activity": "Egypt Classical Tours Explore Egypt The Classic 7 Days Egypt Tour of Cairo",
+          "country": "Aswan"
+        },
+        {
+          "countryImg": "../../assets/alex.jpg",
+          "depatureDate": "2-5-2020",
+          "arrivalDate": "2-6-2020",
+          "price": "3000$",
+          "dayNumber": 7,
+          "best-buy": "handmade wooden accessories ",
+          "activity": "Egypt Classical Tours Explore Egypt The Classic 7 Days Egypt Tour of Cairo",
+          "country": "Alex"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Egypt Vacations ",
+      "location": "Alexandria",
+      "rate": 3,
+      "companyLogo": "../../assets/vacation.jpg",
+      "travelPlan": [
+        {
+          "countryImg": "../../assets/alex.jpg",
+          "depatureDate": "2-5-2020",
+          "arrivalDate": "2-6-2020",
+          "price": "2500$",
+          "dayNumber": 7,
+          "best-buy": "handmade wooden accessories ",
+          "activity": "Egypt Classical Tours Explore Egypt The Classic 7 Days Egypt Tour of Cairo, Luxor, Aswan. Seven days and three fascinating destinations. ",
+          "country": "Alex"
+        },
+        {
+          "countryImg": "../../assets/cairo.jpg",
+          "depatureDate": "2-5-2020",
+          "arrivalDate": "2-6-2020",
+          "price": "1500$",
+          "dayNumber": 7,
+          "best-buy": "handmade wooden accessories ",
+          "activity": "Egypt Classical Tours Explore Egypt The Classic 7 Days Egypt Tour of Cairo, Luxor, Aswan. Seven days and three fascinating destinations. ",
+          "country": "Cairo"
+        },
+        {
+          "countryImg": "../../assets/aswan.jpg",
+          "depatureDate": "2-5-2020",
+          "arrivalDate": "2-6-2020",
+          "price": "4000$",
+          "dayNumber": 7,
+          "best-buy": "handmade wooden accessories ",
+          "activity": "Egypt Classical Tours Explore Egypt The Classic 7 Days Egypt Tour of Cairo, Luxor, Aswan. Seven days and three fascinating destinations. ",
+          "country": "Aswan"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Travel Lounge",
+      "location": "Cairo",
+      "rate": 6,
+      "companyLogo": "../../assets/emo.jpg",
+      "travelPlan": [
+        {
+          "countryImg": "../../assets/aswan.jpg",
+          "depatureDate": "2-5-2020",
+          "arrivalDate": "2-6-2020",
+          "price": "6000$",
+          "dayNumber": 7,
+          "best-buy": "handmade wooden accessories ",
+          "activity": "two hoursboating ride",
+          "country": "Aswan"
+        },
+        {
+          "countryImg": "../../assets/alex.jpg",
+          "depatureDate": "2-5-2020",
+          "arrivalDate": "2-6-2020",
+          "price": "3000$",
+          "dayNumber": 7,
+          "best-buy": "handmade wooden accessories ",
+          "activity": "two hoursboating ride",
+          "country": "Alex"
+        },
+        {
+          "countryImg": "../../assets/cairo.jpg",
+          "depatureDate": "2-5-2020",
+          "arrivalDate": "2-6-2020",
+          "price": "3500$",
+          "dayNumber": 7,
+          "best-buy": "handmade wooden accessories ",
+          "activity": "two hoursboating ride",
+          "country": "Cairo"
+        }
+      ]
+    }
   ]
 }

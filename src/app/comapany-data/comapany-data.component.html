@@ -1,0 +1,60 @@
+<section class="company-data">
+  <div class="container">
+    <div class="header text-center">
+      <span>
+        <span></span>
+    </span>
+      <h1 class="mt-4">our companies package</h1>
+    </div>
+    <div class="company-content row">
+      <div class="company-box col-lg-4 col-md-6 align-item-center" *ngFor="let company of companyData ">
+        <div class="card">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img [src]="company.companyLogo" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body pl-5">
+                <h2 class="card-title">{{company.name}} package</h2>
+                <rating [(ngModel)]="rate" [max]="5" [readonly]="isReadonly" class="rating"></rating>
+                <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                <p class="card-text"><span class="text-muted">{{company.location}}</span></p>
+                <a class="details" routerLink="/companyPackage/{{company.id}}">details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- start tour guid -->
+<section class="tourguid">
+<div class="container">
+  <div class="header text-center">
+    <span>
+      <span></span>
+  </span>
+    <h1 class="mt-4">our tourguides package</h1>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 col-md-6" *ngFor="let guid of Tourguid ">
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img [src]="guid.image" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">{{guid.name}} package</h2>
+              <rating [(ngModel)]="rate" [max]="5" [readonly]="isReadonly" class="rating"></rating>
+              <a class="details d-block pt-2" routerLink="/tourGuid/{{guid.id}}">details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>

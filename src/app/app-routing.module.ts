@@ -15,56 +15,46 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { MyTripComponent } from './my-trip/my-trip.component';
 import { GuideMeComponent } from './guide-me/guide-me.component';
+import { ComapanyPackageComponent } from './comapany-package/comapany-package.component';
 
-
-
-
-// <div *ngIf='singleTourData' class="container">
 
 const routes: Routes = [
-  {path:"",component:HomeComponent},
-  {path:"Home",component:HomeComponent},
+  { path: "", component: HomeComponent },
+  { path: "Home", component: HomeComponent },
+  { path: "register", component: RegisterComponent },
+  { path: "login", component: LoginComponent },
   {
-    path:"register",
-    component:RegisterComponent
+    path: "my-trip/:id",
+    component: MyTripComponent
   },
   {
-    path:"login",
-    component:LoginComponent
+    path: "guide-me",
+    component: GuideMeComponent
   },
   {
-    path:"my-trip/:id",
-    component:MyTripComponent
-  },
-  
-  {
-    path:"guide-me",
-    component:GuideMeComponent
-  },
-  { 
-    path:"Alexandria",                 
-    component:AlexandriaComponent
+    path: "Alexandria",
+    component: AlexandriaComponent
   }
   ,
-  { 
-    path:"Alexandria/visits/:id",                 
-    component:VisitsDetailsComponent
+  {
+    path: "Alexandria/visits/:id",
+    component: VisitsDetailsComponent
   },
   {
-    path:"Alexandria/restaurants/:id",
-    component:RestaurantDetailsComponent
+    path: "Alexandria/restaurants/:id",
+    component: RestaurantDetailsComponent
   },
   {
-    path:"Alexandria/hotels/:id",
-    component:HotelDetailsComponent
+    path: "Alexandria/hotels/:id",
+    component: HotelDetailsComponent
   },
-  {path:"tour",component:PopularTourComponent},
-  {path:"tourDetail",component:TourDetailsComponent},
-  {path:"AllTours",component:ViewAllToursComponent},
-  {path:"AllRestaurants",component:ViewAllRestaurantsComponent},
-  {path:"AllHotels",component:ViewAllHotelsComponent},
-  {path:"AllVisits",component:ViewAllVisitsComponent},
-  // {path:"",component:},
+  { path: "tour", component: PopularTourComponent },
+  { path: "tourDetail", component: TourDetailsComponent },
+  { path: "AllTours", component: ViewAllToursComponent },
+  { path: "AllRestaurants", component: ViewAllRestaurantsComponent },
+  { path: "AllHotels", component: ViewAllHotelsComponent },
+  { path: "AllVisits", component: ViewAllVisitsComponent },
+  { path: "companyPackage", component: ComapanyPackageComponent }
 ];
 
 @NgModule({

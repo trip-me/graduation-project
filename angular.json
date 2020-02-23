@@ -35,7 +35,9 @@
               "node_modules/animate.css/animate.css",
               "src/styles.scss"
             ],
-            "scripts": ["node_modules/wowjs/dist/wow.js"]
+            "scripts": [
+              "node_modules/wowjs/dist/wow.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -103,7 +105,9 @@
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": ["node_modules/wowjs/dist/wow.js"]
+            "scripts": [
+              "node_modules/wowjs/dist/wow.js"
+            ]
           }
         },
         "lint": {
