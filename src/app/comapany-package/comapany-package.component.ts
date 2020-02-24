@@ -9,7 +9,6 @@ import { UsersService } from '../users.service';
 })
 export class ComapanyPackageComponent implements OnInit {
   companyPackage;
-  package = [];
   // Compdata;
   max;
   rate = 2;
@@ -18,11 +17,6 @@ export class ComapanyPackageComponent implements OnInit {
     this.servicePackage.getCompanyData().subscribe(data => {
       this.companyPackage = data;
       console.log(this.companyPackage);
-      console.log(this.companyPackage[0].travelPlan);
-      this.package.push(this.companyPackage[0].travelPlan);
-      this.package.push(this.companyPackage[1].travelPlan);
-      this.package.push(this.companyPackage[2].travelPlan);
-      console.log(this.package);
     })
 
     // this.activeRoute.paramMap.subscribe(param => {
