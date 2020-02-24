@@ -148,7 +148,7 @@
                         <div class="row">
                             <div class="col-lg-3">
                                 <div id="review_summary">
-                                    <strong>8.5</strong>
+                                    <strong>{{singleTourData.rate}}</strong>
                                     <em>Superb</em>
                                     <small>Based on 4 reviews</small>
                                 </div>
@@ -332,14 +332,14 @@
                 </div>
                 <div class="box_detail booking">
                     <div class="price">
-                        <span>45$ <small>person</small></span>
-                        <div class="score"><span>Good<em>350 Reviews</em></span><strong>7.0</strong></div>
+                        <span>{{singleTourData.price}} <small>/person</small></span>
+                        <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{singleTourData.rate}}</strong></div>
                     </div>
                   
                     
                    
                     
-                    <a href="wishlist.html" class="btn_1 full-width outline wishlist">
+                    <a  class="btn_1 full-width outline wishlist">
                         <i class="far fa-heart"></i>
                         Add To My Trip
                        </a>
