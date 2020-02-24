@@ -40,6 +40,21 @@
       "fullDescription": "Set on a busy roundabout, this low-key hotel is 1 km from the nearest beach, 2 km from the Citadel of Qaitbay, a 15th-century seafront fortress, and 9 km from Alexandria International Airport.The straightforward rooms have wood floors and balconies, and offer Wi-Fi access, flat-screen TVs and minibars. Some have sitting areas.Amenities include an airy restaurant, and a down-to-earth cafe featuring outdoor seating.",
       "userId": 4,
       "userName": "mustafa Amin"
+    },
+    {
+      "city": "alex",
+      "id": 4,
+      "category": "hotel",
+      "img": "../../../assets/images/hotels/Alexandria/tolipp/tolip.jpg",
+      "name": "TOLIP Hotel Alexandria",
+      "title": "Alexandria",
+      "rate": "7.2",
+      "price": "$154",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.6066230110214!2d29.943919414319666!3d31.231626181466073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e610b4e28d%3A0x55e0e76c064a00be!2sTOLIP%20Hotel%20Alexandria!5e0!3m2!1sen!2seg!4v1582089620915!5m2!1sen!2seg",
+      "shortDescription": "Across the street from a beach on the Mediterranean Sea, this refined hotel with a colorful facade is 6 km from the Alexandria National Museum and 5 km from Green Plaza Mall.Sophisticated rooms feature free Wi-Fi, flat-screen TVs, minifridges and balconies; some rooms offer sea views. ",
+      "fullDescription": "Across the street from a beach on the Mediterranean Sea, this refined hotel with a colorful facade is 6 km from the Alexandria National Museum and 5 km from Green Plaza Mall.Sophisticated rooms feature free Wi-Fi, flat-screen TVs, minifridges and balconies; some rooms offer sea views. Suites add living rooms and dining tables.Breakfast is complimentary. There are 6 restaurants (1 offering Italian fare). Other amenities include a fitness center, a chic spa, a private beach, and a courtyard with a seasonal outdoor pool. Parking is extra.",
+      "userId": 4,
+      "userName": "mustafa Amin"
     }
   ],
   "user-post": [],
