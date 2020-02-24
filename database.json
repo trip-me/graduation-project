@@ -23,39 +23,17 @@
       "confirmPassword": "aaAA@@66",
       "role": "tourist",
       "id": 3
+    },
+    {
+      "userName": "aya",
+      "email": "aya@gmail.com",
+      "password": "123Aya",
+      "confirmPassword": "123Aya",
+      "role": "tourist",
+      "id": 4
     }
   ],
   "user-favorite-trip": [
-    {
-      "city": "alex",
-      "id": 3,
-      "category": "restaurant",
-      "img": "../../../assets/images/restaurants/Alexandria/3.jpg",
-      "name": "4x4 Cafe",
-      "rate": 9.3,
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.8637264719446!2d29.969286314475607!3d31.25219556746336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c534f6c5ec57%3A0x85c8af596d756400!2s4x4%20Cafe!5e0!3m2!1sen!2seg!4v1582027943648!5m2!1sen!2seg",
-      "title": "Alexandria",
-      "price": "$5",
-      "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
-      "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.",
-      "userId": 2,
-      "userName": "Mustafa Amin"
-    },
-    {
-      "city": "alex",
-      "id": 4,
-      "category": "restaurant",
-      "img": "../../../assets/images/restaurants/Alexandria/7.jpg",
-      "name": "Holmes Burgers",
-      "rate": 9.8,
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28086.468065168378!2d29.95357048962077!3d31.25222596130012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5edacd57c4d%3A0xccf89a1b193af824!2sHolmes%20Burgers!5e0!3m2!1sen!2seg!4v1582030852006!5m2!1sen!2seg",
-      "title": "Alexandria",
-      "price": "$5",
-      "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
-      "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.",
-      "userId": 2,
-      "userName": "Mustafa Amin"
-    },
     {
       "city": "alex",
       "id": 1,
