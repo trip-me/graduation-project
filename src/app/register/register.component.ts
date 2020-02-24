@@ -28,10 +28,10 @@ export class RegisterComponent implements OnInit {
           this.userInfo = data;
           localStorage.setItem("currentUser", JSON.stringify(this.userInfo));
           if (this.userInfo.role == "tourist") {
-            this.router.navigate(['/my-trip', this.userInfo.id + this.userInfo.userName]);
+            this.router.navigate(['/my-trip']);
             
           } else if (this.userInfo.role == "tourguide") {
-            this.router.navigate(['/tourGuid', this.userInfo.id]);
+            this.router.navigate(['/tourGuid']);
           }
         })
       }

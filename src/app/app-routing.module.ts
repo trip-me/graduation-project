@@ -33,7 +33,7 @@ const routes: Routes = [
     component:LoginComponent
   },
   {
-    path:"my-trip/:id",
+    path:"my-trip",
     component:MyTripComponent
   },
   

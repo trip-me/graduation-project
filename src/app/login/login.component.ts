@@ -45,10 +45,10 @@ export class LoginComponent implements OnInit {
           // console.log(this.comingData[i].role);
           this.currentuser = this.comingData[i].email;
           if (this.comingData[i].role === "tourist") {
-            this.router.navigate(['/my-trip', this.comingData[i].id ]);
+            this.router.navigate(['/my-trip']);
           }
           else if (this.comingData[i].role === "tourguide") {
-            this.router.navigate(['/tourGuid', this.comingData[i].id]);
+            this.router.navigate(['/tourGuid']);
           }
           else {
             this.router.navigate(['/Home']);

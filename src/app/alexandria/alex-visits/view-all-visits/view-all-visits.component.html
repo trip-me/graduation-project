@@ -27,7 +27,7 @@
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <a routerLink="/Alexandria/visits/{{visit.id}}" class="more-info">More info</a>
-                                    <a routerLink="/user-trip" class="add-to-my-trip" (click) ="addToMyTrip($event)"> Add to my trip</a>
+                                    <a class="add-to-my-trip" (click) ="addToMyTrip($event,visit)"> Add to my trip</a>
                                 </div>
                             </div>
                         </div>

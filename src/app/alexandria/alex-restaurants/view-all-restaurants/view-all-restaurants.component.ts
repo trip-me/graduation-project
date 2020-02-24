@@ -18,11 +18,10 @@ export class ViewAllRestaurantsComponent implements OnInit {
    }
 
    // start add to my trip button
-   addToMyTrip(e,myFavorite) {
+   addToMyTrip(myFavorite) {
     console.log(myFavorite)
     if(localStorage != null){
       let user = JSON.parse(localStorage.getItem('currentUser'))
-
       myFavorite.userId = user.id;
       myFavorite.userName = user.userName;
 
