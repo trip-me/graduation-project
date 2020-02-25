@@ -1,0 +1,39 @@
+<section class="popular-resturant">
+    <div class="container" *ngIf="restaurants">
+        <div class="row">
+            
+            <div class="col-md-12">
+                <div class="section-header text-left ">
+                    <span>
+                        <span></span>
+                    </span>
+                    <h3>Popular Restaurants</h3>
+                    <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" *ngFor="let restaurant of popularrestaurants">
+                <a routerLink="Alexandria/restaurants/{{restaurant.id}}">
+                <ng-container >
+                    <figure class="resturant-img__content wow fadeInUp" data-wow-delay="0.5s">
+                        <span class="rate">{{restaurant.rate}}</span>
+                        <a routerLink="Alexandria/restaurants/{{restaurant.id}}">
+                            <img src="{{restaurant.img}}" class="w-100" alt="">
+                            <p class="read-more" >
+                                <span class="wow fadeInUp" data-wow-delay="0.5s">{{restaurant.city}}</span>
+                            </p>
+                        </a>
+                        <figcaption>
+                            <p>
+                                {{restaurant.name}}
+                            </p>
+                        </figcaption>
+                    </figure>
+                </ng-container>
+            </a>
+            </div>
+        </div>
+        <div class="view-all__hotels" *ngIf="restaurants">
+            <a routerLink="/AllRestaurants">view all ({{restaurants.length}})</a>
+        </div>
+    </div>
+</section>

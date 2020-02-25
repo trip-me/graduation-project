@@ -1,0 +1,99 @@
+<section class="all-restaurant wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="text-center mb-5">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <input type="text" class="form-control search" [(ngModel)]="CountrySearch" name="searchname" 
+                                (input)="search()"  placeholder="search city">
+                            </li>
+                            <li class="list-group-item header">Service</li>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input #checkBoxValue type="checkbox" value="eat" class=" form-check-input" (click)="filterationSearch(checkBoxValue.value,checkBoxValue.checked)">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        eat
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input #checkDrink type="checkbox" value="drink" (click)="filterationSearch(checkDrink.value,checkDrink.checked)">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        drink
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input #checkDrinkEat type="checkbox" value="eat and drink" (click)="filterationSearch(checkDrinkEat.value,checkDrinkEat.checked)">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        eat and drink
+                                    </label>
+                                </div>
+
+                            </li>
+                            <li class="list-group-item header">Price</li>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input #checkPrice type="checkbox" value="5$" (click)="filterationPrice(checkPrice.value,checkPrice.checked)">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        between 5$ - 20$
+                                    </label>
+                                </div>
+
+                            </li>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input #checkPricebetween type="checkbox" value="20$" (click)="filterationPrice(checkPricebetween.value,checkPricebetween.checked)">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        between 20$ - 80$
+                                    </label>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-9">
+                <div class="card  all-restaurant__details" *ngFor="let restaurent of allRestaurant">
+                    <div class="row no-gutters">
+
+                        <div class="col-lg-5 all-restaurant__details--img">
+                            <figure>
+                                <a routerLink="/Alexandria/restaurants/{{restaurent.id}}">
+                                    <small>Hotils</small>
+                                    <img [src]="restaurent.img" class="card-img img-fluid">
+                                    <div class="read_more">
+                                        <span>Read more</span>
+                                    </div>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-md-7 col-sm-12 all-restaurant__details--content">
+                            <div class="card-body">
+                                <div class="card-body-info">
+                                    <a class="wish_bt">
+                                        <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{
+                                                restaurent.rate}}</strong></div>
+                                    </a>
+                                    <h3><a routerLink="Alexandria/restaurants/{{restaurent.id}}"> {{ restaurent.name}}
+                                        </a></h3>
+                                    <p>{{restaurent.shortDescription}}</p>
+                                    <span class="price">From <strong>{{restaurent.price}}</strong> /per person</span>
+                                </div>
+                                <ul>
+                                    <li><a (click)="addToMyTrip($event,restaurent)">Add To My Trip</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

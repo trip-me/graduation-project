@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+
+// @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+// :root{
+//     font-size: 16px;
+// }
+* {
+  font-family: "Quicksand", sans-serif;
+
+}
+//  2eca6a  0e843c
+a,
+a:hover,
+a:visited{
+    text-decoration: none
+}
+.section-header{
+     margin-bottom: 2rem;
+}
+.section-header h2{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #000;
+    margin: 25px 0 0 0;
+}
+.section-header p{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color:#555555
+}
+.section-header h2{
+    position: relative;
+}
+.section-header span{
+    background:#ccc;
+    width: 120px;
+    height: 2px;
+    display: block;
+    margin: 0 auto
+}
+.section-header span span:first-child{
+    background: #2eca6a;
+    width: 60px;
+    height: 2px;
+}
+.section-header p{
+    font-size: .9rem;
+}
+h3{
+    font-size: 1.5rem;
+    margin: 25px 0 0 0;
+    color: #000;
+}
+h5{
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    color: #03a241
+}
+.rate{
+    font-weight: bold;
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    padding: 5px 10px;
+    font-size: 1rem;
+    top: 15px;
+    right: 15px;
+    background: #0e843c;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-bottom-left-radius: 0;
+}
+.read-more_button,
+.our_read-more{
+    background: #0e843c;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 25px;
+    text-transform: capitalize;
+    border: 2px solid #0e843c;
+    font-weight: bold;
+    margin: 1rem 0;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.read-more_button:hover{
+    background: none;
+    color: #0e843c
+}
+   

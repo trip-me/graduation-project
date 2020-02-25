@@ -1,0 +1,50 @@
+<nav class="nav bg-white">
+    <div class="container-fluid">
+        <div class="logo">
+            <a href="#">Trip me</a>
+        </div>
+        <div id="mainListDiv" class="main_list ml-auto">
+            <ul class="navlinks">
+                <li>
+                    <a routerLink="/" class="active">home</a>
+                </li>
+                <li>
+                    <a href="#">tours</a>
+                </li>
+                <li>
+                    <a href="#">hotels</a>
+                </li>
+                <li>
+                    <a href="#">pages</a>
+                </li>
+                <li>
+                    <a href="#">resturant</a>
+                </li>
+                <li>
+                    <a href="#">adventure</a>
+                </li>
+                <li>
+                    <a routerLink="/my-trip">my trip</a>
+                </li>
+                <li>
+                    <a routerLink="/guide-me">guide me</a>
+                </li>
+                <li id="login-btn">
+                    <a   routerLink="/login">login</a>
+                </li>
+                <li id="logout-btn">
+                    <a  role="button" (click)="logOut()">logout</a>
+                </li>
+                <li id="dashboard">
+                    <a >Dashboard</a>
+                </li>
+            </ul>
+        </div>
+        <span class="navTrigger" (click)="toggleNav()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
