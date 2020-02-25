@@ -10,6 +10,15 @@ import { HotelsService } from 'src/app/hotels.service';
 })
 export class ViewAllHotelsComponent implements OnInit {
   allHotels;
+  // ngOnInit() {
+  //   this.http.get('http://localhost:3000/hotels').subscribe(data => {
+  //     this.allHotels = data;
+  //   })
+  // }
+  // addToMyTrip(e) {
+  //   console.log(e)
+  // }
+  constructor(private http: HttpClient, private service: HotelsService,private userService: UsersService) { }
 
 
 
@@ -27,18 +36,11 @@ export class ViewAllHotelsComponent implements OnInit {
   }
 
 
-
-  // ngOnInit() {
-  //   this.http.get('http://localhost:3000/hotels').subscribe(data => {
-  //     this.allHotels = data;
-  //   })
-  // }
-  // addToMyTrip(e) {
-  //   console.log(e)
-  // }
-  constructor(private http: HttpClient, private service: HotelsService,private userService: UsersService) { }
-
   ngOnInit() {
+
+    this.http.get('http://localhost:3000/hotels').subscribe(data => {
+      this.allHotels = data;
+    })
     this.service.getToursData().subscribe(data => {
       this.allHotels = data;
     })

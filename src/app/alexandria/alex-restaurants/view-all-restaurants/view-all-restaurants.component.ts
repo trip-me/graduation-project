@@ -14,7 +14,7 @@ export class ViewAllRestaurantsComponent implements OnInit {
  
    // start add to my trip button
    
-   // End add to my trip button
+   // End add to my trip buttonvi
 
   constructor(private http: HttpClient,
     private userService: UsersService,

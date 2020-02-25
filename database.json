@@ -7,20 +7,46 @@
       "confirmPassword": "aaAA@@66",
       "role": "tourist",
       "id": 1
+    },
+    {
+      "userName": "dina",
+      "email": "dina@yahoo.com",
+      "password": "Dina6^",
+      "confirmPassword": "Dina6^",
+      "role": "tourist",
+      "id": 2
     }
   ],
   "user-favorite-trip": [
     {
-      "isTrusted": true,
-      "userId": 1,
-      "userName": "Mustafa Amin",
-      "id": 1
+      "city": "cairo",
+      "id": 5,
+      "category": "hotel",
+      "img": "../../../assets/images/hotels/Alexandria/hotel_list_1.jpg",
+      "name": "Steigenberger Cecil Alexandria",
+      "title": "Cairo",
+      "rate": "9.8",
+      "price": "117$",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.708759564803!2d29.896288914474198!3d31.201087669961257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c3f26558d5b5%3A0x6f433b7c49a0da5c!2sSteigenberger%20Cecil%20Alexandria!5e0!3m2!1sen!2seg!4v1582090385865!5m2!1sen!2seg",
+      "shortDescription": "Across the road from the Al Mina' ash Sharqiyah harbor, this elegant hotel dating from 1929 overlooks the Corniche waterfront promenade and the Mediterranean Sea. It's a 2-minute walk from the Caesareum of Alexandria, an ancient temple, and a 4-minute walk from El Raml train station. ",
+      "fullDescription": "Across the road from the Al Mina' ash Sharqiyah harbor, this elegant hotel dating from 1929 overlooks the Corniche waterfront promenade and the Mediterranean Sea. It's a 2-minute walk from the Caesareum of Alexandria, an ancient temple, and a 4-minute walk from El Raml train station.The traditionally and warmly decorated rooms feature balconies, free Wi-Fi and flat-screens, plus tea and coffeemakers. Suites offer living rooms. ",
+      "userId": 2,
+      "userName": "dina"
     },
     {
-      "isTrusted": true,
-      "userId": 1,
-      "userName": "Mustafa Amin",
-      "id": 2
+      "city": "alex",
+      "id": 6,
+      "category": "hotel",
+      "img": "../../../assets/images/hotels/Alexandria/paradise/paradise.jpg",
+      "name": "Paradise Inn",
+      "title": "Alexandria",
+      "rate": "9.5",
+      "price": "137$",
+      "map": "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13650.835783223147!2d29.898477596527467!3d31.201082507238727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sParadise%20Inn!5e0!3m2!1sen!2seg!4v1582091413290!5m2!1sen!2seg",
+      "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.",
+      "fullDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.",
+      "userId": 2,
+      "userName": "dina"
     }
   ],
   "user-post": [],
@@ -457,7 +483,7 @@
     },
     {
       "city": "aswan",
-      "id": 12,
+      "id": 13,
       "category": "hotel",
       "img": "../../../assets/images/hotels/Alexandria/hotel_list_1.jpg",
       "name": "Horizon Hotel",
