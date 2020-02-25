@@ -19,10 +19,14 @@ p {
 }
 
 .card {
-  box-shadow: 1px 1px 11px 2px rgba(158, 158, 158, 0.3);
+  box-shadow: 0 2px 7px 0 #cfcfcf80;
   border: none;
-  max-height: 30rem;
-  min-height: 36rem;
+  max-height: 39rem;
+  min-height: 41rem;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 15px 3px rgba(158, 158, 158, 0.3);
 }
 
 .header span {
@@ -30,7 +34,7 @@ p {
   width: 120px;
   height: 2px;
   display: block;
-  margin:  auto;
+  margin: auto;
 }
 
 .header span span:first-child {
@@ -56,7 +60,7 @@ p {
 rating {
   // padding-bottom: 10px;
   color: gold;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 strong {
@@ -85,6 +89,18 @@ a {
 }
 
 .price-amont {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-data span{
+  background: #ccc;
+  width: 18rem;
+  height: 1px;
+  display: block;
+  margin: auto;
+  opacity: 0.5;
+}
+.company-data strong{
+  color: black;
 }
