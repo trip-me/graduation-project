@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms'
 import { UsersService } from '../users.service';
 import { Router } from '@angular/router';
 import { confirmation } from '../customValidator' ;
+// import { confirmation } from '../customValidator';
 
 @Component({
   selector: 'app-register',
@@ -36,8 +37,10 @@ export class RegisterComponent implements OnInit {
         })
       }
     }
-    document.getElementById("login-btn").style.display = "none";
-    document.getElementById("logout-btn").style.display = "inline";
+    if (localStorage.getItem("currentUser") !== null) {
+      document.getElementById("login-btn").style.display = "none";
+      document.getElementById("logout-btn").style.display = "inline";
+    }
   }
   ngOnInit() {
     this.registerForm = this.fb.group({

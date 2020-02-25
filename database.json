@@ -1,120 +1,29 @@
 {
   "users": [
     {
-      "userName": "aya",
-      "email": "aya@yahoo.com",
-      "password": "123Aya",
-      "confirmPassword": "123Aya",
-      "role": "tourist",
-      "id": 1
-    },
-    {
-      "userName": "mustafa",
-      "email": "mustafa@yahoo.com",
-      "password": "123Mus",
-      "confirmPassword": "123Mus",
-      "role": "tourist",
-      "id": 3
-    },
-    {
-      "userName": "mustafa Amin",
+      "userName": "Mustafa Amin",
       "email": "aa@yahoo.com",
       "password": "aaAA@@66",
       "confirmPassword": "aaAA@@66",
       "role": "tourist",
-      "id": 3
-    },
-    {
-      "userName": "aya",
-      "email": "aya@gmail.com",
-      "password": "123Aya",
-      "confirmPassword": "123Aya",
-      "role": "tourist",
-      "id": 4
+      "id": 1
     }
   ],
   "user-favorite-trip": [
     {
-      "city": "alex",
-      "id": 1,
-      "category": "hotel",
-      "img": "../../../assets/images/hotels/Alexandria/forseason/forseason.jpg",
-      "name": "Four Seasons",
-      "title": "Alexandria",
-      "rate": "9.2",
-      "price": "$174",
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.1033390952925!2d29.964572614320016!3d31.245562481461317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c52e30aaf1df%3A0xc9d2d428ea2ba3d2!2sFour%20Seasons%20Hotel%20Alexandria%20at%20San%20Stefano%2C%20Egypt!5e0!3m2!1sen!2seg!4v1582032525857!5m2!1sen!2seg",
-      "shortDescription": "Set on a busy roundabout, this low-key hotel is 1 km from the nearest beach, 2 km from the Citadel of Qaitbay",
-      "fullDescription": "Set on a busy roundabout, this low-key hotel is 1 km from the nearest beach, 2 km from the Citadel of Qaitbay, a 15th-century seafront fortress, and 9 km from Alexandria International Airport.The straightforward rooms have wood floors and balconies, and offer Wi-Fi access, flat-screen TVs and minibars. Some have sitting areas.Amenities include an airy restaurant, and a down-to-earth cafe featuring outdoor seating.",
-      "userId": 4,
-      "userName": "mustafa Amin"
-    },
-    {
-      "city": "alex",
-      "id": 4,
-      "category": "hotel",
-      "img": "../../../assets/images/hotels/Alexandria/tolipp/tolip.jpg",
-      "name": "TOLIP Hotel Alexandria",
-      "title": "Alexandria",
-      "rate": "7.2",
-      "price": "$154",
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.6066230110214!2d29.943919414319666!3d31.231626181466073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e610b4e28d%3A0x55e0e76c064a00be!2sTOLIP%20Hotel%20Alexandria!5e0!3m2!1sen!2seg!4v1582089620915!5m2!1sen!2seg",
-      "shortDescription": "Across the street from a beach on the Mediterranean Sea, this refined hotel with a colorful facade is 6 km from the Alexandria National Museum and 5 km from Green Plaza Mall.Sophisticated rooms feature free Wi-Fi, flat-screen TVs, minifridges and balconies; some rooms offer sea views. ",
-      "fullDescription": "Across the street from a beach on the Mediterranean Sea, this refined hotel with a colorful facade is 6 km from the Alexandria National Museum and 5 km from Green Plaza Mall.Sophisticated rooms feature free Wi-Fi, flat-screen TVs, minifridges and balconies; some rooms offer sea views. Suites add living rooms and dining tables.Breakfast is complimentary. There are 6 restaurants (1 offering Italian fare). Other amenities include a fitness center, a chic spa, a private beach, and a courtyard with a seasonal outdoor pool. Parking is extra.",
-      "userId": 4,
-      "userName": "mustafa Amin"
+      "isTrusted": true,
+      "userId": 1,
+      "userName": "Mustafa Amin",
+      "id": 1
     },
     {
       "isTrusted": true,
-      "userId": 3,
-      "userName": "mustafa Amin",
-      "id": 5
-    },
-    {
-      "isTrusted": true,
-      "userId": 3,
-      "userName": "mustafa Amin",
-      "id": 6
-    },
-    {
-      "isTrusted": true,
-      "userId": 3,
-      "userName": "mustafa Amin",
-      "id": 7
-    },
-    {
-      "isTrusted": true,
-      "userId": 3,
-      "userName": "mustafa Amin",
-      "id": 8
-    },
-    {
-      "isTrusted": true,
-      "userId": 3,
-      "userName": "mustafa Amin",
-      "id": 9
-    },
-    {
-      "isTrusted": true,
-      "userId": 3,
-      "userName": "mustafa Amin",
-      "id": 10
-    },
-    {
-      "isTrusted": true,
-      "userId": 3,
-      "userName": "mustafa Amin",
-      "id": 11
-    },
-    {
-      "isTrusted": true,
-      "userId": 3,
-      "userName": "mustafa Amin",
-      "id": 12
+      "userId": 1,
+      "userName": "Mustafa Amin",
+      "id": 2
     }
   ],
   "user-post": [],
-  "guide-reply": [],
   "cities": [
     {
       "id": 1,
@@ -255,9 +164,10 @@
       "id": 1,
       "category": "restaurant",
       "title": "Alexandria",
+      "service": "eat",
       "img": "../../../assets/images/restaurants/Alexandria/1.jpg",
       "name": "Potasta",
-      "price": "$5",
+      "price": "25$",
       "rate": 9.2,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.8680133362673!2d29.90000051447403!3d31.196672770176903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e8655eff5d%3A0x5a5908a5e8f225f8!2sPotasta!5e0!3m2!1sen!2seg!4v1582010070848!5m2!1sen!2seg",
       "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
@@ -269,10 +179,11 @@
       "category": "restaurant",
       "img": "../../../assets/images/restaurants/Alexandria/2.jpg",
       "name": "Carlos Cafe",
+      "service": "drink",
       "rate": 8.5,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54605.67631535653!2d29.890162818470703!3d31.197039936955978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4f250ae2659%3A0xbc6b52748eea347a!2sCarlos%20Cafe!5e0!3m2!1sen!2seg!4v1582027887915!5m2!1sen!2seg",
       "title": "Alexandria",
-      "price": "$5",
+      "price": "9$",
       "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
       "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -282,10 +193,11 @@
       "category": "restaurant",
       "img": "../../../assets/images/restaurants/Alexandria/3.jpg",
       "name": "4x4 Cafe",
+      "service": "drink",
       "rate": 9.3,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.8637264719446!2d29.969286314475607!3d31.25219556746336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c534f6c5ec57%3A0x85c8af596d756400!2s4x4%20Cafe!5e0!3m2!1sen!2seg!4v1582027943648!5m2!1sen!2seg",
       "title": "Alexandria",
-      "price": "$5",
+      "price": "8$",
       "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
       "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -295,10 +207,11 @@
       "category": "restaurant",
       "img": "../../../assets/images/restaurants/Alexandria/7.jpg",
       "name": "Holmes Burgers",
+      "service": "eat",
       "rate": 9.8,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28086.468065168378!2d29.95357048962077!3d31.25222596130012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5edacd57c4d%3A0xccf89a1b193af824!2sHolmes%20Burgers!5e0!3m2!1sen!2seg!4v1582030852006!5m2!1sen!2seg",
       "title": "Alexandria",
-      "price": "$5",
+      "price": "16$",
       "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
       "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -308,10 +221,11 @@
       "category": "restaurant",
       "img": "../../../assets/images/restaurants/Alexandria/Beano's Cafe.jpg",
       "name": "Beano's Cafe",
+      "service": "drink",
       "rate": 8.5,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27286.901713316052!2d29.953570475738122!3d31.252223588020087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c55774a7813d%3A0x2db4ea176ea13088!2sBeano&#39;s%20cafe!5e0!3m2!1sen!2seg!4v1582030989531!5m2!1sen!2seg",
       "title": "Alexandria",
-      "price": "$5",
+      "price": "12$",
       "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
       "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -321,10 +235,11 @@
       "category": "restaurant",
       "img": "../../../assets/images/restaurants/Alexandria/6.jpg",
       "name": "China House",
+      "service": "eat and drink",
       "rate": 9,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54588.82272226098!2d29.93091792881706!3d31.226230605571093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c52e206b128d%3A0x86038993148d78df!2sChina%20House!5e0!3m2!1sen!2seg!4v1582031175966!5m2!1sen!2seg",
       "title": "Alexandria",
-      "price": "$5",
+      "price": "10$",
       "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
       "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -334,9 +249,10 @@
       "category": "restaurant",
       "title": "Aswan",
       "name": "Mezze",
+      "service": "eat and drink",
       "img": "../../../assets/images/restaurants/Aswan/Mezze Restaurant/Mezze Restaurant.jpg",
       "place": "Country Hills",
-      "price": "$25",
+      "price": "25$",
       "rate": 9.5,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.2315876465523!2d32.889494314108255!3d24.09334998442142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x143665c23fd61a1d%3A0x1ddd82990a53ed73!2sMezze%20Restaurant!5e0!3m2!1sen!2seg!4v1582031359689!5m2!1sen!2seg",
       "shortDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
@@ -348,9 +264,10 @@
       "category": "restaurant",
       "title": "Aswan",
       "name": "‪El Masry‬",
+      "service": "eat",
       "img": "../../../assets/images/restaurants/Aswan/El Masry/El Masry.jpg",
       "place": "Country Hills",
-      "price": "$22",
+      "price": "22$",
       "rate": 8,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.2561765034916!2d32.89708331410823!3d24.09248498442185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14367b4b2f3de9a3%3A0x5ec07d398e1c3b62!2sEl%20Masry!5e0!3m2!1sen!2seg!4v1582031532444!5m2!1sen!2seg",
       "shortDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
@@ -362,6 +279,7 @@
       "category": "restaurant",
       "title": "Cairo",
       "name": "‪‪El Dokka‬",
+      "service": "eat",
       "img": "../../../assets/images/restaurants/Cairo/Al Dokka/Al Dokka.jpg",
       "place": "Country Hills",
       "price": "15$",
@@ -376,9 +294,10 @@
       "category": "restaurant",
       "title": "Cairo",
       "name": "The Terrace‬",
+      "service": "eat and drink",
       "img": "../../../assets/images/restaurants/Cairo/Terrace/Terrace.jpg",
       "place": "Wrave",
-      "price": "$17",
+      "price": "18$",
       "rate": 8.5,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55248.55099199439!2d31.23917061903364!3d30.06454735979522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840c380e039dd%3A0xf6a715bf78894921!2sTerrace%20Cafe!5e0!3m2!1sen!2seg!4v1582032087641!5m2!1sen!2seg",
       "shortDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
@@ -394,7 +313,7 @@
       "name": "Four Seasons",
       "title": "Alexandria",
       "rate": "9.2",
-      "price": "$174",
+      "price": "174$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.1033390952925!2d29.964572614320016!3d31.245562481461317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c52e30aaf1df%3A0xc9d2d428ea2ba3d2!2sFour%20Seasons%20Hotel%20Alexandria%20at%20San%20Stefano%2C%20Egypt!5e0!3m2!1sen!2seg!4v1582032525857!5m2!1sen!2seg",
       "shortDescription": "Set on a busy roundabout, this low-key hotel is 1 km from the nearest beach, 2 km from the Citadel of Qaitbay",
       "fullDescription": "Set on a busy roundabout, this low-key hotel is 1 km from the nearest beach, 2 km from the Citadel of Qaitbay, a 15th-century seafront fortress, and 9 km from Alexandria International Airport.The straightforward rooms have wood floors and balconies, and offer Wi-Fi access, flat-screen TVs and minibars. Some have sitting areas.Amenities include an airy restaurant, and a down-to-earth cafe featuring outdoor seating."
@@ -419,7 +338,7 @@
       "name": "Hilton Alexandria Green Plaza",
       "title": "Alexandria",
       "rate": "8.7",
-      "price": "$170",
+      "price": "170$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.513117601668!2d29.96333591447431!3d31.20651056969639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4b1d6566141%3A0xdf501bb33b6e7711!2sHilton%20Alexandria%20Green%20Plaza!5e0!3m2!1sen!2seg!4v1582089418091!5m2!1sen!2seg",
       "shortDescription": "Set 3 km from Alexandria International Airport, this polished hotel in the Green Plaza shopping mall is 5 km from the Royal Jewelry Museum Refined rooms feature flat-screen TVs, seating areas and Wi-Fi, plus tea and coffeemakers.",
       "fullDescription": "Set 3 km from Alexandria International Airport, this polished hotel in the Green Plaza shopping mall is 5 km from the Royal Jewelry Museum Refined rooms feature flat-screen TVs, seating areas and Wi-Fi, plus tea and coffeemakers. Club rooms and suites add access to a lounge with complimentary breakfast and drinks. Suites also have living areas. Room service is available Amenities consist of a spa, indoor and an outdoor pools, a gym and a game room. There are multiple bars and dining options, including Indian and Italian restaurants. Event space is offered. Parking is available (fee)."
@@ -445,7 +364,7 @@
       "name": "Steigenberger Cecil Alexandria",
       "title": "Cairo",
       "rate": "9.8",
-      "price": "$117",
+      "price": "117$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.708759564803!2d29.896288914474198!3d31.201087669961257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c3f26558d5b5%3A0x6f433b7c49a0da5c!2sSteigenberger%20Cecil%20Alexandria!5e0!3m2!1sen!2seg!4v1582090385865!5m2!1sen!2seg",
       "shortDescription": "Across the road from the Al Mina' ash Sharqiyah harbor, this elegant hotel dating from 1929 overlooks the Corniche waterfront promenade and the Mediterranean Sea. It's a 2-minute walk from the Caesareum of Alexandria, an ancient temple, and a 4-minute walk from El Raml train station. ",
       "fullDescription": "Across the road from the Al Mina' ash Sharqiyah harbor, this elegant hotel dating from 1929 overlooks the Corniche waterfront promenade and the Mediterranean Sea. It's a 2-minute walk from the Caesareum of Alexandria, an ancient temple, and a 4-minute walk from El Raml train station.The traditionally and warmly decorated rooms feature balconies, free Wi-Fi and flat-screens, plus tea and coffeemakers. Suites offer living rooms. "
@@ -458,7 +377,7 @@
       "name": "Paradise Inn",
       "title": "Alexandria",
       "rate": "9.5",
-      "price": "$137",
+      "price": "137$",
       "map": "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13650.835783223147!2d29.898477596527467!3d31.201082507238727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sParadise%20Inn!5e0!3m2!1sen!2seg!4v1582091413290!5m2!1sen!2seg",
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.",
       "fullDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
@@ -471,7 +390,7 @@
       "name": "San Giovanni Hotel",
       "title": "Alexandria",
       "rate": "7.0",
-      "price": "$172",
+      "price": "172$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.5210959914357!2d29.945563714319732!3d31.233994881465286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4eab0c6dea1%3A0x9532d74ef8d616f0!2sSan%20Giovanni%20Hotel!5e0!3m2!1sen!2seg!4v1582091837466!5m2!1sen!2seg",
       "shortDescription": "Overlooking the Mediterranean Sea, this warm hotel in a building dating from 1938 has views of the Stanley Bridge.",
       "fullDescription": "Overlooking the Mediterranean Sea, this warm hotel in a building dating from 1938 has views of the Stanley Bridge. It's 2 km from the Royal Jewelry Museum and 3 km from El Sook train station.Casual, colorful air-conditioned rooms with wood furnishings and a vintage vibe feature complimentary Wi-Fi, as well as minibars and satellite TV. Some have sea views. Suites add living areas. Room service is provided 24/7."
@@ -484,7 +403,7 @@
       "name": "Eatabe Hotel",
       "title": "Alexandria",
       "rate": "7.0",
-      "price": "$134",
+      "price": "134$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.418555294912!2d29.950711314475086!3d31.236834568214533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4de4c547aeb%3A0x15247e19ec5ad2fe!2sEatabe%20Alexandria%20Hotel!5e0!3m2!1sen!2seg!4v1582092374206!5m2!1sen!2seg",
       "shortDescription": "Facing the Mediterranean Sea, this relaxed hotel is 10 km from the Citadel of Qaitbay, a 15th-century seaside fortress. It's 2 km from the Royal Jewelry Museum and 7 km from Alexandria International Airport."
     },
@@ -496,7 +415,7 @@
       "name": "Romance Hotel",
       "title": "Alexandria",
       "rate": "9.9",
-      "price": "$89",
+      "price": "89$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.4240369837044!2d29.950744114475146!3d31.236682768221915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4de4daf4f93%3A0x2f4b47545c136ba!2sRomance%20Hotel%20Alexandria!5e0!3m2!1sen!2seg!4v1582094019055!5m2!1sen!2seg",
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -508,7 +427,7 @@
       "name": "Lotus Hotel",
       "title": "Alexandria",
       "rate": "9.9",
-      "price": "$56",
+      "price": "56$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.8680133362673!2d29.90000051447403!3d31.196672770176903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e8655eff5d%3A0x5a5908a5e8f225f8!2sPotasta!5e0!3m2!1sen!2seg!4v1582010070848!5m2!1sen!2seg",
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -520,7 +439,7 @@
       "name": "President Hotel",
       "title": "Cairo",
       "rate": "9.9",
-      "price": "$47",
+      "price": "47$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.8680133362673!2d29.90000051447403!3d31.196672770176903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e8655eff5d%3A0x5a5908a5e8f225f8!2sPotasta!5e0!3m2!1sen!2seg!4v1582010070848!5m2!1sen!2seg",
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -532,7 +451,7 @@
       "name": "Nile Plaza Hotel",
       "title": "Alexandria",
       "rate": "9.9",
-      "price": "$57",
+      "price": "57$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.8680133362673!2d29.90000051447403!3d31.196672770176903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e8655eff5d%3A0x5a5908a5e8f225f8!2sPotasta!5e0!3m2!1sen!2seg!4v1582010070848!5m2!1sen!2seg",
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -544,7 +463,7 @@
       "name": "Horizon Hotel",
       "title": "Aswan",
       "rate": "9.9",
-      "price": "$60",
+      "price": "60$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.8680133362673!2d29.90000051447403!3d31.196672770176903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e8655eff5d%3A0x5a5908a5e8f225f8!2sPotasta!5e0!3m2!1sen!2seg!4v1582010070848!5m2!1sen!2seg",
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     }

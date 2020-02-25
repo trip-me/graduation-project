@@ -203,3 +203,20 @@ color: #999;
 .card-body-info .price strong {
 color: #0e843c;
 }
+.form-check{
+  text-align: start;
+}
+.form-check input{
+  float: right;
+  position: relative;
+}
+input.search{
+  background: #fafafa
+}
+li.header{
+  font-weight: bold;
+  text-align: start
+}
+.form-check{
+  padding-left: 0
+}
