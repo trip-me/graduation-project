@@ -64,6 +64,9 @@ html, body {
   -ms-transform: scaleX(0);
   -o-transform: scaleX(0);
 }
+#user__myTrip{
+  display: none
+}
 a.active{
   border-bottom: 2px solid #2eca6a;
   padding-bottom: .3rem;
