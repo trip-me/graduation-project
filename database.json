@@ -1,6 +1,5 @@
 {
-  "users": [
-    {
+  "users": [{
       "userName": "mustafa",
       "email": "acc.mustafa1@yahoo.com",
       "password": "aaAA@@66",
@@ -25,8 +24,7 @@
       "id": 3
     }
   ],
-  "user-favorite-trip": [
-    {
+  "user-favorite-trip": [{
       "city": "alex",
       "id": 3,
       "category": "restaurant",
@@ -87,8 +85,7 @@
       "userName": "Aya ElShatra"
     }
   ],
-  "user-post": [
-    {
+  "user-post": [{
       "message": "cdcdscdsfsdf",
       "id": 1
     },
@@ -120,8 +117,7 @@
       "id": 7
     }
   ],
-  "guide-reply": [
-    {
+  "guide-reply": [{
       "message": "xfdfdfd",
       "postUserId": "2",
       "id": 1
@@ -152,8 +148,7 @@
       "id": 6
     }
   ],
-  "cities": [
-    {
+  "cities": [{
       "id": 1,
       "name": "Alexandria",
       "short_description": "More than 50 tours , activites and you can dscover more",
@@ -172,8 +167,7 @@
       "image_url": "../../assets/images/cities/aswan.jpeg"
     }
   ],
-  "tours": [
-    {
+  "tours": [{
       "city": "alex",
       "id": 1,
       "category": "visit",
@@ -286,8 +280,7 @@
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.2423092885774!2d29.883449614474568!3d31.21401556932975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c3ff1b30e255%3A0xc201e7869ae9971f!2sCitadel%20of%20Qaitbay!5e0!3m2!1sen!2seg!4v1581656334653!5m2!1sen!2seg"
     }
   ],
-  "restaurants": [
-    {
+  "restaurants": [{
       "city": "alex",
       "id": 1,
       "category": "restaurant",
@@ -422,8 +415,7 @@
       "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     }
   ],
-  "hotels": [
-    {
+  "hotels": [{
       "city": "alex",
       "id": 1,
       "category": "hotel",
@@ -586,43 +578,41 @@
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     }
   ],
-  "company": [
-    {
+  "company": [{
       "id": 1,
       "name": "Ramasside Tours Egypt",
       "location": "Alexandria",
       "rate": 4,
       "companyLogo": "../../assets/ramasside.jpg",
-      "travelPlan": [
-        {
+      "travelPlan": [{
           "countryImg": "../../assets/cairo.jpg",
           "depatureDate": "2-5-2020",
-          "arrivalDate": "2-6-2020",
-          "price": "2000$",
+          "arrivalDate": "2-7-2020",
+          "price": "200$",
           "dayNumber": 7,
           "best-buy": "handmade wooden accessories ",
-          "activity": "Start your adventure passing the following landmarks in Cairo: Opera house, the first of a kind in the Middle East, Cairo Tower, the tallest building in Cairo. Cross the bridge that connects Cairo with Giza to dive into the downtown and browse Tahrir Square,Explore Cairo's old gates and alley streets, walk through Al Moez street, the largest open-air museum of Islamic architecture in the world.End your tour at the famous old bazaar of Khan El Khalili, the oldest and largest market in the Middle East.",
+          "activity": "Start your adventure visiting Opera house, Cairo Tower. Cross the bridge that connects Cairo with Giza to dive into the downtown and browse Tahrir Square,Explore Cairo's old gates, walk through Al Moez street, the largest open-air museum of Islamic architecture in the world.End your tour at the famous old bazaar of Khan El Khalili.",
           "country": "Cairo"
         },
         {
           "countryImg": "../../assets/aswan.jpg",
           "depatureDate": "2-5-2020",
-          "arrivalDate": "2-6-2020",
-          "price": "5000$",
+          "arrivalDate": "2-11-2020",
+          "price": "1000$",
           "dayNumber": 7,
           "best-buy": "handmade wooden accessories ",
-          "activity": "Your tour begins with a walk across the High Dam Next, board a motorboat and enjoy a scenic ride on the river Nile to Lake Nasser and Agilkia Island.Visit this ancient temple dedicated to the goddess Isis. Stroll through its vast site, occupying about a quarter of the island, and explore its many other treasures Your tour ends with a visit to a quarry holding the largest known ancient obelisk—if completed.",
+          "activity": "Your tour begins with a walk across the High Dam Next, ride on the river Nile to Lake Nasser.Visit this ancient temple dedicated to the goddess Isis, occupying about a quarter of the island, and explore its many other treasures Your tour ends with a visit to a quarry holding the largest known ancient obelisk—if completed.",
           "country": "Aswan"
         },
         {
           "countryImg": "../../assets/alex.jpg",
           "depatureDate": "2-5-2020",
           "arrivalDate": "2-6-2020",
-          "price": "3000$",
+          "price": "100$",
           "dayNumber": 7,
           "best-buy": "handmade wooden accessories ",
-          "activity": "Visit Pompey’s Pillar and Catacombs of Kom el Shoqafa See the Citadel of Qaitbay Walk around the harbor area near the citadel and have lunch at a local seafood restaurant visit the Alexandria National Museum and Bibliotheca Alexandrina Continue the drive along the Corniche towards the Montaza Gardens for a passing view of the Stanley Bridge Finally, head to the Montaza Gardens to see the Al-Haramlik Palace and visit the gardens.",
-          "country": "Alex"
+          "activity": "Your tour begins with a Visit Pompey’s Pillar and Catacombs of Kom el Shoqafa See the Citadel of Qaitbay then have lunch at a local seafood restaurant ,next visit the Alexandria National Museum and Bibliotheca Alexandrina passing view of the Stanley Bridge. At the end, head to the Montaza Gardens to see the Al-Haramlik Palace.",
+          "country": "alexandria"
         }
       ]
     },
@@ -632,35 +622,34 @@
       "location": "Alexandria",
       "rate": 3,
       "companyLogo": "../../assets/vacation.jpg",
-      "travelPlan": [
-        {
+      "travelPlan": [{
           "countryImg": "../../assets/alex.jpg",
           "depatureDate": "2-5-2020",
           "arrivalDate": "2-6-2020",
-          "price": "2500$",
+          "price": "300$",
           "dayNumber": 7,
           "best-buy": "handmade wooden accessories ",
-          "activity": "Visit Pompey’s Pillar and Catacombs of Kom el Shoqafa See the Citadel of Qaitbay Walk around the harbor area near the citadel and have lunch at a local seafood restaurant visit the Alexandria National Museum and Bibliotheca Alexandrina Continue the drive along the Corniche towards the Montaza Gardens for a passing view of the Stanley Bridge Finally, head to the Montaza Gardens to see the Al-Haramlik Palace and visit the gardens.",
-          "country": "Alex"
+          "activity": "Your tour begins with a Visit Pompey’s Pillar and Catacombs of Kom el Shoqafa See the Citadel of Qaitbay then have lunch at a local seafood restaurant ,next visit the Alexandria National Museum and Bibliotheca Alexandrina passing view of the Stanley Bridge. At the end, head to the Montaza Gardens to see the Al-Haramlik Palace.",
+          "country": "alexandria"
         },
         {
           "countryImg": "../../assets/cairo.jpg",
           "depatureDate": "2-5-2020",
-          "arrivalDate": "2-6-2020",
+          "arrivalDate": "2-8-2020",
           "price": "1500$",
           "dayNumber": 7,
           "best-buy": "handmade wooden accessories ",
-          "activity": "Start your adventure passing the following landmarks in Cairo: Opera house, the first of a kind in the Middle East, Cairo Tower, the tallest building in Cairo. Cross the bridge that connects Cairo with Giza to dive into the downtown and browse Tahrir Square,Explore Cairo's old gates and alley streets, walk through Al Moez street, the largest open-air museum of Islamic architecture in the world.End your tour at the famous old bazaar of Khan El Khalili, the oldest and largest market in the Middle East. ",
+          "activity": "Start your adventure visiting Opera house, Cairo Tower. Cross the bridge that connects Cairo with Giza to dive into the downtown and browse Tahrir Square,Explore Cairo's old gates, walk through Al Moez street, the largest open-air museum of Islamic architecture in the world.End your tour at the famous old bazaar of Khan El Khalili.",
           "country": "Cairo"
         },
         {
           "countryImg": "../../assets/aswan.jpg",
           "depatureDate": "2-5-2020",
-          "arrivalDate": "2-6-2020",
-          "price": "4000$",
+          "arrivalDate": "2-12-2020",
+          "price": "2000$",
           "dayNumber": 7,
           "best-buy": "handmade wooden accessories ",
-          "activity": "Your tour begins with a walk across the High Dam Next, board a motorboat and enjoy a scenic ride on the river Nile to Lake Nasser and Agilkia Island.Visit this ancient temple dedicated to the goddess Isis. Stroll through its vast site, occupying about a quarter of the island, and explore its many other treasures Your tour ends with a visit to a quarry holding the largest known ancient obelisk—if completed.",
+          "activity": "Your tour begins with a walk across the High Dam Next, ride on the river Nile to Lake Nasser.Visit this ancient temple dedicated to the goddess Isis, occupying about a quarter of the island, and explore its many other treasures Your tour ends with a visit to a quarry holding the largest known ancient obelisk—if completed.",
           "country": "Aswan"
         }
       ]
@@ -671,35 +660,34 @@
       "location": "Cairo",
       "rate": 6,
       "companyLogo": "../../assets/emo.jpg",
-      "travelPlan": [
-        {
+      "travelPlan": [{
           "countryImg": "../../assets/aswan.jpg",
           "depatureDate": "2-5-2020",
-          "arrivalDate": "2-6-2020",
-          "price": "6000$",
+          "arrivalDate": "2-12-2020",
+          "price": "2500$",
           "dayNumber": 7,
           "best-buy": "handmade wooden accessories ",
-          "activity": "Your tour begins with a walk across the High Dam Next, board a motorboat and enjoy a scenic ride on the river Nile to Lake Nasser and Agilkia Island.Visit this ancient temple dedicated to the goddess Isis. Stroll through its vast site, occupying about a quarter of the island, and explore its many other treasures Your tour ends with a visit to a quarry holding the largest known ancient obelisk—if completed.",
+          "activity": "Your tour begins with a walk across the High Dam Next, ride on the river Nile to Lake Nasser.Visit this ancient temple dedicated to the goddess Isis, occupying about a quarter of the island, and explore its many other treasures Your tour ends with a visit to a quarry holding the largest known ancient obelisk—if completed.",
           "country": "Aswan"
         },
         {
           "countryImg": "../../assets/alex.jpg",
           "depatureDate": "2-5-2020",
           "arrivalDate": "2-6-2020",
-          "price": "3000$",
+          "price": "300$",
           "dayNumber": 7,
           "best-buy": "handmade wooden accessories ",
-          "activity": "Visit Pompey’s Pillar and Catacombs of Kom el Shoqafa See the Citadel of Qaitbay Walk around the harbor area near the citadel and have lunch at a local seafood restaurant visit the Alexandria National Museum and Bibliotheca Alexandrina Continue the drive along the Corniche towards the Montaza Gardens for a passing view of the Stanley Bridge Finally, head to the Montaza Gardens to see the Al-Haramlik Palace and visit the gardens.",
-          "country": "Alex"
+          "activity": "Your tour begins with a Visit Pompey’s Pillar and Catacombs of Kom el Shoqafa See the Citadel of Qaitbay then have lunch at a local seafood restaurant ,next visit the Alexandria National Museum and Bibliotheca Alexandrina passing view of the Stanley Bridge. At the end, head to the Montaza Gardens to see the Al-Haramlik Palace.",
+          "country": "alexandria"
         },
         {
           "countryImg": "../../assets/cairo.jpg",
           "depatureDate": "2-5-2020",
-          "arrivalDate": "2-6-2020",
-          "price": "3500$",
+          "arrivalDate": "2-7-2020",
+          "price": "250$",
           "dayNumber": 7,
           "best-buy": "handmade wooden accessories ",
-          "activity": "Start your adventure passing the following landmarks in Cairo: Opera house, the first of a kind in the Middle East, Cairo Tower, the tallest building in Cairo. Cross the bridge that connects Cairo with Giza to dive into the downtown and browse Tahrir Square,Explore Cairo's old gates and alley streets, walk through Al Moez street, the largest open-air museum of Islamic architecture in the world.End your tour at the famous old bazaar of Khan El Khalili, the oldest and largest market in the Middle East.",
+          "activity": "Start your adventure visiting Opera house, Cairo Tower. Cross the bridge that connects Cairo with Giza to dive into the downtown and browse Tahrir Square,Explore Cairo's old gates, walk through Al Moez street, the largest open-air museum of Islamic architecture in the world.End your tour at the famous old bazaar of Khan El Khalili.",
           "country": "Cairo"
         }
       ]

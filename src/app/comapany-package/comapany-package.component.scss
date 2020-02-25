@@ -1,62 +1,90 @@
-:root{
-    font-size: 10px;
-}
-.container{
-    padding: 100px 0
-}
-.dicription{
-    color: #999;
-}
-h5{
-    font-weight: bold
-}
-p{
-    margin-bottom: 7px
-}
-.card{
-    box-shadow: 1px 1px 11px 2px rgba(158, 158, 158, 0.3);
-    border: none;
+:root {
+  font-size: 10px;
 }
 
-.header span{
-    background:#ccc;
-    width: 120px;
-    height: 2px;
-    display: block;
-    margin: 0 auto
-}
-.header span span:first-child{
-    background: #2eca6a;
-    width: 60px;
-    height: 2px;
+.container {
+  padding: 100px 0
 }
 
-rating{
-    padding-bottom: 7px;
-    color: gold;
-    font-size: 1rem;
-    padding-left: 8px
-}
-strong{
-    color: #0e843c
-}
-a{
-    background: #0e843c;
-    padding: 2px 12px;
-    border-color: #0e843c;
-    font-weight: bold;
-    transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
+.dicription {
+  color: #999;
 }
 
-.card-body{
-font-size: 1rem;
+h5 {
+  font-weight: bold
 }
 
-.btn{
-    padding: 7px 20px 7px 20px;
-    font-size: 1rem;
+p {
+  margin-bottom: 7px
+}
+
+.card {
+  box-shadow: 1px 1px 11px 2px rgba(158, 158, 158, 0.3);
+  border: none;
+  max-height: 30rem;
+  min-height: 36rem;
+}
+
+.header span {
+  background: #ccc;
+  width: 120px;
+  height: 2px;
+  display: block;
+  margin:  auto;
+}
+
+.header span span:first-child {
+  background: #2eca6a;
+  width: 60px;
+  height: 2px;
+}
+
+.card-title:hover {
+  color: #0e843c;
+  cursor: pointer;
+}
+
+.date {
+  color: #0e843c;
+  font-weight: bold;
+}
+
+.date-number {
+  color: black;
+}
+
+rating {
+  // padding-bottom: 10px;
+  color: gold;
+  font-size: 1rem;
+}
+
+strong {
+  color: #0e843c
+}
+
+a {
+  background: #0e843c;
+  padding: 2px 12px;
+  border-color: #0e843c;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.card-body {
+  font-size: 0.8rem;
+}
+
+.btn {
+  padding: 7px 20px 7px 20px;
+  font-size: 0.8rem;
+}
+
+.price-amont {
+    display: flex;
+    justify-content: space-between;
 }
