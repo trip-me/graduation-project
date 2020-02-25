@@ -7,41 +7,9 @@
       "confirmPassword": "123Aya",
       "role": "tourist",
       "id": 1
-    },
-    {
-      "userName": "mustafa",
-      "email": "mustafa@yahoo.com",
-      "password": "123Mus",
-      "confirmPassword": "123Mus",
-      "role": "tourist",
-      "id": 3
-    },
-    {
-      "userName": "mustafa Amin",
-      "email": "aa@yahoo.com",
-      "password": "aaAA@@66",
-      "confirmPassword": "aaAA@@66",
-      "role": "tourist",
-      "id": 4
     }
   ],
-  "user-favorite-trip": [
-    {
-      "city": "alex",
-      "id": 1,
-      "category": "hotel",
-      "img": "../../../assets/images/hotels/Alexandria/forseason/forseason.jpg",
-      "name": "Four Seasons",
-      "title": "Alexandria",
-      "rate": "9.2",
-      "price": "$174",
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.1033390952925!2d29.964572614320016!3d31.245562481461317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c52e30aaf1df%3A0xc9d2d428ea2ba3d2!2sFour%20Seasons%20Hotel%20Alexandria%20at%20San%20Stefano%2C%20Egypt!5e0!3m2!1sen!2seg!4v1582032525857!5m2!1sen!2seg",
-      "shortDescription": "Set on a busy roundabout, this low-key hotel is 1 km from the nearest beach, 2 km from the Citadel of Qaitbay",
-      "fullDescription": "Set on a busy roundabout, this low-key hotel is 1 km from the nearest beach, 2 km from the Citadel of Qaitbay, a 15th-century seafront fortress, and 9 km from Alexandria International Airport.The straightforward rooms have wood floors and balconies, and offer Wi-Fi access, flat-screen TVs and minibars. Some have sitting areas.Amenities include an airy restaurant, and a down-to-earth cafe featuring outdoor seating.",
-      "userId": 4,
-      "userName": "mustafa Amin"
-    }
-  ],
+  "user-favorite-trip": [],
   "user-post": [],
   "guide-reply": [],
   "cities": [

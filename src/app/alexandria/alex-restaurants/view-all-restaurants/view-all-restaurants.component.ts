@@ -10,32 +10,33 @@ import { UsersService } from 'src/app/users.service';
 export class ViewAllRestaurantsComponent implements OnInit {
 
   allRestaurant;
- 
+
   constructor(private http: HttpClient,
-    private userService:UsersService
-    ) {
+    private userService: UsersService
+  ) {
+ 
 
-   }
+  }
 
-   // start add to my trip button
-   addToMyTrip(myFavorite) {
+  // start add to my trip button
+  addToMyTrip(myFavorite) {
     console.log(myFavorite)
-    if(localStorage != null){
+    if (localStorage != null) {
       let user = JSON.parse(localStorage.getItem('currentUser'))
       myFavorite.userId = user.id;
       myFavorite.userName = user.userName;
 
-      this.userService.postUserFavoriteTrip(myFavorite).subscribe(data=>{
+      this.userService.postUserFavoriteTrip(myFavorite).subscribe(data => {
         myFavorite = data
       })
     }
   }
-   // End add to my trip button
+  // End add to my trip button
 
   ngOnInit() {
 
-  this.http.get('http://localhost:3000/restaurants').subscribe(data => {
-    this.allRestaurant = data;
-  })
-}
+    this.http.get('http://localhost:3000/restaurants').subscribe(data => {
+      this.allRestaurant = data;
+    })
+  }
 }

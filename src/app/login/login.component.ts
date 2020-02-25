@@ -15,10 +15,12 @@ export class LoginComponent implements OnInit {
   userPassword;
   currentuser;
   logedinAdmin;
-  constructor(private activeRoute: ActivatedRoute,
+  constructor(
+    private activeRoute: ActivatedRoute,
     private service: UsersService,
     private fb: FormBuilder,
-    private router: Router) { }
+    private router: Router
+  ){ }
 
   ngOnInit() {
     this.loginForm = this.fb.group({
@@ -41,7 +43,7 @@ export class LoginComponent implements OnInit {
           let userObj = this.comingData[i];
           console.log(userObj);
           localStorage.setItem("currentUser", JSON.stringify(userObj));
-          this.router.navigate(['/my-trip', this.comingData[i].id]);
+          this.router.navigate(['/my-trip']);
           // console.log(this.comingData[i].role);
           this.currentuser = this.comingData[i].email;
           if (this.comingData[i].role === "tourist") {
