@@ -2,6 +2,12 @@
   <!-- <ngb-rating [rate]="4" [readonly]="isReadonly"></ngb-rating> -->
 </div>
 <div class="container">
+  <div class="header text-center">
+    <span>
+      <span></span>
+  </span>
+    <h1 class="mt-3 mb-5">our companies package</h1>
+  </div>
   <div class="row" *ngIf="companyPackage">
     <div class="col-md-4" *ngFor="let a of companyPackage">
       <div *ngFor="let i of a.travelPlan">
