@@ -1,34 +1,44 @@
 
 
 
+
 <section class="all-restaurant wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-11">
-                <div class="card  all-restaurant__details" *ngFor="let visit of allVisits">
+            <div class="col-sm-12 col-md-12"  *ngFor="let visit of allVisits">
+                <div class="card  all-restaurant__details">
                     <div class="row no-gutters">
-                        <div class="col-md-5 all-restaurant__details--img">
-                            <a [routerLink]="['/visit', visit.id]">
-                                <img [src]="visit.img" class="card-img"
-                                alt="{{visit.name}} {{visit.city}}">
-                            </a>
+                        
+                        <div class="col-lg-5 all-restaurant__details--img">
+                            <figure>
+                                <a routerLink="/Alexandria/visits/{{visit.id}}">
+                                <small>tours</small>
+                                    <img [src]="visit.img" class="card-img img-fluid">
+                                   
+                                </a>
+                            </figure>
                         </div>
                         <div class="col-md-7 all-restaurant__details--content">
-                            <div class="card-body py-5">
-                                <div class="py-5">
-                                    <a href="" class="icon-heart">
-                                        <!-- <i class="fas fa-heart"></i> -->
-                                        <i class="far fa-heart"></i>
+                            <div class="card-body ">
+                                <div class="card-body-info">
+                                    <a  class="wish_bt">
+                                        <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{visit.rate}}</strong></div>
                                     </a>
-                                    <a [routerLink]="['/visit', visit.id]">
-                                        <h3 class="card-title">{{visit.name}}</h3>
-                                    </a>
+<<<<<<< HEAD
                                     <p class="card-text">{{visit.shortDescription}}</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <a routerLink="/Alexandria/visits/{{visit.id}}" class="more-info">More info</a>
                                     <a class="add-to-my-trip" (click) ="addToMyTrip($event,visit)"> Add to my trip</a>
+=======
+                                    <h3><a routerLink="Alexandria/visits/{{visit.id}}"> {{ visit.name}} </a></h3>
+                                    <p>{{visit.shortDescription}}</p>
+                                    <span class="price">From <strong>{{visit.price}}</strong> /per person</span>
+>>>>>>> osama
                                 </div>
+                                <ul>
+                                    <li><a routerLink="/user-trip" class="add-to-my-trip" (click) ="addToMyTrip($event)"> Add to my trip</a> </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
