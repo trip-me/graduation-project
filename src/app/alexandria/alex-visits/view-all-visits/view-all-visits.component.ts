@@ -13,7 +13,7 @@ export class ViewAllVisitsComponent implements OnInit {
   constructor(private http: HttpClient, private userService: UsersService) { }
 
 
-  addToMyTrip(event, myFavorite) {
+  addToMyTrip( myFavorite) {
     if (localStorage != null) {
       let user = JSON.parse(localStorage.getItem('currentUser'))
       myFavorite.userId = user.id;

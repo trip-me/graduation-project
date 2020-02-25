@@ -28,6 +28,13 @@ export class LoginComponent implements OnInit {
     this.service.getUser().subscribe(userData => {
       return this.comingData = userData;
     })
+    if(localStorage.getItem("currentUser") !== null){
+      document.getElementById("login-btn").style.display = "none";
+      document.getElementById("logout-btn").style.display = "inline";
+      document.getElementById("user__myTrip").style.display="inline"
+      console.log("loyality");
+      
+    }
   }
 
   onSubmit(loginForm) {
@@ -65,7 +72,11 @@ export class LoginComponent implements OnInit {
     if (this.logedinAdmin === "admin") {
       document.getElementById("dashboard").style.display = "inline";
     }
-    document.getElementById("login-btn").style.display = "none";
-    document.getElementById("logout-btn").style.display = "inline";
+    if(localStorage.getItem("currentUser") !== null){
+      document.getElementById("login-btn").style.display = "none";
+      document.getElementById("logout-btn").style.display = "inline";
+      console.log("loyality");
+      
+    }
   }
 }
