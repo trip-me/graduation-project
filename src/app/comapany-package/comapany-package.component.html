@@ -1,5 +1,4 @@
 <!-- <div *ngIf="companyPackage">
- <ngb-rating [rate]="4" [readonly]="isReadonly"></ngb-rating> 
 </div> -->
 <div class="container">
   <div class="header text-center">
@@ -33,7 +32,6 @@
               <p class="pt-2"><strong>{{company.name}} company</strong></p>
               <rating [(ngModel)]="rate" [max]="5" [readonly]="isReadonly" class="rating"></rating>
             </div>
-            
           </div>
         </div>
       </div>

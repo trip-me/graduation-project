@@ -595,7 +595,7 @@
           "country": "Cairo"
         },
         {
-          "countryImg": "../../assets/aswan.jpg",
+          "countryImg": "../../assets/aswan2.jpg",
           "depatureDate": "2-5-2020",
           "arrivalDate": "2-11-2020",
           "price": "1000$",
@@ -605,7 +605,7 @@
           "country": "Aswan"
         },
         {
-          "countryImg": "../../assets/alex.jpg",
+          "countryImg": "../../assets/alex2.jpg",
           "depatureDate": "2-5-2020",
           "arrivalDate": "2-6-2020",
           "price": "100$",
@@ -643,7 +643,7 @@
           "country": "Cairo"
         },
         {
-          "countryImg": "../../assets/aswan.jpg",
+          "countryImg": "../../assets/aswan3.jpg",
           "depatureDate": "2-5-2020",
           "arrivalDate": "2-12-2020",
           "price": "2000$",
