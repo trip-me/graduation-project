@@ -21,7 +21,6 @@ export class ViewAllHotelsComponent implements OnInit {
       this.userService.postUserFavoriteTrip(myFavorite).subscribe(data => {
         myFavorite = data
         console.log(data);
-
       })
     }
   }

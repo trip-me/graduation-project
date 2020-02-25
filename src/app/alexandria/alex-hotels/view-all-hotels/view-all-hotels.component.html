@@ -11,9 +11,9 @@
                                 <a routerLink="/Alexandria/hotels/{{hotel.id}}">
                                 <small>Hotils</small>
                                     <img [src]="hotel.img" class="card-img img-fluid">
-                                    <div class="read_more">
-                                        <span>Read more</span>
-                                    </div>
+                                    <p class="read-more" >
+                                        <span class="wow fadeInUp" data-wow-delay="0.5s">{{hotel.city}}</span>
+                                    </p>
                                 </a>
                             </figure>
                         </div>
@@ -28,7 +28,7 @@
                                     <span class="price">From <strong>{{hotel.price}}</strong> /per person</span>
                                 </div>
                                 <ul>
-                                    <li ><a class="add-to-my-trip" (click)="addToMyTrip(hotel)">Add to my trip</a></li>
+                                    <li><a routerLink="/user-trip" class="add-to-my-trip" (click) ="addToMyTrip($event)"> Add to my trip</a> </li>
                                 </ul>
                             </div>
                         </div>
