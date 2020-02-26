@@ -25,8 +25,19 @@ export class ViewAllRestaurantsComponent implements OnInit {
      //select query param 
      this.activeRoute.paramMap.subscribe(param=>
       { 
-        this.CountrySearch=param.get('country');
-      this.search();
+        let x=param.get('country');
+        console.log(x);
+        // this.search();
+    })
+   }
+   newsearch(currentCountry){
+    // this.currentCountry = this.CountrySearch;
+    // console.log(this.currentCountry,"+"+this.allRestaurant);
+    this.allRestaurant = this.allRestaurant.filter(res => {
+      // this.city = this.allRestaurant;
+      console.log(this.allRestaurant );
+      
+      return res.city.toLocaleLowerCase().match(currentCountry.toLocaleLowerCase());
     })
    }
   // start add to my trip button
@@ -44,6 +55,7 @@ export class ViewAllRestaurantsComponent implements OnInit {
 
     }
   }
+  
   // addToMyTrip(myFavorite) {
   //   let user = JSON.parse(localStorage.getItem('currentUser'))
   //   if (localStorage != null ) {
@@ -74,7 +86,7 @@ export class ViewAllRestaurantsComponent implements OnInit {
   
   }
   city = [];
-  search() {
+  search(x) {
     if (this.CountrySearch != "") {
       this.currentCountry = this.CountrySearch;
       console.log(this.currentCountry,"+"+this.allRestaurant);

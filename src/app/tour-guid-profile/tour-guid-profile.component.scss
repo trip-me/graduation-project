@@ -16,13 +16,13 @@
     margin-bottom: 0;
     overflow: hidden;
     position: relative;
-    height: 230px;
+    height: 300px;
 }
 
 .box_grid figure img {
     width: 100%;
     transition: all 0.3s ease-in-out;
-    object-fit: cover;
+    height: auto;
 }
 
 .img-fluid {

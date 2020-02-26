@@ -547,7 +547,121 @@
       "tourGuideImg":"./assets/images/tourGuids/1.jpg",
       "name":"osama mostafa",
       "job" : "Tour Guide " ,
-      "guideDiscription":"I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002,acompano turistas hispanos para conocer nuestra tierra faraonica",
+      "guideDiscription":"I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
+      "TourHQID" :"EG96361",
+      "Experience":"5 Years",
+      "Gender":"Male" ,
+      "PrivateTour" :"Cairo",
+       "GuidingAreas" :[{
+        "first":"Aswan",
+        "second":"Alex"
+       }
+       ],
+       "Languages":[{
+       "first": "English" ,
+        "second":"Spanish"
+       }],
+       "rate":[
+         {
+           "ExcellentNum":30,
+           "Excellentwidth": "95%",
+           "VeryGoodNum":25,
+           "VeryGoodwidth": "90%",
+           "AverageNum":20,
+           "Averagewidth": "85%",
+           "PoortNum":3,
+           "Poorwidth": "20%",
+           "TerribleNum":0,
+           "Terriblewidth": "0%"
+         }
+       ],
+       "imgTrip":"./assets/Egypt1.jpg",
+       "tripDiscription":"Located near Egypt’s western border, Siwa Oasis remained culturally isolated from the rest of the country until late in the 19th century. Today, Siwa Oasis is an increasingly popular travel destination. Vacationers come to the city to enjoy the town’s many freshwater springs",
+       "halfDayPrice":40,
+       "fullDayPrice":100
+    },
+    {
+      "id":1,
+      "tourGuideImg":"./assets/images/tourGuids/2.jpg",
+      "name":"alex jack",
+      "job" : "Tour Guide " ,
+      "guideDiscription":"I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
+      "TourHQID" :"EG96361",
+      "Experience":"5 Years",
+      "Gender":"Male" ,
+      "PrivateTour" :"Cairo",
+       "GuidingAreas" :[{
+        "first":"Aswan",
+        "second":"Alex"
+       }
+       ],
+       "Languages":[{
+       "first": "English" ,
+        "second":"Spanish"
+       }],
+       "rate":[
+         {
+           "ExcellentNum":30,
+           "Excellentwidth": "95%",
+           "VeryGoodNum":25,
+           "VeryGoodwidth": "90%",
+           "AverageNum":20,
+           "Averagewidth": "85%",
+           "PoortNum":3,
+           "Poorwidth": "20%",
+           "TerribleNum":0,
+           "Terriblewidth": "0%"
+         }
+       ],
+       "imgTrip":"./assets/Egypt1.jpg",
+       "tripDiscription":"Located near Egypt’s western border, Siwa Oasis remained culturally isolated from the rest of the country until late in the 19th century. Today, Siwa Oasis is an increasingly popular travel destination. Vacationers come to the city to enjoy the town’s many freshwater springs",
+       "halfDayPrice":40,
+       "fullDayPrice":100
+    },
+    {
+      "id":1,
+      "tourGuideImg":"./assets/images/tourGuids/3.jpg",
+      "name":"eleena jack",
+      "job" : "Tour Guide " ,
+      "guideDiscription":"I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
+      "TourHQID" :"EG96361",
+      "Experience":"5 Years",
+      "Gender":"Male" ,
+      "PrivateTour" :"Cairo",
+       "GuidingAreas" :[{
+        "first":"Aswan",
+        "second":"Alex"
+       }
+       ],
+       "Languages":[{
+       "first": "English" ,
+        "second":"Spanish"
+       }],
+       "rate":[
+         {
+           "ExcellentNum":30,
+           "Excellentwidth": "95%",
+           "VeryGoodNum":25,
+           "VeryGoodwidth": "90%",
+           "AverageNum":20,
+           "Averagewidth": "85%",
+           "PoortNum":3,
+           "Poorwidth": "20%",
+           "TerribleNum":0,
+           "Terriblewidth": "0%"
+         }
+       ],
+       "imgTrip":"./assets/Egypt1.jpg",
+       "tripDiscription":"Located near Egypt’s western border, Siwa Oasis remained culturally isolated from the rest of the country until late in the 19th century. Today, Siwa Oasis is an increasingly popular travel destination. Vacationers come to the city to enjoy the town’s many freshwater springs",
+       "halfDayPrice":40,
+       "fullDayPrice":100
+    },
+    {
+      "id":1,
+      "tourGuideImg":"./assets/images/tourGuids/4.jpg",
+      "name":"jack ",
+      "job" : "Tour Guide " ,
+      "guideDiscription":"I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
       "TourHQID" :"EG96361",
       "Experience":"5 Years",
       "Gender":"Male" ,
