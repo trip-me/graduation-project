@@ -601,7 +601,7 @@
           "price": "1000$",
           "dayNumber": 7,
           "best-buy": "handmade wooden accessories ",
-          "activity": "Your tour begins with a walk across the High Dam Next, ride on the river Nile to Lake Nasser.Visit this ancient temple dedicated to the goddess Isis, occupying about a quarter of the island, and explore its many other treasures Your tour ends with a visit to a quarry holding the largest known ancient obelisk—if completed.",
+          "activity": "First Visit the High Dam, Unfinished Obelisk. After that you’ll be moving to the Great Nubian temples of Philae. visite Kom Ombo and Edfu Temples, Then sail to Edfu. and Sail to Luxor late arrival, Visit Karnak and Luxor Temple. next visite Valley of the Kings, Temple of Queen Hatshepsut at El Deir El Bahary and the Colossi of Memnon.",
           "country": "Aswan"
         },
         {
@@ -633,7 +633,7 @@
           "country": "alexandria"
         },
         {
-          "countryImg": "../../assets/cairo.jpg",
+          "countryImg": "../../assets/cairo2.jpg",
           "depatureDate": "2-5-2020",
           "arrivalDate": "2-8-2020",
           "price": "1500$",
@@ -681,7 +681,7 @@
           "country": "alexandria"
         },
         {
-          "countryImg": "../../assets/cairo.jpg",
+          "countryImg": "../../assets/cairo3.jpg",
           "depatureDate": "2-5-2020",
           "arrivalDate": "2-7-2020",
           "price": "250$",

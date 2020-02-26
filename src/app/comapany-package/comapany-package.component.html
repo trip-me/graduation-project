@@ -8,12 +8,12 @@
     <h1 class="mt-3 mb-5">our companies package</h1>
   </div>
   <div class="row no-gutters" *ngIf="companyPackage">
-    <div class="col-md-4 pr-3" *ngFor="let company of companyPackage">
+    <div class="col-md-4 pr-4" *ngFor="let company of companyPackage">
       <div *ngFor="let package of company.travelPlan">
         <div class="card mb-4">
           <img src="{{package.countryImg}}" class="card-img-top img-fulid" alt="">
           <div class="card-body">
-            <h2 class="card-title text-center">{{package.country}}</h2>
+            <h3 class="card-title text-center mt-0">Tour to {{package.country}} city</h3>
             <p class="discription"> {{package.activity}}</p>
             <p class="date">Depature Date :<span class="date-number"> {{package.depatureDate}}</span></p>
             <p class="date">Arrival Date :<span class="date-number"> {{package.arrivalDate}}</span></p>
