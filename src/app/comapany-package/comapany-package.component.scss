@@ -29,6 +29,10 @@ p {
   box-shadow: 2px 2px 20px 4px rgba(158, 158, 158, 0.3);
 }
 
+.header h2 {
+  text-transform: capitalize;
+}
+
 .header span {
   background: #ccc;
   width: 120px;
@@ -58,7 +62,6 @@ p {
 }
 
 rating {
-  // padding-bottom: 10px;
   color: gold;
   font-size: 1.3rem;
 }
@@ -93,7 +96,7 @@ a {
   justify-content: space-between;
 }
 
-.company-data span{
+.company-data span {
   background: #ccc;
   width: 18rem;
   height: 1px;
@@ -101,6 +104,7 @@ a {
   margin: auto;
   opacity: 0.5;
 }
-.company-data strong{
+
+.company-data strong {
   color: black;
 }
