@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hero-section',
@@ -6,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-section.component.scss']
 })
 export class HeroSectionComponent implements OnInit {
-
-  constructor() { }
-
+  searchname;
+  constructor(private router:Router) { 
+    
+  }
+      filterSearch(){
+        if(this.searchname == "resturant"){
+        this.router.navigate(['/AllRestaurants',{country:"cairo"}]);
+        }
+    
+      }
   ngOnInit() {
   }
 

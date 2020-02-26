@@ -40,6 +40,10 @@ export class RegisterComponent implements OnInit {
     if (localStorage.getItem("currentUser") !== null) {
       document.getElementById("login-btn").style.display = "none";
       document.getElementById("logout-btn").style.display = "inline";
+      document.getElementById("user__myTrip").style.display="inline";
+    }else{
+    if (localStorage.getItem("currentUser") === null) 
+      document.getElementById("user__myTrip").style.display="none";
     }
   }
   ngOnInit() {

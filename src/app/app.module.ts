@@ -40,6 +40,8 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyTripComponent } from './my-trip/my-trip.component';
 import { GuideMeComponent } from './guide-me/guide-me.component';
+import { TourGuidComponent } from './tour-guid/tour-guid.component';
+import { TourGuidProfileComponent } from './tour-guid-profile/tour-guid-profile.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +72,8 @@ import { GuideMeComponent } from './guide-me/guide-me.component';
     RegisterComponent,
     MyTripComponent,
     GuideMeComponent,
+    TourGuidComponent,
+    TourGuidProfileComponent,
 
   ],
   imports: [

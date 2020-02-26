@@ -49,7 +49,7 @@ export class UsersService {
   cancelUserFavoriteTrip(id) {
     return this.http.delete('http://localhost:3000/user-favorite-trip/' + id)
   }
-
+// get tour guid of trip
 
   // thses methodes to get the  user  post  to  share it 
   // in guid me page 

@@ -15,6 +15,22 @@
       "confirmPassword": "Dina6^",
       "role": "tourist",
       "id": 2
+    },
+    {
+      "userName": "shahd",
+      "email": "shahd@gmail.com",
+      "password": "Shahd1!",
+      "confirmPassword": "Shahd1!",
+      "role": "tourguide",
+      "id": 3
+    },
+    {
+      "userName": "shahd",
+      "email": "shahd@gmail.com",
+      "password": "Shahd1!",
+      "confirmPassword": "Shahd1!",
+      "role": "tourguide",
+      "id": 4
     }
   ],
   "user-favorite-trip": [
@@ -45,6 +61,37 @@
       "map": "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13650.835783223147!2d29.898477596527467!3d31.201082507238727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sParadise%20Inn!5e0!3m2!1sen!2seg!4v1582091413290!5m2!1sen!2seg",
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.",
       "fullDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.",
+      "userId": 2,
+      "userName": "dina"
+    },
+    {
+      "city": "alex",
+      "id": 3,
+      "category": "hotel",
+      "img": "../../../assets/images/hotels/Alexandria/hilton/hilton.jpg",
+      "name": "Hilton Alexandria Green Plaza",
+      "title": "Alexandria",
+      "rate": "8.7",
+      "price": "170$",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.513117601668!2d29.96333591447431!3d31.20651056969639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4b1d6566141%3A0xdf501bb33b6e7711!2sHilton%20Alexandria%20Green%20Plaza!5e0!3m2!1sen!2seg!4v1582089418091!5m2!1sen!2seg",
+      "shortDescription": "Set 3 km from Alexandria International Airport, this polished hotel in the Green Plaza shopping mall is 5 km from the Royal Jewelry Museum Refined rooms feature flat-screen TVs, seating areas and Wi-Fi, plus tea and coffeemakers.",
+      "fullDescription": "Set 3 km from Alexandria International Airport, this polished hotel in the Green Plaza shopping mall is 5 km from the Royal Jewelry Museum Refined rooms feature flat-screen TVs, seating areas and Wi-Fi, plus tea and coffeemakers. Club rooms and suites add access to a lounge with complimentary breakfast and drinks. Suites also have living areas. Room service is available Amenities consist of a spa, indoor and an outdoor pools, a gym and a game room. There are multiple bars and dining options, including Indian and Italian restaurants. Event space is offered. Parking is available (fee).",
+      "userId": 2,
+      "userName": "dina"
+    },
+    {
+      "city": "alex",
+      "id": 2,
+      "category": "restaurant",
+      "img": "../../../assets/images/restaurants/Alexandria/2.jpg",
+      "name": "Carlos Cafe",
+      "service": "drink",
+      "rate": 8.5,
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54605.67631535653!2d29.890162818470703!3d31.197039936955978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4f250ae2659%3A0xbc6b52748eea347a!2sCarlos%20Cafe!5e0!3m2!1sen!2seg!4v1582027887915!5m2!1sen!2seg",
+      "title": "Alexandria",
+      "price": "9$",
+      "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
+      "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.",
       "userId": 2,
       "userName": "dina"
     }
@@ -492,6 +539,32 @@
       "price": "60$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.8680133362673!2d29.90000051447403!3d31.196672770176903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e8655eff5d%3A0x5a5908a5e8f225f8!2sPotasta!5e0!3m2!1sen!2seg!4v1582010070848!5m2!1sen!2seg",
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
+    }
+  ],
+  "tourGuid": [
+    {
+      "id": 3,
+      "name": "amr",
+      "img": "../../../assets/images/hotels/Alexandria/hotel_list_2.jpg",
+      "discription": "working for tourism since 1999 , i hold bachelor's degree in english literature "
+    },
+    {
+      "id": 33,
+      "name":"mohamed",
+      "img": "../../../assets/images/hotels/Alexandria/hotel_list_2.jpg",
+      "discription": "working for tourism since 1999 , i hold bachelor's degree in english literature "
+    },
+    {
+      "id": 31,
+      "name": "sadek",
+      "img": "../../../assets/images/hotels/Alexandria/hotel_list_2.jpg",
+      "discription": "working for tourism since 1999 , i hold bachelor's degree in english literature "
+    },
+    {
+      "id": 23,
+      "name": "leen ",
+      "img": "../../../assets/images/hotels/Alexandria/hotel_list_2.jpg",
+      "discription": "working for tourism since 1999 , i hold bachelor's degree in english literature "
     }
   ]
 }
