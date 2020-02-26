@@ -11,10 +11,11 @@
         <div class="card mb-4">
           <img src="{{package.countryImg}}" class="card-img-top img-fulid" alt="">
           <div class="card-body">
-            <h3 class="card-title mt-0">Tour to {{package.country}} city</h3>
-            <p class="discription"> {{package.activity}}</p>
-            <p class="date">Depature Date :<span class="date-number"> {{package.depatureDate}}</span></p>
-            <p class="date">Arrival Date :<span class="date-number"> {{package.arrivalDate}}</span></p>
+            <h4 class="card-title mt-0 mb-0">Tour to {{package.country}} city</h4>
+            <p class="company-data"><strong>{{company.name}} company</strong></p>
+            <p class="shortDisc"> {{package.shortDisc}}</p>
+            <!-- <p class="date">Depature Date :<span class="date-number"> {{package.depatureDate}}</span></p> -->
+            <!-- <p class="date">Arrival Date :<span class="date-number"> {{package.arrivalDate}}</span></p> -->
             <rating [(ngModel)]="rate" [max]="4" [readonly]="isReadonly"></rating>
             <div class="price-amont">
               <p class="pt-2">
@@ -25,11 +26,10 @@
               <div class="book-btn"><a href="" class="btn btn-primary">Book</a>
               </div>
             </div>
-            <div class="company-data pt-3">
-              <span></span>
-              <p class="pt-2"><strong>{{company.name}} company</strong></p>
-              <rating [(ngModel)]="rate" [max]="5" [readonly]="isReadonly" class="rating"></rating>
-            </div>
+            <!-- <div class="company-data pt-3"> -->
+              <!-- <span></span> -->
+              <!-- <rating [(ngModel)]="rate" [max]="5" [readonly]="isReadonly" class="rating"></rating> -->
+            <!-- </div> -->
           </div>
         </div>
       </div>

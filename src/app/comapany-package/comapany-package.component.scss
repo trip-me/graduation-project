@@ -6,12 +6,13 @@
   padding: 100px 0;
 }
 
-.dicription {
-  color: #999;
+.shortDisc {
+  color: rgb(155, 152, 152);
 }
 
 h5 {
-  font-weight: bold
+  // font-weight: bold;
+  color: black;
 }
 
 p {
@@ -21,8 +22,8 @@ p {
 .card {
   box-shadow: 0 2px 7px 0 #cfcfcf80;
   border: none;
-  max-height: 39rem;
-  min-height: 41rem;
+  // max-height: 39rem;
+  // min-height: 41rem;
 }
 
 .card:hover {
@@ -47,6 +48,10 @@ p {
   height: 2px;
 }
 
+.card-title{
+  padding-bottom: 7px;
+}
+
 .card-title:hover {
   color: #0e843c;
   cursor: pointer;
@@ -63,11 +68,11 @@ p {
 
 rating {
   color: gold;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 strong {
-  color: #0e843c
+  color: #0e843c;
 }
 
 a {
@@ -75,6 +80,8 @@ a {
   padding: 2px 12px;
   border-color: #0e843c;
   font-weight: bold;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -96,15 +103,17 @@ a {
   justify-content: space-between;
 }
 
-.company-data span {
-  background: #ccc;
-  width: 18rem;
-  height: 1px;
-  display: block;
-  margin: auto;
-  opacity: 0.5;
-}
+// .company-data span {
+//   background: #ccc;
+//   width: 18rem;
+//   height: 1px;
+//   display: block;
+//   margin: auto;
+//   opacity: 0.5;
+// }
 
 .company-data strong {
-  color: black;
+  color: #0e843c;
+  font-weight: 600;
+  font-size: 0.75rem;
 }
