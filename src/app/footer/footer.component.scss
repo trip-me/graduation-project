@@ -117,4 +117,10 @@ h6{
     flex-direction: row;
     justify-content: flex-end
 }
+@media (max-width:768px){
+    .footer-terms {
+    flex-direction: row;
+        justify-content: flex-start
+    }
+}
 
