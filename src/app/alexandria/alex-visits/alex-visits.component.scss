@@ -1,18 +1,20 @@
 .all-restaurant:not(:last-of-type) {
     margin: 0 0 3.5rem;
     background-color: #f8f8f8;
-      
+    
   }
   .all-restaurant:last-of-type {
-    padding-bottom: 3.5rem
+    padding-bottom: 3.5rem;
+    background-color: #f8f8f8;
+    
   }
   .all-restaurant__details {
     box-shadow: 0px 0px 35px -12px rgba(44, 44, 44, 0.27);
     position: relative;
-    margin: .5rem auto;
-    border:none
+    margin-bottom: 1.5rem;
+    border:none;
   }
-  .card{}
+  .section-head{margin-bottom: 2rem;}
   .section-head span{
     background:#ccc;
     width: 120px;
@@ -51,12 +53,14 @@
   }
   ul li a{
   text-decoration: none;
-  background-color: #32a067;
-  font-size: .9rem;
+  background-color: #0e843c;
+  font-size: .83rem;
+  font-weight: bold;
   padding:.5rem 1rem;
   display: inline-block;
   color: #ffffff;
   border-radius: 20px;
+  cursor: pointer;
   }
   .score span {
   display: inline-block;
@@ -137,9 +141,8 @@ top:10px ;
     
 }
 .view-all__hotels a{
-    color: #32a067;
-   
+    color: #32a067;  
     font-weight: bold;
     text-transform: capitalize;
-    opacity: .8;
+    margin-left: 1rem
 }

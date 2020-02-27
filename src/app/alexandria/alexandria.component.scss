@@ -2,7 +2,8 @@ h1{
     font-weight: bold
 }
 p{
-    font-size: 1.4rem
+    font-size: 1.4rem;
+    text-transform: capitalize
 }
 header{
     background-image: url(../../assets/alex_hero.jpg);
@@ -52,7 +53,7 @@ header a{
 }
 @media (max-width: 700px) {
     .header-content{
-        margin-top: 10rem;
+        margin-top: 6rem;
     }
     h1{
         font-size: 2rem
