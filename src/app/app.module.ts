@@ -42,6 +42,7 @@ import { GuideMeComponent } from './guide-me/guide-me.component';
 import { ComapanyPackageComponent } from './comapany-package/comapany-package.component';
 import { RatingModule } from 'ngx-bootstrap/rating';
 import { ComapanyDataComponent } from './comapany-data/comapany-data.component';
+import { PackageDetailsComponent } from './package-details/package-details.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import { ComapanyDataComponent } from './comapany-data/comapany-data.component';
     MyTripComponent,
     GuideMeComponent,
     ComapanyPackageComponent,
-    ComapanyDataComponent
+    ComapanyDataComponent,
+    PackageDetailsComponent
   ],
   imports: [
     BrowserModule,

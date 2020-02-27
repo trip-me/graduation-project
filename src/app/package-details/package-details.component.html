@@ -1,0 +1,86 @@
+<div class="package-details">
+    <!-- *ngIf="singleTourData" -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <section id="description">
+          <h2>Description</h2>
+          <p></p>
+          <hr>
+          <h3>Instagram photos</h3>
+          <div id="instagram">
+            <div class="row">
+              <div class="col-md-2 col-sm-3">
+                <img src="">
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <img src="">
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <img src="">
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <img src="">
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <img src="">
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <img src="">
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <img src="">
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <img src="">
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <img src="">
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <img src="">
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <img src="">
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <img src="">
+              </div>
+            </div>
+          </div>
+          <!-- <hr>
+          <h3>Program</h3>
+          <p></p> -->
+          <hr>
+          <h3>Location</h3>
+          <div *ngIf="MapurlSafe" class="place_details-map col-sm-12 ">
+            <iframe [src]="MapurlSafe" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""
+              alt="map"></iframe>
+          </div>
+        </section>
+        <hr>
+      </div>
+      <aside class="col-lg-4" id="sidebar">
+        <div class="tour-img">
+          <img src="">
+        </div>
+        <!-- <div class="box_detail booking">
+          <div class="price">
+            <span>{{singleTourData.price}} <small>/person</small></span>
+            <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{singleTourData.rate}}</strong></div>
+          </div>
+          <a routerLink="/user-trip" class="add-to-my-trip" (click)="addToMyTrip($event)"
+            class="btn_1 full-width outline wishlist">
+            <i class="far fa-heart"></i>
+            Add To My Trip
+          </a>
+        </div> -->
+        <!-- <ul class="share-buttons">
+          <li><a class="fb-share" href="#0"><i class="fab fa-facebook-f"></i>Share</a></li>
+          <li><a class="twitter-share" href="#0"><i class="fab fa-twitter"></i> Tweet</a></li>
+          <li><a class="gplus-share" href="#0"><i class="far fa-envelope-open"></i> Share</a></li>
+        </ul> -->
+      </aside>
+    </div>
+  </div>
+</div>

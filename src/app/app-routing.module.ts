@@ -16,6 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { MyTripComponent } from './my-trip/my-trip.component';
 import { GuideMeComponent } from './guide-me/guide-me.component';
 import { ComapanyPackageComponent } from './comapany-package/comapany-package.component';
+import { PackageDetailsComponent } from './package-details/package-details.component';
 
 
 const routes: Routes = [
@@ -54,7 +55,9 @@ const routes: Routes = [
   { path: "AllRestaurants", component: ViewAllRestaurantsComponent },
   { path: "AllHotels", component: ViewAllHotelsComponent },
   { path: "AllVisits", component: ViewAllVisitsComponent },
-  { path: "companyPackage", component: ComapanyPackageComponent }
+  { path: "companyPackage", component: ComapanyPackageComponent },
+  {path:"companyPackage/:id",component:PackageDetailsComponent}
+
 ];
 
 @NgModule({

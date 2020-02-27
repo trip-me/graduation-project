@@ -12,20 +12,20 @@ export class UsersService {
   //End variables
 
   constructor(private http: HttpClient) { }
-  
-  getCompanyData(){
+
+  getCompanyData() {
     return this.http.get("http://localhost:3000/company");
   }
 
-  getCompanyPackage(id){
+  getCompanyPackage(id) {
     return this.http.get(`http://localhost:3000/company/${id}`);
   }
-
-  getTourGuid(){
-    return this.http.get("http://localhost:3000/tourGuid"); 
+  ///////////////////
+  getTourGuid() {
+    return this.http.get("http://localhost:3000/tourGuid");
   }
-  getTourGuidPackage(id){
-    return this.http.get(`http://localhost:3000/tourGuid/${id}`); 
+  getTourGuidPackage(id) {
+    return this.http.get(`http://localhost:3000/tourGuid/${id}`);
   }
 
   postUser(user) {
@@ -35,7 +35,7 @@ export class UsersService {
   getUser() {
     return this.http.get("http://localhost:3000/users");
   }
-// Ayaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  // Ayaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
   // thses methodes to get  user favorite trip and send it in his profile 
   postUserFavoriteTrip(obj) {
@@ -85,7 +85,7 @@ export class UsersService {
 
 
 
-// Ayaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  // Ayaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 
 

@@ -9,26 +9,20 @@ import { UsersService } from '../users.service';
 })
 export class ComapanyPackageComponent implements OnInit {
   companyPackage;
-  // Compdata;
+  Compdata;
   max;
   rate = 2;
   isReadonly: boolean = true;
   constructor(private activeRoute: ActivatedRoute, private servicePackage: UsersService) {
+    //companies
     this.servicePackage.getCompanyData().subscribe(data => {
       this.companyPackage = data;
       console.log(this.companyPackage);
     })
 
-    // this.activeRoute.paramMap.subscribe(param => {
-    //   this.packageData(param.get('id'));
-    // })
   }
-  // packageData(cId) {
-  //   this.servicePackage.getCompanyPackage(cId).subscribe(data => {
-  //     this.Compdata = data;
-  //     console.log(this.Compdata);
-  //   });
-  // }
+  
   ngOnInit() {
+    
   }
 }
