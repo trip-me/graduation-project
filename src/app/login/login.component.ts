@@ -55,7 +55,7 @@ export class LoginComponent implements OnInit {
             this.router.navigate(['/my-trip']);
           }
           else if (this.comingData[i].role === "tourguide") {
-            this.router.navigate(['/tourGuid']);
+            this.router.navigate(['/tourguid']);
           }
           else {
             this.router.navigate(['/Home']);

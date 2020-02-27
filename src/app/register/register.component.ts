@@ -32,7 +32,7 @@ export class RegisterComponent implements OnInit {
             this.router.navigate(['/my-trip']);
             
           } else if (this.userInfo.role == "tourguide") {
-            this.router.navigate(['/tourGuid']);
+            this.router.navigate(['/tourguid']);
           }
         })
       }

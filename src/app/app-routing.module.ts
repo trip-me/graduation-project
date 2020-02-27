@@ -65,7 +65,8 @@ const routes: Routes = [
   {path:"AllRestaurants",component:ViewAllRestaurantsComponent},
   {path:"AllHotels",component:ViewAllHotelsComponent},
   {path:"AllVisits",component:ViewAllVisitsComponent},
-  {path:"tourguid/:id",component:TourGuidProfileComponent}
+  {path:"tourguid/:id",component:TourGuidProfileComponent},
+  {path:"tourguid",component:TourGuidProfileComponent}
   // {path:"",component:},
 ];
 

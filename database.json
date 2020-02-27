@@ -31,6 +31,30 @@
       "confirmPassword": "Shahd1!",
       "role": "tourguide",
       "id": 4
+    },
+    {
+      "userName": "dina",
+      "email": "dina@gmail.com",
+      "password": "Dina1!",
+      "confirmPassword": "Dina1!",
+      "role": "tourguide",
+      "id": 5
+    },
+    {
+      "userName": "dina",
+      "email": "dina@gmail.com",
+      "password": "Dina1!",
+      "confirmPassword": "Dina1!",
+      "role": "tourguide",
+      "id": 6
+    },
+    {
+      "userName": "alaa",
+      "email": "alaa@yahoo.com",
+      "password": "Dina1!",
+      "confirmPassword": "Dina1!",
+      "role": "tourguide",
+      "id": 7
     }
   ],
   "user-favorite-trip": [
@@ -140,7 +164,7 @@
       "name_tag": "Alexandria_tours",
       "tour_category": "museums",
       "name": "Alexandria National Museum",
-      "shortDescription": "is a museum in Alexandria, Egypt. It was inaugurated the 31 December 2003 by Hosni Mubarak and it is located in a renovated Italian style palace in Tariq Al-Horreya Street (former Rue Fouad). The building used to be home to the United States consulate.",
+      "shortDescription": "It was inaugurated the 31 December 2003 by Hosni Mubarak and it is located in a renovated Italian style palace in Tariq Al-Horreya Street (former Rue Fouad). ",
       "fullDescription": "The museum is located in a former Italianate mansion. It's the former home of a wood sales person. It used to house the United States consulate. The building dates back to 1926, located around a large garden, in addition to housing a basement. The three-storey palace was a meeting place for the Egyptian upper-class society of Alexandria.",
       "img": "https://lh5.googleusercontent.com/p/AF1QipOG079tpBmIFZTO4ImitMItIJ1zoqzwwKSjlkMR=w408-h306-k-no",
       "rate": 9.1,
@@ -182,7 +206,7 @@
       "tourType": "sites",
       "title": "Alexandria",
       "name": "pompey piilar ",
-      "shortDescription": "Pompey's Pillar is a Roman triumphal column in Alexandria, Egypt, the largest of its type constructed outside the imperial capitals of Rome and Constantinople, located at the Serapeum of Alexandria.",
+      "shortDescription": "Pompey's Pillar is a Roman triumphal column in Alexandria, Egypt, the largest of its type constructed outside the imperial capitals of Rome and Constantinople.",
       "fullDescription": " is a Roman triumphal column in Alexandria, Egypt, the largest of its type constructed outside the imperial capitals of Rome and Constantinople,located at the Serapeum of Alexandria. The only known free-standing column in Roman Egypt which was not composed of drums, it is one of the largest ancient monoliths and one of the largest monolithic columns ever erected.",
       "img": "https://lh5.googleusercontent.com/p/AF1QipMw8hF3CA8GWKMqplJiyB_XbWGzHwG0vaYBjnHU=w408-h544-k-no",
       "rate": 9.8,
@@ -541,158 +565,170 @@
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     }
   ],
-  "tourGuid":[
+  "tourGuid": [
     {
-      "id":1,
-      "tourGuideImg":"./assets/images/tourGuids/1.jpg",
-      "name":"osama mostafa",
-      "job" : "Tour Guide " ,
-      "guideDiscription":"I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
-      "TourHQID" :"EG96361",
-      "Experience":"5 Years",
-      "Gender":"Male" ,
-      "PrivateTour" :"Cairo",
-       "GuidingAreas" :[{
-        "first":"Aswan",
-        "second":"Alex"
-       }
-       ],
-       "Languages":[{
-       "first": "English" ,
-        "second":"Spanish"
-       }],
-       "rate":[
-         {
-           "ExcellentNum":30,
-           "Excellentwidth": "95%",
-           "VeryGoodNum":25,
-           "VeryGoodwidth": "90%",
-           "AverageNum":20,
-           "Averagewidth": "85%",
-           "PoortNum":3,
-           "Poorwidth": "20%",
-           "TerribleNum":0,
-           "Terriblewidth": "0%"
-         }
-       ],
-       "imgTrip":"./assets/Egypt1.jpg",
-       "tripDiscription":"Located near Egypt’s western border, Siwa Oasis remained culturally isolated from the rest of the country until late in the 19th century. Today, Siwa Oasis is an increasingly popular travel destination. Vacationers come to the city to enjoy the town’s many freshwater springs",
-       "halfDayPrice":40,
-       "fullDayPrice":100
+      "id": 1,
+      "tourGuideImg": "./assets/images/tourGuids/1.jpg",
+      "name": "osama mostafa",
+      "job": "Tour Guide ",
+      "guideDiscription": "I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
+      "TourHQID": "EG96361",
+      "Experience": "5 Years",
+      "Gender": "Male",
+      "PrivateTour": "Cairo",
+      "GuidingAreas": [
+        {
+          "first": "Aswan",
+          "second": "Alex"
+        }
+      ],
+      "Languages": [
+        {
+          "first": "English",
+          "second": "Spanish"
+        }
+      ],
+      "rate": [
+        {
+          "ExcellentNum": 30,
+          "Excellentwidth": "95%",
+          "VeryGoodNum": 25,
+          "VeryGoodwidth": "90%",
+          "AverageNum": 20,
+          "Averagewidth": "85%",
+          "PoortNum": 3,
+          "Poorwidth": "20%",
+          "TerribleNum": 0,
+          "Terriblewidth": "0%"
+        }
+      ],
+      "imgTrip": "./assets/Egypt1.jpg",
+      "tripDiscription": "Located near Egypt’s western border, Siwa Oasis remained culturally isolated from the rest of the country until late in the 19th century. Today, Siwa Oasis is an increasingly popular travel destination. Vacationers come to the city to enjoy the town’s many freshwater springs",
+      "halfDayPrice": 40,
+      "fullDayPrice": 100
     },
     {
-      "id":1,
-      "tourGuideImg":"./assets/images/tourGuids/2.jpg",
-      "name":"alex jack",
-      "job" : "Tour Guide " ,
-      "guideDiscription":"I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
-      "TourHQID" :"EG96361",
-      "Experience":"5 Years",
-      "Gender":"Male" ,
-      "PrivateTour" :"Cairo",
-       "GuidingAreas" :[{
-        "first":"Aswan",
-        "second":"Alex"
-       }
-       ],
-       "Languages":[{
-       "first": "English" ,
-        "second":"Spanish"
-       }],
-       "rate":[
-         {
-           "ExcellentNum":30,
-           "Excellentwidth": "95%",
-           "VeryGoodNum":25,
-           "VeryGoodwidth": "90%",
-           "AverageNum":20,
-           "Averagewidth": "85%",
-           "PoortNum":3,
-           "Poorwidth": "20%",
-           "TerribleNum":0,
-           "Terriblewidth": "0%"
-         }
-       ],
-       "imgTrip":"./assets/Egypt1.jpg",
-       "tripDiscription":"Located near Egypt’s western border, Siwa Oasis remained culturally isolated from the rest of the country until late in the 19th century. Today, Siwa Oasis is an increasingly popular travel destination. Vacationers come to the city to enjoy the town’s many freshwater springs",
-       "halfDayPrice":40,
-       "fullDayPrice":100
+      "id": 1,
+      "tourGuideImg": "./assets/images/tourGuids/2.jpg",
+      "name": "alex jack",
+      "job": "Tour Guide ",
+      "guideDiscription": "I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
+      "TourHQID": "EG96361",
+      "Experience": "5 Years",
+      "Gender": "Male",
+      "PrivateTour": "Cairo",
+      "GuidingAreas": [
+        {
+          "first": "Aswan",
+          "second": "Alex"
+        }
+      ],
+      "Languages": [
+        {
+          "first": "English",
+          "second": "Spanish"
+        }
+      ],
+      "rate": [
+        {
+          "ExcellentNum": 30,
+          "Excellentwidth": "95%",
+          "VeryGoodNum": 25,
+          "VeryGoodwidth": "90%",
+          "AverageNum": 20,
+          "Averagewidth": "85%",
+          "PoortNum": 3,
+          "Poorwidth": "20%",
+          "TerribleNum": 0,
+          "Terriblewidth": "0%"
+        }
+      ],
+      "imgTrip": "./assets/Egypt1.jpg",
+      "tripDiscription": "Located near Egypt’s western border, Siwa Oasis remained culturally isolated from the rest of the country until late in the 19th century. Today, Siwa Oasis is an increasingly popular travel destination. Vacationers come to the city to enjoy the town’s many freshwater springs",
+      "halfDayPrice": 40,
+      "fullDayPrice": 100
     },
     {
-      "id":1,
-      "tourGuideImg":"./assets/images/tourGuids/3.jpg",
-      "name":"eleena jack",
-      "job" : "Tour Guide " ,
-      "guideDiscription":"I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
-      "TourHQID" :"EG96361",
-      "Experience":"5 Years",
-      "Gender":"Male" ,
-      "PrivateTour" :"Cairo",
-       "GuidingAreas" :[{
-        "first":"Aswan",
-        "second":"Alex"
-       }
-       ],
-       "Languages":[{
-       "first": "English" ,
-        "second":"Spanish"
-       }],
-       "rate":[
-         {
-           "ExcellentNum":30,
-           "Excellentwidth": "95%",
-           "VeryGoodNum":25,
-           "VeryGoodwidth": "90%",
-           "AverageNum":20,
-           "Averagewidth": "85%",
-           "PoortNum":3,
-           "Poorwidth": "20%",
-           "TerribleNum":0,
-           "Terriblewidth": "0%"
-         }
-       ],
-       "imgTrip":"./assets/Egypt1.jpg",
-       "tripDiscription":"Located near Egypt’s western border, Siwa Oasis remained culturally isolated from the rest of the country until late in the 19th century. Today, Siwa Oasis is an increasingly popular travel destination. Vacationers come to the city to enjoy the town’s many freshwater springs",
-       "halfDayPrice":40,
-       "fullDayPrice":100
+      "id": 1,
+      "tourGuideImg": "./assets/images/tourGuids/3.jpg",
+      "name": "eleena jack",
+      "job": "Tour Guide ",
+      "guideDiscription": "I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
+      "TourHQID": "EG96361",
+      "Experience": "5 Years",
+      "Gender": "Male",
+      "PrivateTour": "Cairo",
+      "GuidingAreas": [
+        {
+          "first": "Aswan",
+          "second": "Alex"
+        }
+      ],
+      "Languages": [
+        {
+          "first": "English",
+          "second": "Spanish"
+        }
+      ],
+      "rate": [
+        {
+          "ExcellentNum": 30,
+          "Excellentwidth": "95%",
+          "VeryGoodNum": 25,
+          "VeryGoodwidth": "90%",
+          "AverageNum": 20,
+          "Averagewidth": "85%",
+          "PoortNum": 3,
+          "Poorwidth": "20%",
+          "TerribleNum": 0,
+          "Terriblewidth": "0%"
+        }
+      ],
+      "imgTrip": "./assets/Egypt1.jpg",
+      "tripDiscription": "Located near Egypt’s western border, Siwa Oasis remained culturally isolated from the rest of the country until late in the 19th century. Today, Siwa Oasis is an increasingly popular travel destination. Vacationers come to the city to enjoy the town’s many freshwater springs",
+      "halfDayPrice": 40,
+      "fullDayPrice": 100
     },
     {
-      "id":1,
-      "tourGuideImg":"./assets/images/tourGuids/4.jpg",
-      "name":"jack ",
-      "job" : "Tour Guide " ,
-      "guideDiscription":"I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
-      "TourHQID" :"EG96361",
-      "Experience":"5 Years",
-      "Gender":"Male" ,
-      "PrivateTour" :"Cairo",
-       "GuidingAreas" :[{
-        "first":"Aswan",
-        "second":"Alex"
-       }
-       ],
-       "Languages":[{
-       "first": "English" ,
-        "second":"Spanish"
-       }],
-       "rate":[
-         {
-           "ExcellentNum":30,
-           "Excellentwidth": "95%",
-           "VeryGoodNum":25,
-           "VeryGoodwidth": "90%",
-           "AverageNum":20,
-           "Averagewidth": "85%",
-           "PoortNum":3,
-           "Poorwidth": "20%",
-           "TerribleNum":0,
-           "Terriblewidth": "0%"
-         }
-       ],
-       "imgTrip":"./assets/Egypt1.jpg",
-       "tripDiscription":"Located near Egypt’s western border, Siwa Oasis remained culturally isolated from the rest of the country until late in the 19th century. Today, Siwa Oasis is an increasingly popular travel destination. Vacationers come to the city to enjoy the town’s many freshwater springs",
-       "halfDayPrice":40,
-       "fullDayPrice":100
+      "id": 1,
+      "tourGuideImg": "./assets/images/tourGuids/4.jpg",
+      "name": "jack ",
+      "job": "Tour Guide ",
+      "guideDiscription": "I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
+      "TourHQID": "EG96361",
+      "Experience": "5 Years",
+      "Gender": "Male",
+      "PrivateTour": "Cairo",
+      "GuidingAreas": [
+        {
+          "first": "Aswan",
+          "second": "Alex"
+        }
+      ],
+      "Languages": [
+        {
+          "first": "English",
+          "second": "Spanish"
+        }
+      ],
+      "rate": [
+        {
+          "ExcellentNum": 30,
+          "Excellentwidth": "95%",
+          "VeryGoodNum": 25,
+          "VeryGoodwidth": "90%",
+          "AverageNum": 20,
+          "Averagewidth": "85%",
+          "PoortNum": 3,
+          "Poorwidth": "20%",
+          "TerribleNum": 0,
+          "Terriblewidth": "0%"
+        }
+      ],
+      "imgTrip": "./assets/Egypt1.jpg",
+      "tripDiscription": "Located near Egypt’s western border, Siwa Oasis remained culturally isolated from the rest of the country until late in the 19th century. Today, Siwa Oasis is an increasingly popular travel destination. Vacationers come to the city to enjoy the town’s many freshwater springs",
+      "halfDayPrice": 40,
+      "fullDayPrice": 100
     }
-    ]
+  ]
 }
