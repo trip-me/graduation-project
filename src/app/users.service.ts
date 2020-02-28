@@ -12,7 +12,9 @@ export class UsersService {
   //End variables
 
   constructor(private http: HttpClient) { }
-  
+  getTour(){
+    return this.http.get("http://localhost:3000/tours");
+  }
   getCompanyData(){
     return this.http.get("http://localhost:3000/company");
   }

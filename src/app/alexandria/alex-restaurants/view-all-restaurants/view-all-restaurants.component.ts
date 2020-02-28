@@ -86,7 +86,7 @@ export class ViewAllRestaurantsComponent implements OnInit {
   
   }
   city = [];
-  search(x) {
+  search() {
     if (this.CountrySearch != "") {
       this.currentCountry = this.CountrySearch;
       console.log(this.currentCountry,"+"+this.allRestaurant);
