@@ -1,133 +1,15 @@
 {
   "users": [
-    {
-      "userName": "aya",
-      "email": "aya@yahoo.com",
-      "password": "123Aya",
-      "confirmPassword": "123Aya",
-      "role": "tourist",
-      "id": 1
-    },
-    {
-      "userName": "asmaa",
-      "email": "asmaa@yahoo.com",
-      "password": "123Asmaa",
-      "confirmPassword": "123Asmaa",
-      "role": "tourist",
-      "id": 2
-    }
+   
   ],
+ 
   "user-favorite-trip": [
-    {
-      "city": "alex",
-      "id": 1,
-      "category": "hotel",
-      "img": "../../../assets/images/hotels/Alexandria/forseason/forseason.jpg",
-      "name": "Four Seasons",
-      "title": "Alexandria",
-      "rate": "9.2",
-      "price": "$174",
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.1033390952925!2d29.964572614320016!3d31.245562481461317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c52e30aaf1df%3A0xc9d2d428ea2ba3d2!2sFour%20Seasons%20Hotel%20Alexandria%20at%20San%20Stefano%2C%20Egypt!5e0!3m2!1sen!2seg!4v1582032525857!5m2!1sen!2seg",
-      "shortDescription": "Set on a busy roundabout, this low-key hotel is 1 km from the nearest beach, 2 km from the Citadel of Qaitbay",
-      "fullDescription": "Set on a busy roundabout, this low-key hotel is 1 km from the nearest beach, 2 km from the Citadel of Qaitbay, a 15th-century seafront fortress, and 9 km from Alexandria International Airport.The straightforward rooms have wood floors and balconies, and offer Wi-Fi access, flat-screen TVs and minibars. Some have sitting areas.Amenities include an airy restaurant, and a down-to-earth cafe featuring outdoor seating.",
-      "userId": 1,
-      "userName": "aya"
-    },
-    {
-      "city": "alex",
-      "id": 2,
-      "category": "hotel",
-      "img": "../../../assets/images/hotels/Alexandria/amoun/amoun.jpg",
-      "name": "Amoun Hotel",
-      "title": "Alexandria",
-      "rate": "6.0",
-      "price": "$217",
-      "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6825.603789898857!2d29.8884995!3d31.1985058!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5db31e202ceb7%3A0x149c73ad313ef4a8!2sAmoun%20Hotel!5e0!3m2!1sen!2seg!4v1582088503236!5m2!1sen!2seg",
-      "shortDescription": "Set on a busy roundabout, this low-key hotel is 1 km from the nearest beach, 2 km from the Citadel of Qaitbay",
-      "userId": 1,
-      "userName": "aya"
-    },
-    {
-      "city": "alex",
-      "id": 4,
-      "category": "hotel",
-      "img": "../../../assets/images/hotels/Alexandria/tolipp/tolip.jpg",
-      "name": "TOLIP Hotel Alexandria",
-      "title": "Alexandria",
-      "rate": "7.2",
-      "price": "$154",
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.6066230110214!2d29.943919414319666!3d31.231626181466073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e610b4e28d%3A0x55e0e76c064a00be!2sTOLIP%20Hotel%20Alexandria!5e0!3m2!1sen!2seg!4v1582089620915!5m2!1sen!2seg",
-      "shortDescription": "Across the street from a beach on the Mediterranean Sea, this refined hotel with a colorful facade is 6 km from the Alexandria National Museum and 5 km from Green Plaza Mall.Sophisticated rooms feature free Wi-Fi, flat-screen TVs, minifridges and balconies; some rooms offer sea views. ",
-      "fullDescription": "Across the street from a beach on the Mediterranean Sea, this refined hotel with a colorful facade is 6 km from the Alexandria National Museum and 5 km from Green Plaza Mall.Sophisticated rooms feature free Wi-Fi, flat-screen TVs, minifridges and balconies; some rooms offer sea views. Suites add living rooms and dining tables.Breakfast is complimentary. There are 6 restaurants (1 offering Italian fare). Other amenities include a fitness center, a chic spa, a private beach, and a courtyard with a seasonal outdoor pool. Parking is extra.",
-      "userId": 1,
-      "userName": "aya"
-    },
-    {
-      "city": "aswan",
-      "id": 12,
-      "category": "hotel",
-      "img": "../../../assets/images/hotels/Alexandria/hotel_list_1.jpg",
-      "name": "Horizon Hotel",
-      "title": "Aswan",
-      "rate": "9.9",
-      "price": "$60",
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.8680133362673!2d29.90000051447403!3d31.196672770176903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e8655eff5d%3A0x5a5908a5e8f225f8!2sPotasta!5e0!3m2!1sen!2seg!4v1582010070848!5m2!1sen!2seg",
-      "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.",
-      "userId": 1,
-      "userName": "aya"
-    },
-    {
-      "city": "aswan",
-      "id": 7,
-      "category": "restaurant",
-      "title": "Aswan",
-      "name": "Mezze",
-      "img": "../../../assets/images/restaurants/Aswan/Mezze Restaurant/Mezze Restaurant.jpg",
-      "place": "Country Hills",
-      "price": "$25",
-      "rate": 9.5,
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.2315876465523!2d32.889494314108255!3d24.09334998442142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x143665c23fd61a1d%3A0x1ddd82990a53ed73!2sMezze%20Restaurant!5e0!3m2!1sen!2seg!4v1582031359689!5m2!1sen!2seg",
-      "shortDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
-      "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.",
-      "userId": 1,
-      "userName": "aya"
-    },
-    {
-      "city": "alex",
-      "id": 5,
-      "category": "visit",
-      "tour_category": "Alex_",
-      "tourType": "sites",
-      "title": "Alexandria",
-      "name": "pompey piilar ",
-      "shortDescription": "Pompey's Pillar is a Roman triumphal column in Alexandria, Egypt, the largest of its type constructed outside the imperial capitals of Rome and Constantinople, located at the Serapeum of Alexandria.",
-      "fullDescription": " is a Roman triumphal column in Alexandria, Egypt, the largest of its type constructed outside the imperial capitals of Rome and Constantinople,located at the Serapeum of Alexandria. The only known free-standing column in Roman Egypt which was not composed of drums, it is one of the largest ancient monoliths and one of the largest monolithic columns ever erected.",
-      "img": "https://lh5.googleusercontent.com/p/AF1QipMw8hF3CA8GWKMqplJiyB_XbWGzHwG0vaYBjnHU=w408-h544-k-no",
-      "rate": 9.8,
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3413.3844809763755!2d29.894098514473626!3d31.182351170876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c3c5a2084c55%3A0xba01b18741829299!2sSerapeum%20and%20Pompey&#39;s%20Pillar!5e0!3m2!1sen!2seg!4v1581655877552!5m2!1sen!2seg",
-      "userId": 1,
-      "userName": "aya"
-    },
-    {
-      "city": "alex",
-      "id": 6,
-      "category": "visit",
-      "tour_category": "Alex_",
-      "tourType": "museums",
-      "name": "The Royal Jewelry Museum",
-      "title": "Alexandria",
-      "shortDescription": "is an art and history museum in the Zizenia neighborhood of Alexandria, Egypt. It is located in the former palace of Princess Fatma Al-Zahra'. The building's halls contain an inestimable collection of jewels and jewelry of the Muhammad Ali Dynasty.",
-      "fullDescription": "is an art and history museum in the Zizenia neighborhood of Alexandria, Egypt. It is located in the former palace of Princess Fatma Al-Zahra'. The building's halls contain an inestimable collection of jewels and jewelry of the Muhammad Ali Dynasty. 19th-century paintings, statues, and decorative arts are also exhibited in the rooms and lobbies. The museum was first inaugurated on 24 October 1986. After several years of renovations and expansion it was reopened in April 2010.The museum houses major jewelry pieces and art acquisitions of the dynasty of Muhammad Ali and his descendants, who ruled Egypt for nearly 150 years from 1805 until the Egyptian Revolution of 1952. Following the Revolution, the jewelry left by the Royal Family was kept secure and unseen until a 1986 decree by President Mubarak was issued to assign Princess Fatima Al-Zahra' Palace in Alexandria as a special museum to house those pieces.",
-      "img": "https://lh5.googleusercontent.com/p/AF1QipNueurbRfF_C9CrHoMOBNAMatoDw-3HTgPjyOTL=w408-h272-k-no",
-      "rate": 7.6,
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.2774964906025!2d29.96106811447521!3d31.24074056802354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5293b29f3cb%3A0xf790955947954877!2sRoyal%20Jewelry%20Museum!5e0!3m2!1sen!2seg!4v1581655979318!5m2!1sen!2seg",
-      "userId": 1,
-      "userName": "aya"
-    }
+   
   ],
-  "user-post": [],
+  "user-post": [
+  ],
   "guide-reply": [],
-  "userPost-guideReply": [],
+      
   "cities": [
     {
       "id": 1,
@@ -161,6 +43,7 @@
       "fullDescription": "is a major library and cultural center located on the shore of the Mediterranean Sea in the Egyptian city of Alexandria. It is both a commemoration of the Library of Alexandria that was lost in antiquity, and an attempt to rekindle something of the brilliance that this earlier center of study and erudition represented. The idea of reviving the old library dates back to 1974, when a committee set up by Alexandria University selected a plot of land for its new library.Construction work began in 1995 and, after some US$220 million had been spent, the complex was officially inaugurated on 16 October 2002.In 2010,the library received a donation of 500,000 books from the Bibliothèque nationale de France (BnF). The gift makes the Bibliotheca Alexandrina the sixth-largest Francophone library in the world.The library has shelf space for eight million books, with the main reading room covering 20,000 square metres (220,000 sq ft). The complex also houses a conference center; specialized libraries for maps, multimedia, the blind and visually impaired, young people, and for children; four museums; four art galleries for temporary exhibitions; 15 permanent exhibitions; a planetarium; and a manuscript restoration laboratory.",
       "img": "https://www.aast.edu/en/conference/AYF/images/portfolio/big-item5.jpg",
       "rate": 9.9,
+      "price": "5$",
       "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13649.7118753824!2d29.9092012!3d31.2088705!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa34cc632ec23e7!2sBibliotheca%20Alexandrina!5e0!3m2!1sen!2seg!4v1581655284706!5m2!1sen!2seg"
     },
     {
@@ -171,10 +54,11 @@
       "name_tag": "Alexandria_tours",
       "tour_category": "museums",
       "name": "Alexandria National Museum",
-      "shortDescription": "is a museum in Alexandria, Egypt. It was inaugurated the 31 December 2003 by Hosni Mubarak and it is located in a renovated Italian style palace in Tariq Al-Horreya Street (former Rue Fouad). The building used to be home to the United States consulate.",
+      "shortDescription": "It was inaugurated the 31 December 2003 by Hosni Mubarak and it is located in a renovated Italian style palace in Tariq Al-Horreya Street (former Rue Fouad). ",
       "fullDescription": "The museum is located in a former Italianate mansion. It's the former home of a wood sales person. It used to house the United States consulate. The building dates back to 1926, located around a large garden, in addition to housing a basement. The three-storey palace was a meeting place for the Egyptian upper-class society of Alexandria.",
       "img": "https://lh5.googleusercontent.com/p/AF1QipOG079tpBmIFZTO4ImitMItIJ1zoqzwwKSjlkMR=w408-h306-k-no",
       "rate": 9.1,
+      "price": "8$",
       "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13650.8932861767!2d29.9132227!3d31.200684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa2ebaf38ebb3039b!2sAlexandria%20National%20Museum!5e0!3m2!1sen!2seg!4v1581628063565!5m2!1sen!2seg"
     },
     {
@@ -189,6 +73,7 @@
       "fullDescription": "The Greco-Roman Museum was officially opened on 17 October 1892 by Khedive Abbas Helmy the Second. Giuseppe Botti, an Italian, had undertaken the task of creating a museum in Alexandria dedicated to the Greco-Roman period.Interest in this period had begun in earnest after 1866, when Mahmoud El-Falaki completed his excavations in Alexandria, bringing to light the plan of the ancient city. Interest in the museum was enhanced by the formation of the Society of Archaeology in Alexandria in 1893.Initially, the collections were housed in part of a building situated in Rosetta Street, which is now El-Horreih Road. Construction of the first ten galleries of the present building was completed in 1895. The additional galleries (numbers 11 to 16) were completed in 1899 and the facade was completed in 1900. Some of the Greco-Roman artifacts, especially the coin collection, were obtained from the Bulaq Museum (now the Egyptian Museum) in Cairo.When Giuseppe Botti assumed responsibility for the management of the museum, he enriched it with collections obtained from his excavations in the city and its environs. When Evaristo Breccia and Achille Adriani subsequently took charge of the museum, they continued to supply it with objects from excavations in Alexandria. They also began to obtain artifacts for the museum from excavations in the Fayium region.The collections in the museum mostly date from the third century BC to the third century AD, spanning the Ptolemaic and Roman periods. The collections are categorized and organized in 27 rooms with some objects exhibited in the small garden.",
       "img": "https://lh5.googleusercontent.com/p/AF1QipOxsixEzxFuhUO0LJ7oRCyt7RHUYC51h5rqtITg=w426-h240-k-no",
       "rate": 7.3,
+      "price": "12$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.7764328995504!2d29.904366714474087!3d31.199211670052954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c3929c68e2db%3A0xd5a8202433765a47!2sGraeco-Roman%20Museum!5e0!3m2!1sen!2seg!4v1581655426991!5m2!1sen!2seg"
     },
     {
@@ -203,6 +88,7 @@
       "fullDescription": "is a historical archaeological site located in Alexandria, Egypt, and is considered one of the Seven Wonders of the Middle Ages.The necropolis consists of a series of Alexandrian tombs, statues and archaeological objects of the Pharaonic funeral cult with Hellenistic and early Imperial Roman influences. Due to the time period, many of the features of the catacombs of Kom El Shoqafa merge Roman, Greek and Egyptian cultural points; some statues are Egyptian in style, yet bear Roman clothes and hair style whilst other features share a similar style. A circular staircase, which was often used to transport deceased bodies down the middle of it, leads down into the tombs that were tunneled into the bedrock during the age of the Antonine emperors (2nd century AD).The facility was then used as a burial chamber from the 2nd century to the 4th century, before being rediscovered in 1900 when a donkey accidentally fell into the access shaft. To date, three sarcophagi have been found, along with other human and animal remains which were added later. It is believed that the catacombs were only intended for a single family, but it is unclear why the site was expanded in order to house numerous other individuals.",
       "img": "https://lh5.googleusercontent.com/p/AF1QipMtAlvjOS5uf-mOElYJ9hVUZqf24Adnv-88otI8=w408-h306-k-no",
       "rate": 9.1,
+      "price": "16$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3413.506613916758!2d29.89088791447356!3d31.178963571041535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c39a2a19a397%3A0x6cc09f316aeb7191!2sCatacombs%20of%20Kom%20el%20Shoqafa!5e0!3m2!1sen!2seg!4v1581655542988!5m2!1sen!2seg"
     },
     {
@@ -213,10 +99,11 @@
       "tourType": "sites",
       "title": "Alexandria",
       "name": "pompey piilar ",
-      "shortDescription": "Pompey's Pillar is a Roman triumphal column in Alexandria, Egypt, the largest of its type constructed outside the imperial capitals of Rome and Constantinople, located at the Serapeum of Alexandria.",
+      "shortDescription": "Pompey's Pillar is a Roman triumphal column in Alexandria, Egypt, the largest of its type constructed outside the imperial capitals of Rome and Constantinople.",
       "fullDescription": " is a Roman triumphal column in Alexandria, Egypt, the largest of its type constructed outside the imperial capitals of Rome and Constantinople,located at the Serapeum of Alexandria. The only known free-standing column in Roman Egypt which was not composed of drums, it is one of the largest ancient monoliths and one of the largest monolithic columns ever erected.",
       "img": "https://lh5.googleusercontent.com/p/AF1QipMw8hF3CA8GWKMqplJiyB_XbWGzHwG0vaYBjnHU=w408-h544-k-no",
       "rate": 9.8,
+      "price": "20$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3413.3844809763755!2d29.894098514473626!3d31.182351170876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c3c5a2084c55%3A0xba01b18741829299!2sSerapeum%20and%20Pompey&#39;s%20Pillar!5e0!3m2!1sen!2seg!4v1581655877552!5m2!1sen!2seg"
     },
     {
@@ -231,6 +118,7 @@
       "fullDescription": "is an art and history museum in the Zizenia neighborhood of Alexandria, Egypt. It is located in the former palace of Princess Fatma Al-Zahra'. The building's halls contain an inestimable collection of jewels and jewelry of the Muhammad Ali Dynasty. 19th-century paintings, statues, and decorative arts are also exhibited in the rooms and lobbies. The museum was first inaugurated on 24 October 1986. After several years of renovations and expansion it was reopened in April 2010.The museum houses major jewelry pieces and art acquisitions of the dynasty of Muhammad Ali and his descendants, who ruled Egypt for nearly 150 years from 1805 until the Egyptian Revolution of 1952. Following the Revolution, the jewelry left by the Royal Family was kept secure and unseen until a 1986 decree by President Mubarak was issued to assign Princess Fatima Al-Zahra' Palace in Alexandria as a special museum to house those pieces.",
       "img": "https://lh5.googleusercontent.com/p/AF1QipNueurbRfF_C9CrHoMOBNAMatoDw-3HTgPjyOTL=w408-h272-k-no",
       "rate": 7.6,
+      "price": "22$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.2774964906025!2d29.96106811447521!3d31.24074056802354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5293b29f3cb%3A0xf790955947954877!2sRoyal%20Jewelry%20Museum!5e0!3m2!1sen!2seg!4v1581655979318!5m2!1sen!2seg"
     },
     {
@@ -245,6 +133,7 @@
       "fullDescription": "The extensive Montaza Palace grounds first had the Salamlek Palace, built in 1892 by Khedive Abbas II, the last Muhammad Ali Dynasty ruler to hold the Khedive title over the Khedivate of Egypt and Sudan. It was used as a hunting lodge and residence for his companion.The larger Al-Haramlik Palace and royal gardens were added to the Montaza Palace grounds, being built by King Fuad I in 1932, as a summer palace. It is in a mixture of Ottoman and Florentine styles, with two towers. One of these towers rises distinctively high above with elaborated Italian Renaissance design details. The palace has long open arcades facing the sea along each floor.President Anwar El-Sadat renovated the original Salamlek Palace as an official presidential residence. It was most recently used by former president Hosni Mubarak.",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Alexandria-MontazahPalace.jpg/800px-Alexandria-MontazahPalace.jpg",
       "rate": 6.8,
+      "price": "15$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.6776426328192!2d30.023723714476468!3d31.285010765857557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5d0f49db5c73f%3A0xf07d0b318dd52c5f!2sEl%20Montazah%20Park!5e0!3m2!1sen!2seg!4v1581656075381!5m2!1sen!2seg"
     },
     {
@@ -259,6 +148,7 @@
       "fullDescription": "is considered one of the most important defensive strongholds, not only in Egypt, but also along the Mediterranean Sea coast. It formulated an important part of the fortification system of Alexandria in the 15th century AD.The Citadel is situated at the entrance of the eastern harbour on the eastern point of the Pharos Island. It was erected on the exact site of the famous Lighthouse of Alexandria, which was one of the Seven Wonders of the Ancient World. The lighthouse continued to function until the time of the Arab conquest, then several disasters occurred and the shape of the lighthouse was changed to some extent, but it still continued to function. Restoration began in the period of Ahmed Ibn Tulun (about 880 AD). During the 11th century an earthquake occurred, causing damage to the octagonal part. The bottom survived, but it could only serve as a watchtower, and a small mosque was built on the top. In the 14th century there was a very destructive earthquake and the whole building was completely destroyed.",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTMUPzyu4DRBqZuRay7-51YIUwiWLrYrF5qA3vxyknHmXz6YrRZ",
       "rate": 9.5,
+      "price": "22$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.2423092885774!2d29.883449614474568!3d31.21401556932975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c3ff1b30e255%3A0xc201e7869ae9971f!2sCitadel%20of%20Qaitbay!5e0!3m2!1sen!2seg!4v1581656334653!5m2!1sen!2seg"
     }
   ],
@@ -268,9 +158,10 @@
       "id": 1,
       "category": "restaurant",
       "title": "Alexandria",
+      "service": "eat",
       "img": "../../../assets/images/restaurants/Alexandria/1.jpg",
       "name": "Potasta",
-      "price": "$5",
+      "price": "25$",
       "rate": 9.2,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.8680133362673!2d29.90000051447403!3d31.196672770176903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e8655eff5d%3A0x5a5908a5e8f225f8!2sPotasta!5e0!3m2!1sen!2seg!4v1582010070848!5m2!1sen!2seg",
       "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
@@ -282,10 +173,11 @@
       "category": "restaurant",
       "img": "../../../assets/images/restaurants/Alexandria/2.jpg",
       "name": "Carlos Cafe",
+      "service": "drink",
       "rate": 8.5,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54605.67631535653!2d29.890162818470703!3d31.197039936955978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4f250ae2659%3A0xbc6b52748eea347a!2sCarlos%20Cafe!5e0!3m2!1sen!2seg!4v1582027887915!5m2!1sen!2seg",
       "title": "Alexandria",
-      "price": "$5",
+      "price": "9$",
       "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
       "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -295,10 +187,11 @@
       "category": "restaurant",
       "img": "../../../assets/images/restaurants/Alexandria/3.jpg",
       "name": "4x4 Cafe",
+      "service": "drink",
       "rate": 9.3,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.8637264719446!2d29.969286314475607!3d31.25219556746336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c534f6c5ec57%3A0x85c8af596d756400!2s4x4%20Cafe!5e0!3m2!1sen!2seg!4v1582027943648!5m2!1sen!2seg",
       "title": "Alexandria",
-      "price": "$5",
+      "price": "8$",
       "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
       "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -308,10 +201,11 @@
       "category": "restaurant",
       "img": "../../../assets/images/restaurants/Alexandria/7.jpg",
       "name": "Holmes Burgers",
+      "service": "eat",
       "rate": 9.8,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28086.468065168378!2d29.95357048962077!3d31.25222596130012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5edacd57c4d%3A0xccf89a1b193af824!2sHolmes%20Burgers!5e0!3m2!1sen!2seg!4v1582030852006!5m2!1sen!2seg",
       "title": "Alexandria",
-      "price": "$5",
+      "price": "16$",
       "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
       "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -321,10 +215,11 @@
       "category": "restaurant",
       "img": "../../../assets/images/restaurants/Alexandria/Beano's Cafe.jpg",
       "name": "Beano's Cafe",
+      "service": "drink",
       "rate": 8.5,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27286.901713316052!2d29.953570475738122!3d31.252223588020087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c55774a7813d%3A0x2db4ea176ea13088!2sBeano&#39;s%20cafe!5e0!3m2!1sen!2seg!4v1582030989531!5m2!1sen!2seg",
       "title": "Alexandria",
-      "price": "$5",
+      "price": "12$",
       "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
       "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -334,10 +229,11 @@
       "category": "restaurant",
       "img": "../../../assets/images/restaurants/Alexandria/6.jpg",
       "name": "China House",
+      "service": "eat and drink",
       "rate": 9,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54588.82272226098!2d29.93091792881706!3d31.226230605571093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c52e206b128d%3A0x86038993148d78df!2sChina%20House!5e0!3m2!1sen!2seg!4v1582031175966!5m2!1sen!2seg",
       "title": "Alexandria",
-      "price": "$5",
+      "price": "10$",
       "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
       "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -347,9 +243,10 @@
       "category": "restaurant",
       "title": "Aswan",
       "name": "Mezze",
+      "service": "eat and drink",
       "img": "../../../assets/images/restaurants/Aswan/Mezze Restaurant/Mezze Restaurant.jpg",
       "place": "Country Hills",
-      "price": "$25",
+      "price": "25$",
       "rate": 9.5,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.2315876465523!2d32.889494314108255!3d24.09334998442142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x143665c23fd61a1d%3A0x1ddd82990a53ed73!2sMezze%20Restaurant!5e0!3m2!1sen!2seg!4v1582031359689!5m2!1sen!2seg",
       "shortDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
@@ -361,9 +258,10 @@
       "category": "restaurant",
       "title": "Aswan",
       "name": "‪El Masry‬",
+      "service": "eat",
       "img": "../../../assets/images/restaurants/Aswan/El Masry/El Masry.jpg",
       "place": "Country Hills",
-      "price": "$22",
+      "price": "22$",
       "rate": 8,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.2561765034916!2d32.89708331410823!3d24.09248498442185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14367b4b2f3de9a3%3A0x5ec07d398e1c3b62!2sEl%20Masry!5e0!3m2!1sen!2seg!4v1582031532444!5m2!1sen!2seg",
       "shortDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
@@ -375,6 +273,7 @@
       "category": "restaurant",
       "title": "Cairo",
       "name": "‪‪El Dokka‬",
+      "service": "eat",
       "img": "../../../assets/images/restaurants/Cairo/Al Dokka/Al Dokka.jpg",
       "place": "Country Hills",
       "price": "15$",
@@ -389,9 +288,10 @@
       "category": "restaurant",
       "title": "Cairo",
       "name": "The Terrace‬",
+      "service": "eat and drink",
       "img": "../../../assets/images/restaurants/Cairo/Terrace/Terrace.jpg",
       "place": "Wrave",
-      "price": "$17",
+      "price": "18$",
       "rate": 8.5,
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55248.55099199439!2d31.23917061903364!3d30.06454735979522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840c380e039dd%3A0xf6a715bf78894921!2sTerrace%20Cafe!5e0!3m2!1sen!2seg!4v1582032087641!5m2!1sen!2seg",
       "shortDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
@@ -407,7 +307,7 @@
       "name": "Four Seasons",
       "title": "Alexandria",
       "rate": "9.2",
-      "price": "$174",
+      "price": "174$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.1033390952925!2d29.964572614320016!3d31.245562481461317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c52e30aaf1df%3A0xc9d2d428ea2ba3d2!2sFour%20Seasons%20Hotel%20Alexandria%20at%20San%20Stefano%2C%20Egypt!5e0!3m2!1sen!2seg!4v1582032525857!5m2!1sen!2seg",
       "shortDescription": "Set on a busy roundabout, this low-key hotel is 1 km from the nearest beach, 2 km from the Citadel of Qaitbay",
       "fullDescription": "Set on a busy roundabout, this low-key hotel is 1 km from the nearest beach, 2 km from the Citadel of Qaitbay, a 15th-century seafront fortress, and 9 km from Alexandria International Airport.The straightforward rooms have wood floors and balconies, and offer Wi-Fi access, flat-screen TVs and minibars. Some have sitting areas.Amenities include an airy restaurant, and a down-to-earth cafe featuring outdoor seating."
@@ -432,7 +332,7 @@
       "name": "Hilton Alexandria Green Plaza",
       "title": "Alexandria",
       "rate": "8.7",
-      "price": "$170",
+      "price": "170$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.513117601668!2d29.96333591447431!3d31.20651056969639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4b1d6566141%3A0xdf501bb33b6e7711!2sHilton%20Alexandria%20Green%20Plaza!5e0!3m2!1sen!2seg!4v1582089418091!5m2!1sen!2seg",
       "shortDescription": "Set 3 km from Alexandria International Airport, this polished hotel in the Green Plaza shopping mall is 5 km from the Royal Jewelry Museum Refined rooms feature flat-screen TVs, seating areas and Wi-Fi, plus tea and coffeemakers.",
       "fullDescription": "Set 3 km from Alexandria International Airport, this polished hotel in the Green Plaza shopping mall is 5 km from the Royal Jewelry Museum Refined rooms feature flat-screen TVs, seating areas and Wi-Fi, plus tea and coffeemakers. Club rooms and suites add access to a lounge with complimentary breakfast and drinks. Suites also have living areas. Room service is available Amenities consist of a spa, indoor and an outdoor pools, a gym and a game room. There are multiple bars and dining options, including Indian and Italian restaurants. Event space is offered. Parking is available (fee)."
@@ -458,7 +358,7 @@
       "name": "Steigenberger Cecil Alexandria",
       "title": "Cairo",
       "rate": "9.8",
-      "price": "$117",
+      "price": "117$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.708759564803!2d29.896288914474198!3d31.201087669961257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c3f26558d5b5%3A0x6f433b7c49a0da5c!2sSteigenberger%20Cecil%20Alexandria!5e0!3m2!1sen!2seg!4v1582090385865!5m2!1sen!2seg",
       "shortDescription": "Across the road from the Al Mina' ash Sharqiyah harbor, this elegant hotel dating from 1929 overlooks the Corniche waterfront promenade and the Mediterranean Sea. It's a 2-minute walk from the Caesareum of Alexandria, an ancient temple, and a 4-minute walk from El Raml train station. ",
       "fullDescription": "Across the road from the Al Mina' ash Sharqiyah harbor, this elegant hotel dating from 1929 overlooks the Corniche waterfront promenade and the Mediterranean Sea. It's a 2-minute walk from the Caesareum of Alexandria, an ancient temple, and a 4-minute walk from El Raml train station.The traditionally and warmly decorated rooms feature balconies, free Wi-Fi and flat-screens, plus tea and coffeemakers. Suites offer living rooms. "
@@ -471,7 +371,7 @@
       "name": "Paradise Inn",
       "title": "Alexandria",
       "rate": "9.5",
-      "price": "$137",
+      "price": "137$",
       "map": "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13650.835783223147!2d29.898477596527467!3d31.201082507238727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sParadise%20Inn!5e0!3m2!1sen!2seg!4v1582091413290!5m2!1sen!2seg",
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.",
       "fullDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
@@ -484,7 +384,7 @@
       "name": "San Giovanni Hotel",
       "title": "Alexandria",
       "rate": "7.0",
-      "price": "$172",
+      "price": "172$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.5210959914357!2d29.945563714319732!3d31.233994881465286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4eab0c6dea1%3A0x9532d74ef8d616f0!2sSan%20Giovanni%20Hotel!5e0!3m2!1sen!2seg!4v1582091837466!5m2!1sen!2seg",
       "shortDescription": "Overlooking the Mediterranean Sea, this warm hotel in a building dating from 1938 has views of the Stanley Bridge.",
       "fullDescription": "Overlooking the Mediterranean Sea, this warm hotel in a building dating from 1938 has views of the Stanley Bridge. It's 2 km from the Royal Jewelry Museum and 3 km from El Sook train station.Casual, colorful air-conditioned rooms with wood furnishings and a vintage vibe feature complimentary Wi-Fi, as well as minibars and satellite TV. Some have sea views. Suites add living areas. Room service is provided 24/7."
@@ -497,7 +397,7 @@
       "name": "Eatabe Hotel",
       "title": "Alexandria",
       "rate": "7.0",
-      "price": "$134",
+      "price": "134$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.418555294912!2d29.950711314475086!3d31.236834568214533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4de4c547aeb%3A0x15247e19ec5ad2fe!2sEatabe%20Alexandria%20Hotel!5e0!3m2!1sen!2seg!4v1582092374206!5m2!1sen!2seg",
       "shortDescription": "Facing the Mediterranean Sea, this relaxed hotel is 10 km from the Citadel of Qaitbay, a 15th-century seaside fortress. It's 2 km from the Royal Jewelry Museum and 7 km from Alexandria International Airport."
     },
@@ -509,7 +409,7 @@
       "name": "Romance Hotel",
       "title": "Alexandria",
       "rate": "9.9",
-      "price": "$89",
+      "price": "89$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.4240369837044!2d29.950744114475146!3d31.236682768221915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4de4daf4f93%3A0x2f4b47545c136ba!2sRomance%20Hotel%20Alexandria!5e0!3m2!1sen!2seg!4v1582094019055!5m2!1sen!2seg",
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -521,7 +421,7 @@
       "name": "Lotus Hotel",
       "title": "Alexandria",
       "rate": "9.9",
-      "price": "$56",
+      "price": "56$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.8680133362673!2d29.90000051447403!3d31.196672770176903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e8655eff5d%3A0x5a5908a5e8f225f8!2sPotasta!5e0!3m2!1sen!2seg!4v1582010070848!5m2!1sen!2seg",
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -533,7 +433,7 @@
       "name": "President Hotel",
       "title": "Cairo",
       "rate": "9.9",
-      "price": "$47",
+      "price": "47$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.8680133362673!2d29.90000051447403!3d31.196672770176903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e8655eff5d%3A0x5a5908a5e8f225f8!2sPotasta!5e0!3m2!1sen!2seg!4v1582010070848!5m2!1sen!2seg",
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
@@ -545,21 +445,187 @@
       "name": "Nile Plaza Hotel",
       "title": "Alexandria",
       "rate": "9.9",
-      "price": "$57",
+      "price": "57$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.8680133362673!2d29.90000051447403!3d31.196672770176903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e8655eff5d%3A0x5a5908a5e8f225f8!2sPotasta!5e0!3m2!1sen!2seg!4v1582010070848!5m2!1sen!2seg",
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
     },
     {
       "city": "aswan",
-      "id": 12,
+      "id": 13,
       "category": "hotel",
       "img": "../../../assets/images/hotels/Alexandria/hotel_list_1.jpg",
       "name": "Horizon Hotel",
       "title": "Aswan",
       "rate": "9.9",
-      "price": "$60",
+      "price": "60$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.8680133362673!2d29.90000051447403!3d31.196672770176903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e8655eff5d%3A0x5a5908a5e8f225f8!2sPotasta!5e0!3m2!1sen!2seg!4v1582010070848!5m2!1sen!2seg",
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune."
+    }
+  ],
+  "tourGuid": [
+    {
+      "id": 1,
+      "tourGuideImg": "./assets/images/tourGuids/1.jpg",
+      "name": "osama mostafa",
+      "job": "Tour Guide ",
+      "guideDiscription": "I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
+      "TourHQID": "EG96361",
+      "Experience": "5 Years",
+      "Gender": "Male",
+      "PrivateTour": "Cairo",
+      "GuidingAreas": [
+        {
+          "first": "Aswan",
+          "second": "Alex"
+        }
+      ],
+      "Languages": [
+        {
+          "first": "English",
+          "second": "Spanish"
+        }
+      ],
+      "rate": [
+        {
+          "ExcellentNum": 30,
+          "Excellentwidth": "95%",
+          "VeryGoodNum": 25,
+          "VeryGoodwidth": "90%",
+          "AverageNum": 20,
+          "Averagewidth": "85%",
+          "PoortNum": 3,
+          "Poorwidth": "20%",
+          "TerribleNum": 0,
+          "Terriblewidth": "0%"
+        }
+      ],
+      "imgTrip": "./assets/Egypt1.jpg",
+      "tripDiscription": "Located near Egypt’s western border, Siwa Oasis remained culturally isolated from the rest of the country until late in the 19th century. Today, Siwa Oasis is an increasingly popular travel destination. Vacationers come to the city to enjoy the town’s many freshwater springs",
+      "halfDayPrice": 40,
+      "fullDayPrice": 100
+    },
+    {
+      "id": 1,
+      "tourGuideImg": "./assets/images/tourGuids/2.jpg",
+      "name": "alex jack",
+      "job": "Tour Guide ",
+      "guideDiscription": "I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
+      "TourHQID": "EG96361",
+      "Experience": "5 Years",
+      "Gender": "Male",
+      "PrivateTour": "Cairo",
+      "GuidingAreas": [
+        {
+          "first": "Aswan",
+          "second": "Alex"
+        }
+      ],
+      "Languages": [
+        {
+          "first": "English",
+          "second": "Spanish"
+        }
+      ],
+      "rate": [
+        {
+          "ExcellentNum": 30,
+          "Excellentwidth": "95%",
+          "VeryGoodNum": 25,
+          "VeryGoodwidth": "90%",
+          "AverageNum": 20,
+          "Averagewidth": "85%",
+          "PoortNum": 3,
+          "Poorwidth": "20%",
+          "TerribleNum": 0,
+          "Terriblewidth": "0%"
+        }
+      ],
+      "imgTrip": "./assets/Egypt1.jpg",
+      "tripDiscription": "Located near Egypt’s western border, Siwa Oasis remained culturally isolated from the rest of the country until late in the 19th century. Today, Siwa Oasis is an increasingly popular travel destination. Vacationers come to the city to enjoy the town’s many freshwater springs",
+      "halfDayPrice": 40,
+      "fullDayPrice": 100
+    },
+    {
+      "id": 1,
+      "tourGuideImg": "./assets/images/tourGuids/3.jpg",
+      "name": "eleena jack",
+      "job": "Tour Guide ",
+      "guideDiscription": "I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
+      "TourHQID": "EG96361",
+      "Experience": "5 Years",
+      "Gender": "Male",
+      "PrivateTour": "Cairo",
+      "GuidingAreas": [
+        {
+          "first": "Aswan",
+          "second": "Alex"
+        }
+      ],
+      "Languages": [
+        {
+          "first": "English",
+          "second": "Spanish"
+        }
+      ],
+      "rate": [
+        {
+          "ExcellentNum": 30,
+          "Excellentwidth": "95%",
+          "VeryGoodNum": 25,
+          "VeryGoodwidth": "90%",
+          "AverageNum": 20,
+          "Averagewidth": "85%",
+          "PoortNum": 3,
+          "Poorwidth": "20%",
+          "TerribleNum": 0,
+          "Terriblewidth": "0%"
+        }
+      ],
+      "imgTrip": "./assets/Egypt1.jpg",
+      "tripDiscription": "Located near Egypt’s western border, Siwa Oasis remained culturally isolated from the rest of the country until late in the 19th century. Today, Siwa Oasis is an increasingly popular travel destination. Vacationers come to the city to enjoy the town’s many freshwater springs",
+      "halfDayPrice": 40,
+      "fullDayPrice": 100
+    },
+    {
+      "id": 1,
+      "tourGuideImg": "./assets/images/tourGuids/4.jpg",
+      "name": "jack ",
+      "job": "Tour Guide ",
+      "guideDiscription": "I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
+      "TourHQID": "EG96361",
+      "Experience": "5 Years",
+      "Gender": "Male",
+      "PrivateTour": "Cairo",
+      "GuidingAreas": [
+        {
+          "first": "Aswan",
+          "second": "Alex"
+        }
+      ],
+      "Languages": [
+        {
+          "first": "English",
+          "second": "Spanish"
+        }
+      ],
+      "rate": [
+        {
+          "ExcellentNum": 30,
+          "Excellentwidth": "95%",
+          "VeryGoodNum": 25,
+          "VeryGoodwidth": "90%",
+          "AverageNum": 20,
+          "Averagewidth": "85%",
+          "PoortNum": 3,
+          "Poorwidth": "20%",
+          "TerribleNum": 0,
+          "Terriblewidth": "0%"
+        }
+      ],
+      "imgTrip": "./assets/Egypt1.jpg",
+      "tripDiscription": "Located near Egypt’s western border, Siwa Oasis remained culturally isolated from the rest of the country until late in the 19th century. Today, Siwa Oasis is an increasingly popular travel destination. Vacationers come to the city to enjoy the town’s many freshwater springs",
+      "halfDayPrice": 40,
+      "fullDayPrice": 100
     }
   ]
 }

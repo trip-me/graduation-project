@@ -26,7 +26,7 @@ toggleNav(){
     document.getElementById('login-btn').style.display = "inline";
     document.getElementById('logout-btn').style.display = "none";
     document.getElementById('dashboard').style.display = "none";
-
+    document.getElementById("user__myTrip").style.display="none";
     this.router.navigate(['/Home'])
   }
 

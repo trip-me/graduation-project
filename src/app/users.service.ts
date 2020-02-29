@@ -12,8 +12,13 @@ export class UsersService {
   //End variables
 
   constructor(private http: HttpClient) { }
-
-  getCompanyData() {
+  putuserdata(id,obj){
+    return this.http.put(`http://localhost:3000/users/${id}`,obj)
+  }
+  getTour(){
+    return this.http.get("http://localhost:3000/tours");
+  }
+  getCompanyData(){
     return this.http.get("http://localhost:3000/company");
   }
   getCompanyPackage(id) {
@@ -34,8 +39,10 @@ export class UsersService {
   getUser() {
     return this.http.get("http://localhost:3000/users");
   }
-  // Ayaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-
+  gettourguide(id) {
+    return this.http.get(`http://localhost:3000/users/${id}`);
+  }
+// Ayaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
   // thses methodes to get  user favorite trip and send it in his profile 
   postUserFavoriteTrip(obj) {
@@ -54,7 +61,7 @@ export class UsersService {
   deleteUserFavoriteTrip(id) {
     return this.http.delete('http://localhost:3000/user-favorite-trip/' + id)
   }
-
+// get tour guid of trip
 
   // thses methodes to get the  user  post  to  share it 
   // in guid me page 

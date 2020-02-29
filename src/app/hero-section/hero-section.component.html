@@ -4,8 +4,8 @@
             <h1>Egypt</h1>
             <p>Expolore top rated tours, hotels and restaurants in Egypt</p>
             <form>
-                <input type="text" class="w-50" name="search" placeholder="search">
-                <a routerLink="/">search</a>
+                <input type="text" class="w-50" [(ngModel)]="searchname" name="search" placeholder="search">
+                <a  (click)="filterSearch()">search</a>
             </form>
         </div>
     </div>

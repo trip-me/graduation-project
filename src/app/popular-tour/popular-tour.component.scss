@@ -3,7 +3,7 @@
 }
 .popular-tour{
     background:#f8f8f8;
-    padding: 3.5rem 0;
+    padding: 3.5rem 0 0;
 }
 
 // popular tour content
@@ -23,6 +23,13 @@
     -ms-transform: scale(1);
     -o-transform: scale(1);
 }
+// .popular-tour .item-center:nth-of-type(2n){
+//     transform: scale(1) !important;
+//     -webkit-transform: scale(1) !important;
+//     -moz-transform: scale(1) !important;
+//     -ms-transform: scale(1) !important;
+//     -o-transform: scale(1) !important;
+// }
 .card-img{
     position: relative;
    overflow: hidden;
@@ -153,9 +160,8 @@ p{
     width: 100%;
     text-align: end;
     margin-right: 30px;
-    margin-top: 3rem
+    margin-top: 2rem
 }
-
 .view-tour a:hover{
     background: none;
     color: #0e843c
@@ -165,7 +171,8 @@ p{
     padding: 3px 12px;
     font-size: .8rem;
     background: none;
-    color: #0e843c
+    color: #0e843c;
+    margin: 0 0 .5rem
 }
 @media (max-width: 768px) {
     header{

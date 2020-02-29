@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms'
 import { UsersService } from '../users.service';
 import { Router } from '@angular/router';
 import { confirmation } from '../customValidator' ;
+// import { confirmation } from '../customValidator';
 
 @Component({
   selector: 'app-register',
@@ -15,8 +16,9 @@ export class RegisterComponent implements OnInit {
   comingData;
   foundedEmail
   constructor(private fb: FormBuilder, private service: UsersService, private router: Router) { }
-
+Uid;
   onSubmit(registerForm) {
+    this.Uid=JSON.parse(localStorage.getItem("currentUser"));
     if (registerForm.valid) {
       this.userInfo = registerForm.value;
       this.foundedEmail = this.comingData.find(element => element.email == this.userInfo.email);
@@ -31,13 +33,20 @@ export class RegisterComponent implements OnInit {
             this.router.navigate(['/my-trip']);
             
           } else if (this.userInfo.role == "tourguide") {
-            this.router.navigate(['/tourGuid']);
+            this.router.navigate(['/tourguid', this.Uid.id]);
+            // this.router.navigate(['/tourguid',]);
           }
         })
       }
     }
-    document.getElementById("login-btn").style.display = "none";
-    document.getElementById("logout-btn").style.display = "inline";
+    if (localStorage.getItem("currentUser") !== null) {
+      document.getElementById("login-btn").style.display = "none";
+      document.getElementById("logout-btn").style.display = "inline";
+      document.getElementById("user__myTrip").style.display="inline";
+    }else{
+    if (localStorage.getItem("currentUser") === null) 
+      document.getElementById("user__myTrip").style.display="none";
+    }
   }
   ngOnInit() {
     this.registerForm = this.fb.group({

@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { AppRoutingModule } from './app-routing.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+// import {FormsModule } form "@ang"
 
 
 
@@ -39,6 +40,9 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyTripComponent } from './my-trip/my-trip.component';
 import { GuideMeComponent } from './guide-me/guide-me.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { TourGuidComponent } from './tour-guid/tour-guid.component';
+import { TourGuidProfileComponent } from './tour-guid-profile/tour-guid-profile.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +73,9 @@ import { GuideMeComponent } from './guide-me/guide-me.component';
     RegisterComponent,
     MyTripComponent,
     GuideMeComponent,
+    AboutUsComponent,
+    TourGuidComponent,
+    TourGuidProfileComponent,
 
   ],
   imports: [
