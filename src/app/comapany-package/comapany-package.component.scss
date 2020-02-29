@@ -1,0 +1,120 @@
+:root {
+  font-size: 10px;
+}
+
+.container {
+  padding: 100px 0;
+}
+
+.shortDisc {
+  color: rgb(155, 152, 152);
+}
+
+h5 {
+  // font-weight: bold;
+  color: black;
+}
+
+p {
+  margin-bottom: 7px
+}
+
+.card {
+  box-shadow: 0 2px 7px 0 #cfcfcf80;
+  border: none;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 20px 4px rgba(158, 158, 158, 0.3);
+}
+
+.header h2 {
+  text-transform: capitalize;
+}
+
+.header span {
+  background: #ccc;
+  width: 120px;
+  height: 2px;
+  display: block;
+  margin: auto;
+}
+
+.header span span:first-child {
+  background: #2eca6a;
+  width: 60px;
+  height: 2px;
+}
+
+.card-title {
+  padding-bottom: 7px;
+}
+
+.card-title:hover {
+  color: #0e843c;
+  cursor: pointer;
+}
+
+.date {
+  color: #0e843c;
+  font-weight: bold;
+}
+
+.date-number {
+  color: black;
+}
+
+rating {
+  color: gold;
+  font-size: 1rem;
+}
+
+strong {
+  color: #0e843c;
+}
+
+.btn {
+  background: #0e843c;
+  border-color: #0e843c;
+  padding: 7px 20px 7px 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+  border: 2px solid #0e843c;
+  background-color: white;
+  color: #0e843c;
+  font-weight: bold;
+}
+
+.card-body {
+  font-size: 0.8rem;
+}
+
+.price-amont {
+  display: flex;
+  justify-content: space-between;
+}
+
+// .company-data span {
+//   background: #ccc;
+//   width: 18rem;
+//   height: 1px;
+//   display: block;
+//   margin: auto;
+//   opacity: 0.5;
+// }
+
+.company-data strong {
+  color: #0e843c;
+  font-weight: 600;
+  font-size: 0.75rem;
+}

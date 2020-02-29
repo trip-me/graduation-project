@@ -43,6 +43,10 @@ import { GuideMeComponent } from './guide-me/guide-me.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { TourGuidComponent } from './tour-guid/tour-guid.component';
 import { TourGuidProfileComponent } from './tour-guid-profile/tour-guid-profile.component';
+import { ComapanyPackageComponent } from './comapany-package/comapany-package.component';
+import { RatingModule } from 'ngx-bootstrap/rating';
+import { ComapanyDataComponent } from './comapany-data/comapany-data.component';
+import { PackageDetailsComponent } from './package-details/package-details.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +81,9 @@ import { TourGuidProfileComponent } from './tour-guid-profile/tour-guid-profile.
     TourGuidComponent,
     TourGuidProfileComponent,
 
+    ComapanyPackageComponent,
+    ComapanyDataComponent,
+    PackageDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -89,7 +96,8 @@ import { TourGuidProfileComponent } from './tour-guid-profile/tour-guid-profile.
     NgbModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RatingModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
