@@ -11,6 +11,9 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 export class ViewAllVisitsComponent implements OnInit {
   allVisits;
 
+
+
+  // addToMyTrip(myFavorit) {}
   constructor(private http: HttpClient, private userService: UsersService) {
     this.getAllTour() ;
   }
@@ -107,13 +110,14 @@ export class ViewAllVisitsComponent implements OnInit {
   // 
   addToMyTrip( myFavorite) {
     if (localStorage != null) {
-      let user = JSON.parse(localStorage.getItem('currentUser'))
+      let user = JSON.parse(localStorage.getItem('currentUser'));
+
       myFavorite.userId = user.id;
       myFavorite.userName = user.userName;
+      
       this.userService.postUserFavoriteTrip(myFavorite).subscribe(data => {
         myFavorite = data
-        console.log(data);
-
+        console.log(myFavorite)
       })
     }
   }

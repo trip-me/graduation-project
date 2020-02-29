@@ -21,15 +21,15 @@ export class UsersService {
   getCompanyData(){
     return this.http.get("http://localhost:3000/company");
   }
-  getCompanyPackage(id){
+  getCompanyPackage(id) {
     return this.http.get(`http://localhost:3000/company/${id}`);
   }
 
-  getTourGuid(){
-    return this.http.get("http://localhost:3000/tourGuid"); 
+  getTourGuid() {
+    return this.http.get("http://localhost:3000/tourGuid");
   }
-  getTourGuidPackage(id){
-    return this.http.get(`http://localhost:3000/tourGuid/${id}`); 
+  getTourGuidPackage(id) {
+    return this.http.get(`http://localhost:3000/tourGuid/${id}`);
   }
 
   postUser(user) {
@@ -46,7 +46,11 @@ export class UsersService {
 
   // thses methodes to get  user favorite trip and send it in his profile 
   postUserFavoriteTrip(obj) {
-    return this.http.post('http://localhost:3000/user-favorite-trip/', obj);
+    const headers = { 'Content-Type': 'application/json ; charset=UTF-8' };
+    return this.http.post('http://localhost:3000/user-favorite-trip/', obj, { headers });
+
+    // return this.http.post<any>(url, obj , headers);
+
   }
 
 
@@ -54,7 +58,7 @@ export class UsersService {
     return this.http.get('http://localhost:3000/user-favorite-trip/');
   }
 
-  cancelUserFavoriteTrip(id) {
+  deleteUserFavoriteTrip(id) {
     return this.http.delete('http://localhost:3000/user-favorite-trip/' + id)
   }
 // get tour guid of trip
@@ -63,10 +67,14 @@ export class UsersService {
   // in guid me page 
 
   postUserPost(obj) {
-    return this.http.post('http://localhost:3000/user-post/', obj);
+    const headers = { 'Content-Type': 'application/json ; charset=UTF-8' };
+
+    return this.http.post('http://localhost:3000/user-post/', obj, { headers });
   }
 
+
   getUserPost() {
+
     return this.http.get('http://localhost:3000/user-post/');
   }
 
@@ -78,7 +86,8 @@ export class UsersService {
   // thses methodes  dealing with  tour guide reply   
 
   postTourGuideReply(obj) {
-    return this.http.post('http://localhost:3000/guide-reply/', obj);
+    const headers = { 'Content-Type': 'application/json ; charset=UTF-8' };
+    return this.http.post('http://localhost:3000/guide-reply/', obj, { headers });
   }
 
   getTourGuideReply() {
@@ -90,9 +99,22 @@ export class UsersService {
   }
 
 
+  postUserPostAndGuideReply(obj) {
+    const headers = { 'Content-Type': 'application/json ; charset=UTF-8' };
+    return this.http.post('http://localhost:3000/post-reply', obj, { headers })
 
+  }
+  getUserPostAndGuideReply() {
+    return this.http.get('http://localhost:3000/post-reply');
 
-// Ayaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  }
+  deleteUserPostAndGuideReply() {
+    return this.http.get('http://localhost:3000/post-reply');
+  }
+
+  
+
+  // Ayaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 
 

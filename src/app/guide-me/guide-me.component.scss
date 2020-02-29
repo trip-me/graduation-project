@@ -1,69 +1,135 @@
 .tour-guide-page {
-    background-color: #f0f2f5;
-    min-height: 500px;
+  background-color: #f0f2f5;
+  min-height: 500px;
+}
+.tour-guide__title {
+  margin: 3rem 0;
+  position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .tour-guide__title::after {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 530px;
+    background: #2eca6a;
+    width: 60px;
+    height: 2px;
   }
-  .userPost {
-    margin: 2rem 0;
-    background: white;
-    border-radius: 20px;
+}
+
+.userpost {
+  background: white;
+  border-radius: 20px;
+  padding: 1.2rem;
+  box-shadow: 3px 3px 4px #cfd1ce;
+}
+.userpost__title {
+  background-color: #32a067;
+  border-radius: 20px;
+  color: #fff;
+}
+.userpost__info {
+  align-items: baseline;
+  figure {
+    width: 40px;
   }
-  .user-info {
-    align-items: baseline;
+  .user-name {
+    font-size: 1rem;
+  }
+}
+
+.delPost {
+  position: relative;
+  bottom: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.noUsersPost {
+  margin-top: 10rem;
+}
+.tour-guide-reply {
+  figure {
+    width: 25px;
+  }
+  .tour-message {
+    p {
+      background-color: #f0f2f5;
+      word-break: break-all;
+      line-height: 1.7;
+      border-radius: 30px;
+      width: fit-content;
+      height: fit-content;
+      position: relative;
+    }
+
+    .delBtn {
+      margin-left: 35px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .likeBtn {
+      cursor: pointer;
+    }
+    .like-icon {
+      color: red;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+form input {
+  min-height: 4.2rem;
+  width: 26rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #f0f2f5;
+}
+
+form button {
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #0e843c;
+  border-radius: 10px;
+  position: relative;
+  top: -1px;
+}
+
+.sponsors-ads {
+  .sponsors-ads__content {
+    box-shadow: 2px 2px 5px #e0dada;
+    padding: 1rem;
+
     figure {
-      width: 60px;
-      border-radius: 50%;
-    }
-    .user-name {
-      font-size: 1.5rem;
-    }
-  }
-  
-  .tour-guide-reply {
-    figure {
-      width: 30px;
-    }
-    .tour-message {
-      p {
-        background-color: #f0f2f5;
-        word-break: break-all;
-        line-height: 1.7;
-        border-radius: 30px;
-        width: fit-content;
-        height: fit-content;
+      width: 40px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid white;
       }
     }
-    img {
-      border-radius: 50%;
-      border: 1px solid #0e843c;
-    }
-    .delBtn {
-      height: 2rem;
-      line-height: 0.7;
-    }
   }
-  
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  
-  form input {
-    min-height: 4.2rem;
-    width: 30rem;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    background-color: #f0f2f5;
-  }
-  
-  form button {
-    padding: 5px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    background: #0e843c;
-    border-radius: 10px;
-    position: relative;
-    top: -1px;
-  }
-  
+}
+
+.heart {
+  display: none;
+}

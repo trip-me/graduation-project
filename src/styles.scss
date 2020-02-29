@@ -39,7 +39,7 @@ a:visited{
     display: block;
     margin: 0 auto
 }
-.section-header span span:first-child{
+.section-header span span:first-child {
     background: #2eca6a;
     width: 60px;
     height: 2px;
@@ -100,3 +100,6 @@ h5{
     color: #0e843c
 }
    
+.add-to-my-trip{
+    cursor: pointer;
+}

@@ -2,50 +2,119 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-12 tour-guide__title text-center text-white">
-                <h2 class="h1">Guid me </h2>
+                <h2 class="h3   text-dark font-weight-bold"> Private Tours </h2>
             </div>
         </div>
-        <div class="row no-gutters">
-            <div class="col-sm-12 col-md-8">
+        <div class="row no-gutters justify-content-between tour-guide__content">
+            <div class="col-sm-12 col-md-8 mb-5">
                 <!-- start  user post -->
-                <div *ngFor="let userPost of usersPosts">
-                    <div class="userPost">
-                        <div class="d-flex  user-info">
+                <div *ngFor="let userpost of usersPosts">
+                    <div class="userpost mb-5" #delUserPost id="{{userpost.id}}">
+                        <h6 class=" userpost__title px-5 py-1 mb-4 text-capitalize font-weight-bold">
+                            {{userpost.title}}
+                        </h6>
+                        <div class="d-flex  userpost__info">
                             <figure class="mr-3">
-                                <img src="./../../assets/images/avatar.png" class="img-fluid">
+                                <img src="./../../assets/images/avatar/avatar.jfif" alt="" class="img-fluid">
                             </figure>
-                            <a 
-                                class="user-name text-dark font-weight-bold">{{userPost.userName}}</a>
+                            <div>
+                                <a class="user-name text-muted">{{userpost.userName}}</a>
+                            </div>
                         </div>
-                        <div class="user-message my-3">
-                            <h3 class="text-dark">{{userPost.message}}</h3>
+                        <div class="userpost__message my-3">
+                            <p class="font-weight-bold">Details:</p>
+                            <p class="text-dark"> {{userpost.message}}</p>
                         </div>
                         <hr>
                         <!-- end  user post  -->
                         <!-- start a tour guide reply -->
+
                         <div *ngFor=" let reply of  guideReplies" class="tour-guide-reply my-4">
-                            <div *ngIf="userPost.id == reply.postUserId" #DelReply class="d-flex">
+                            <div *ngIf="userpost.id == reply.postUserId" #DelReply class="d-flex">
                                 <figure class="mr-5">
-                                    <img src="./../../assets/images/user_review_photo.png" alt="">
+                                    <img src="./../../assets/images/avatar/avatar.png" class="img-fluid">
                                 </figure>
-                                <div class="tour-message d-flex">
-                                    <p class=" px-5 py-2 mr-3">{{reply.message}}</p>
-                                    <button class=" delBtn btn btn-outline-danger" (click)='deleteReply(DelReply,reply.id)'>delete</button>
+                                <!-- reply tour guide  -->
+                                <div class="tour-message">
+                                    <p class="px-5 py-2 mr-3">{{reply.message}}
+                                        <i class="fas fa-heart like-icon heart"></i>
+                                    </p>
+                                    <!-- delete tour guide reply  -->
+
+                                    <span class="delBtn text-danger mr-5"
+                                        (click)='deleteReply(DelReply,reply.id)'>delete
+                                    </span>
+
+                                    <!-- like on tour guide reply  -->
+                                    <span #element class="likeBtn" (click)="like( $event)">like
+                                    </span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="p-0">
-                            <form [id]="userPost.id" [formGroup]="myForm" (ngSubmit)="onSubmit($event,myForm)">
+                            <form [id]="userpost.id" [formGroup]="myForm" (ngSubmit)="onSubmit($event,myForm,btn)">
                                 <input (input)="makeBtnAbled($event)" formControlName="message"
-                                    placeholder="Your Comment" class="mr-3 mb-4 pl-5">
-                                <button type="submit" disabled class="btn text-white">Reply</button>
+                                    placeholder="Your Comment" class="mr-3 mb-4 pl-3">
+                                <button type="submit" #btn disabled class="btn text-white">Reply</button>
                             </form>
                         </div>
-                       
+                        <span class="float-right text-danger delPost" (click)="deleteUserPost(delUserPost)">Delete
+                            Post
+                        </span>
                     </div>
+
                 </div>
+                <ng-container *ngIf="usersPosts.length === 0 ">
+                    <div class="noUsersPost text-center  text-capitalize font-weight-bold" >
+                        <h3>make your trip real by sharing post <br><br> to let our best tour guide helping you</h3>
+                    </div>
+                </ng-container>
             </div>
+
+            <!-- sponsors -->
+            <aside class=" sponsors-ads col-sm-12 col-md-3 ">
+                <p class=" sponsors-ads__title font-weight-bold">sponsored</p>
+                <!-- first -->
+                <div class="sponsors-ads__content mb-3">
+                    <figure class="d-flex">
+                        <img src="./../../assets/images/avatar/avatar.png" alt="">
+                        <p>Name</p>
+                    </figure>
+                    <figcaption>
+                        <div class="sponsors-info">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing.
+                        </div>
+                    </figcaption>
+                </div>
+                <!-- //second  -->
+                <div class="sponsors-ads__content mb-3">
+                    <figure class="d-flex">
+                        <img src="./../../assets/images/avatar/user_review_photo.png" alt="">
+                        <p>Name</p>
+                    </figure>
+                    <figcaption>
+                        <div class="sponsors-info">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing.
+                        </div>
+                    </figcaption>
+                </div>
+                <!-- third -->
+                <div class="sponsors-ads__content">
+                    <figure class="d-flex">
+                        <img src="./../../assets/images/avatar/avatar.jpg" alt="">
+                        <p>Name</p>
+                    </figure>
+                    <figcaption>
+                        <div class="sponsors-info">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing.
+                        </div>
+                    </figcaption>
+                </div>
+            </aside>
         </div>
     </div>
 </section>
