@@ -22,8 +22,6 @@ p {
 .card {
   box-shadow: 0 2px 7px 0 #cfcfcf80;
   border: none;
-  // max-height: 39rem;
-  // min-height: 41rem;
 }
 
 .card:hover {
@@ -48,7 +46,7 @@ p {
   height: 2px;
 }
 
-.card-title{
+.card-title {
   padding-bottom: 7px;
 }
 
@@ -75,10 +73,11 @@ strong {
   color: #0e843c;
 }
 
-a {
+.btn {
   background: #0e843c;
-  padding: 2px 12px;
   border-color: #0e843c;
+  padding: 7px 20px 7px 20px;
+  font-size: 0.8rem;
   font-weight: bold;
   border-radius: 25px;
   -webkit-border-radius: 25px;
@@ -89,12 +88,14 @@ a {
   -o-transition: all .3s ease-in-out;
 }
 
-.card-body {
-  font-size: 0.8rem;
+.btn:hover {
+  border: 2px solid #0e843c;
+  background-color: white;
+  color: #0e843c;
+  font-weight: bold;
 }
 
-.btn {
-  padding: 7px 20px 7px 20px;
+.card-body {
   font-size: 0.8rem;
 }
 

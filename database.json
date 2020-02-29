@@ -594,7 +594,13 @@
           "best-buy": "handmade wooden accessories ",
           "shortDisc": "Start your adventure visiting Opera house, Cairo Tower. Cross the bridge that connects...",
           "fullDisc": "Start your adventure visiting Opera house, Cairo Tower. Cross the bridge that connects Cairo with Giza to dive into the downtown and browse Tahrir Square,Explore Cairo's old gates, walk through Al Moez street, the largest open-air museum of Islamic architecture in the world.End your tour at the famous old bazaar of Khan El Khalili.",
-          "country": "Cairo"
+          "country": "Cairo",
+          "img1":"../../assets/cairo/1.jpg",
+          "img2":"../../assets/cairo/2.jpg",
+          "img3":"../../assets/cairo/3.jpg",
+          "img4":"../../assets/cairo/4.jpg",
+          "img5":"../../assets/cairo/5.jpg",
+          "img6":"../../assets/cairo/6.jpg"
         },
         {
           "id": 12,
@@ -606,7 +612,13 @@
           "best-buy": "handmade wooden accessories ",
           "shortDisc": "At the First Visit the High Dam, Unfinished Obelisk. After that you’ll be moving to the Great...",
           "fullDisc": "At the First Visit the High Dam, Unfinished Obelisk. After that you’ll be moving to the Great Nubian temples of Philae. visite Kom Ombo and Edfu Temples, Then sail to Edfu. and Sail to Luxor late arrival, Visit Karnak and Luxor Temple. next visite Valley of the Kings, Temple of Queen Hatshepsut at El Deir El Bahary and the Colossi of Memnon.",
-          "country": "Aswan"
+          "country": "Aswan",
+          "img1":"../../assets/aswan/1.jpg",
+          "img2":"../../assets/aswan/2.jpg",
+          "img3":"../../assets/aswan/3.jpg",
+          "img4":"../../assets/aswan/4.jpg",
+          "img5":"../../assets/aswan/5.jpg",
+          "img6":"../../assets/aswan/6.jpg"
         },
         {
           "id": 13,
@@ -618,7 +630,13 @@
           "best-buy": "handmade wooden accessories ",
           "shortDisc": "Your tour begins with a Visit Pompey’s Pillar and Catacombs of Kom el Shoqafa See the Citadel...",
           "fullDisc": "Your tour begins with a Visit Pompey’s Pillar and Catacombs of Kom el Shoqafa See the Citadel of Qaitbay then have lunch at a local seafood restaurant ,next visit the Alexandria National Museum and Bibliotheca Alexandrina passing view of the Stanley Bridge. At the end, head to the Montaza Gardens to see the Al-Haramlik Palace.",
-          "country": "alexandria"
+          "country": "Alexandria",
+          "img1":"../../assets/alex/1.jpg",
+          "img2":"../../assets/alex/2.jpg",
+          "img3":"../../assets/alex/3.jpg",
+          "img4":"../../assets/alex/4.jpg",
+          "img5":"../../assets/alex/5.jpg",
+          "img6":"../../assets/alex/6.jpg"
         }
       ]
     },
@@ -638,7 +656,13 @@
           "best-buy": "handmade wooden accessories ",
           "shortDisc": "Your tour begins with a Visit Pompey’s Pillar and Catacombs of Kom el Shoqafa See the Citadel...",
           "fullDisc": "Your tour begins with a Visit Pompey’s Pillar and Catacombs of Kom el Shoqafa See the Citadel of Qaitbay then have lunch at a local seafood restaurant ,next visit the Alexandria National Museum and Bibliotheca Alexandrina passing view of the Stanley Bridge. At the end, head to the Montaza Gardens to see the Al-Haramlik Palace.",
-          "country": "alexandria"
+          "country": "Alexandria",
+          "img1":"../../assets/alex/1.jpg",
+          "img2":"../../assets/alex/2.jpg",
+          "img3":"../../assets/alex/3.jpg",
+          "img4":"../../assets/alex/4.jpg",
+          "img5":"../../assets/alex/5.jpg",
+          "img6":"../../assets/alex/6.jpg"
         },
         {
           "id": 15,
@@ -650,7 +674,13 @@
           "best-buy": "handmade wooden accessories ",
           "shortDisc": "Start your adventure visiting Opera house, Cairo Tower. Cross the bridge that connects...",
           "fullDisc": "Start your adventure visiting Opera house, Cairo Tower. Cross the bridge that connects Cairo with Giza to dive into the downtown and browse Tahrir Square,Explore Cairo's old gates, walk through Al Moez street, the largest open-air museum of Islamic architecture in the world.End your tour at the famous old bazaar of Khan El Khalili.",
-          "country": "Cairo"
+          "country": "Cairo",
+          "img1":"../../assets/cairo/1.jpg",
+          "img2":"../../assets/cairo/2.jpg",
+          "img3":"../../assets/cairo/3.jpg",
+          "img4":"../../assets/cairo/4.jpg",
+          "img5":"../../assets/cairo/5.jpg",
+          "img6":"../../assets/cairo/6.jpg"
         },
         {
           "id": 16,
@@ -662,7 +692,13 @@
           "best-buy": "handmade wooden accessories ",
           "shortDisc": "Your tour begins with a walk across the amazing High Dam Next, ride on the river Nile...",
           "fullDisc": "Your tour begins with a walk across the amazing High Dam Next, ride on the river Nile to Lake Nasser, then Visit this ancient temple dedicated to the goddess Isis, occupying about a quarter of the island, and explore its many other treasures Your tour ends with a visit to a quarry holding the largest known ancient obelisk—if completed.",
-          "country": "Aswan"
+          "country": "Aswan",
+          "img1":"../../assets/aswan/1.jpg",
+          "img2":"../../assets/aswan/2.jpg",
+          "img3":"../../assets/aswan/3.jpg",
+          "img4":"../../assets/aswan/4.jpg",
+          "img5":"../../assets/aswan/5.jpg",
+          "img6":"../../assets/aswan/6.jpg"
         }
       ]
     },
@@ -682,7 +718,13 @@
           "best-buy": "handmade wooden accessories ",
           "shortDisc": "Your tour begins with a walk across the amazing High Dam Next, ride on the river Nile...",
           "fullDisc": "Your tour begins with a walk across the amazing High Dam Next, ride on the river Nile to Lake Nasser, then Visit this ancient temple dedicated to the goddess Isis, occupying about a quarter of the island, and explore its many other treasures Your tour ends with a visit to a quarry holding the largest known ancient obelisk—if completed.",
-          "country": "Aswan"
+          "country": "Aswan",
+          "img1":"../../assets/aswan/1.jpg",
+          "img2":"../../assets/aswan/2.jpg",
+          "img3":"../../assets/aswan/3.jpg",
+          "img4":"../../assets/aswan/4.jpg",
+          "img5":"../../assets/aswan/5.jpg",
+          "img6":"../../assets/aswan/6.jpg"
         },
         {
           "id": 18,
@@ -694,7 +736,13 @@
           "best-buy": "handmade wooden accessories ",
           "shortDisc": "Your tour begins with a Visit Pompey’s Pillar and Catacombs of Kom el Shoqafa See the Citadel...",
           "fullDisc": "Your tour begins with a Visit Pompey’s Pillar and Catacombs of Kom el Shoqafa See the Citadel of Qaitbay then have lunch at a local seafood restaurant ,next visit the Alexandria National Museum and Bibliotheca Alexandrina passing view of the Stanley Bridge. At the end, head to the Montaza Gardens to see the Al-Haramlik Palace.",
-          "country": "alexandria"
+          "country": "Alexandria",
+          "img1":"../../assets/alex/1.jpg",
+          "img2":"../../assets/alex/2.jpg",
+          "img3":"../../assets/alex/3.jpg",
+          "img4":"../../assets/alex/4.jpg",
+          "img5":"../../assets/alex/5.jpg",
+          "img6":"../../assets/alex/6.jpg"
         },
         {
           "id": 19,
@@ -706,7 +754,13 @@
           "best-buy": "handmade wooden accessories ",
           "shortDisc": "Start your adventure visiting Opera house, Cairo Tower. Cross the bridge that connects...",
           "fullDisc": "Start your adventure visiting Opera house, Cairo Tower. Cross the bridge that connects Cairo with Giza to dive into the downtown and browse Tahrir Square,Explore Cairo's old gates, walk through Al Moez street, the largest open-air museum of Islamic architecture in the world.End your tour at the famous old bazaar of Khan El Khalili.",
-          "country": "Cairo"
+          "country": "Cairo",
+          "img1":"../../assets/cairo/1.jpg",
+          "img2":"../../assets/cairo/2.jpg",
+          "img3":"../../assets/cairo/3.jpg",
+          "img4":"../../assets/cairo/4.jpg",
+          "img5":"../../assets/cairo/5.jpg",
+          "img6":"../../assets/cairo/6.jpg"
         }
       ]
     }

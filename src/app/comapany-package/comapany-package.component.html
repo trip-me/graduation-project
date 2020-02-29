@@ -9,20 +9,18 @@
     <div class="col-md-4 p-4" *ngFor="let company of companyPackage">
       <div *ngFor="let package of company.travelPlan">
         <div class="card mb-5">
-        <a routerLink="/companyPackage/{{package.id}}"><img src="{{package.countryImg}}" class="card-img-top img-fulid" alt=""></a>
+        <a routerLink="/companyPackage/{{package.id}}"><img src="{{package.countryImg}}" class="card-img-top img-fluid" alt=""></a>
           <div class="card-body">
             <h4 class="card-title mt-0 mb-0">Tour to {{package.country}} city</h4>
             <p class="company-data"><strong>{{company.name}} company</strong></p>
             <p class="shortDisc"> {{package.shortDisc}}</p>
-            <!-- <p class="date">Depature Date :<span class="date-number"> {{package.depatureDate}}</span></p> -->
-            <!-- <p class="date">Arrival Date :<span class="date-number"> {{package.arrivalDate}}</span></p> -->
             <rating [(ngModel)]="rate" [max]="4" [readonly]="isReadonly"></rating>
             <div class="price-amont">
               <p class="pt-2">
                 <strong>
                   {{package.price}}
                 </strong>
-                for person</p>
+                per person</p>
               <div class="book-btn"><a href="" class="btn btn-primary">Book</a>
               </div>
             </div>

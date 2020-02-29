@@ -10,36 +10,30 @@ import { ActivatedRoute } from '@angular/router';
 export class PackageDetailsComponent implements OnInit {
   PackageDetails;
   Compdata: any;
-  allPackages=[];
-  singlePackage={};
-  
-  constructor(private packageDetail: UsersService, private activeRoute: ActivatedRoute) {}
-  // packagesData(id) {
-  // }
+  allPackages = [];
+  singlePackage = {};
+
+  constructor(private packageDetail: UsersService, private activeRoute: ActivatedRoute) { }
+
   ngOnInit() {
     this.packageDetail.getCompanyData().subscribe(data => {
       this.Compdata = data;
-      // console.log(compId,this.Compdata);
+      console.log(this.Compdata);
       for (let i = 0; i < this.Compdata.length; i++) {
         for (let j = 0; j < this.Compdata[i].travelPlan.length; j++) {
-          // if(this.Compdata[i].travelPlan[i] == compId){
           this.allPackages.push(this.Compdata[i].travelPlan[j]);
-          // if(this.id == this.allPackages.id){
-          // }
-          // console.log(this.allPackages);
         }
       }
     });
-      setTimeout(() => {
-        this.activeRoute.params.subscribe(param => {
-          console.log(param)
-       for (let item of this.allPackages){
-         if(item.id == param.id){
-           this.singlePackage= item
-         }
-       }
+    setTimeout(() => {
+      this.activeRoute.params.subscribe(param => {
+        for (let item of this.allPackages) {
+          if (item.id == param.id) {
+            this.singlePackage = item
+          }
+        }
         console.log(this.singlePackage);
       })
-      }, 500);
+    }, 500);
   }
 }
