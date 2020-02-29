@@ -77,6 +77,8 @@ export class MyTripComponent implements OnInit {
   // user share post in guide me page 
   onSubmit(form, favorite) {
     form.value.userName = this.userName
+    form.value.userid = this.userid
+    // console.log(this.userid);
     this.userService.postUserPost(form.value).subscribe(data => {
       form.value = data;
       form.reset()

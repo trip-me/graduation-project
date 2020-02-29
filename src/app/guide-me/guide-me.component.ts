@@ -118,6 +118,8 @@ export class GuideMeComponent implements OnInit {
 
   deleteUserPost(deleteUserPost) {
     let user = JSON.parse(localStorage.getItem('currentUser'))
+    console.log(user.id)
+    console.log(deleteUserPost.id)
      if (deleteUserPost.id == user.id) {
     this.userService.cancelUserPost(deleteUserPost.id).subscribe(data =>
       deleteUserPost.id = data
@@ -125,6 +127,7 @@ export class GuideMeComponent implements OnInit {
     // remove post from html
     deleteUserPost.remove()
     }
+// console.log(this.usersPosts);
 
   }
 
