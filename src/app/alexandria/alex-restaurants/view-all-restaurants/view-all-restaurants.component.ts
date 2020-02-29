@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { UsersService } from 'src/app/users.service';
 import { RestaurantsService } from 'src/app/restaurants.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-view-all-restaurants',
@@ -18,22 +19,43 @@ export class ViewAllRestaurantsComponent implements OnInit {
 
   constructor(private http: HttpClient,
     private userService: UsersService,
-    private restaurantsService: RestaurantsService
-  ) { }
-
+    private restaurantsService: RestaurantsService,
+    private activeRoute:ActivatedRoute
+  ) { 
+     //select query param 
+     this.activeRoute.paramMap.subscribe(param=>
+      { 
+        let x=param.get('country');
+        console.log(x);
+        // this.search();
+    })
+   }
+   newsearch(currentCountry){
+    // this.currentCountry = this.CountrySearch;
+    // console.log(this.currentCountry,"+"+this.allRestaurant);
+    this.allRestaurant = this.allRestaurant.filter(res => {
+      // this.city = this.allRestaurant;
+      console.log(this.allRestaurant );
+      
+      return res.city.toLocaleLowerCase().match(currentCountry.toLocaleLowerCase());
+    })
+   }
   // start add to my trip button
   addToMyTrip(myFavorite) {
     console.log(myFavorite)
+    let user = JSON.parse(localStorage.getItem('currentUser'))
     if(localStorage != null){
-      let user = JSON.parse(localStorage.getItem('currentUser'))
-      myFavorite.userId = user.id;
-      myFavorite.userName = user.userName;
+      if(user.role=="tourist"){
+        myFavorite.userId = user.id;
+        myFavorite.userName = user.userName;
+        this.userService.postUserFavoriteTrip(myFavorite).subscribe(data=>{
+          myFavorite = data
+        })
+      }else{alert("u aren't a tourist")}
 
-      this.userService.postUserFavoriteTrip(myFavorite).subscribe(data=>{
-        myFavorite = data
-      })
     }
   }
+  
   // addToMyTrip(myFavorite) {
   //   let user = JSON.parse(localStorage.getItem('currentUser'))
   //   if (localStorage != null ) {
@@ -60,12 +82,14 @@ export class ViewAllRestaurantsComponent implements OnInit {
       this.allRestaurant = data;
       console.log((this.allRestaurant));
     })
+    
+  
   }
   city = [];
   search() {
     if (this.CountrySearch != "") {
       this.currentCountry = this.CountrySearch;
-      console.log(this.currentCountry);
+      console.log(this.currentCountry,"+"+this.allRestaurant);
       this.allRestaurant = this.allRestaurant.filter(res => {
         this.city = this.allRestaurant;
         return res.city.toLocaleLowerCase().match(this.CountrySearch.toLocaleLowerCase());

@@ -16,6 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { MyTripComponent } from './my-trip/my-trip.component';
 import { GuideMeComponent } from './guide-me/guide-me.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { TourGuidProfileComponent } from './tour-guid-profile/tour-guid-profile.component';
 
 
 
@@ -66,6 +67,8 @@ const routes: Routes = [
   {path:"AllHotels",component:ViewAllHotelsComponent},
   {path:"AllVisits",component:ViewAllVisitsComponent},
   {path:"aboutUs",component:AboutUsComponent},
+  {path:"tourguid/:id",component:TourGuidProfileComponent},
+  {path:"tourguid",component:TourGuidProfileComponent}
   // {path:"",component:},
 ];
 

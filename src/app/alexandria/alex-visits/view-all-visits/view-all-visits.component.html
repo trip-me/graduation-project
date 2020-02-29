@@ -1,27 +1,57 @@
-
-
-
-
 <section class="all-restaurant wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-12"  *ngFor="let visit of allVisits">
-                <div class="card  all-restaurant__details">
+            <div class="col-md-3">
+                <div class="text-center mb-5">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <input type="text" class="form-control search" [(ngModel)]="CountrySearch" name="searchname"
+                                    (input)="search()" placeholder="search city">
+                            </li>
+                            
+                            <li class="list-group-item header">Rate</li>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input #checkRatee type="checkbox" class=" form-check-input" value="7" (click)="filterationRate(checkRatee.value,checkRatee.checked)">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        5 -7
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list-group-item header">Price</li>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input #checkPrice type="checkbox" value="5$" 
+                                    (click)="filterationPrice(checkPrice.value,checkPrice.checked)">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        between 5$ - 20$
+                                    </label>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-9">
+                <!-- <div class="col-sm-12 col-md-12"  > -->
+                <div class="card  all-restaurant__details" *ngFor="let visit of allVisits">
                     <div class="row no-gutters">
-                        
+
                         <div class="col-lg-5 all-restaurant__details--img">
                             <figure>
                                 <a routerLink="/Alexandria/visits/{{visit.id}}">
-                                <small>tours</small>
+                                    <small>tours</small>
                                     <img [src]="visit.img" class="card-img img-fluid">
-                                   
+
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-7 all-restaurant__details--content">
                             <div class="card-body ">
                                 <div class="card-body-info">
-                                    <a  class="wish_bt">
+                                    <a class="wish_bt">
                                         <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{visit.rate}}</strong></div>
                                     </a>
                                     <h3><a routerLink="Alexandria/visits/{{visit.id}}"> {{ visit.name}} </a></h3>
@@ -29,12 +59,12 @@
                                     <span class="price">From <strong>{{visit.price}}</strong> /per person</span>
                                 </div>
                                 <ul>
-                                    <li><a  class="add-to-my-trip" (click) ="addToMyTrip(visit)"> Add to my trip</a> </li>
+                                    <li><a class="add-to-my-trip" (click)="addToMyTrip(visit)"> Add to my trip</a> </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                
+
                 </div>
             </div>
         </div>
