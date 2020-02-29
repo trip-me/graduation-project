@@ -1,0 +1,124 @@
+<!-- <div class="package-details">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <section id="description">
+          <h2>Tour to {{singlePackage.country}} city</h2>
+          <h3 class="pb-3">Program</h3>
+          <p>{{singlePackage.fullDisc}}</p>
+          <p class="date">From :<span class="date-number"> {{singlePackage.depatureDate}}</span></p>
+          <p class="date">To :<span class="date-number"> {{singlePackage.arrivalDate}}</span></p>
+          <p class="pt-2">
+            <strong>
+              {{singlePackage.price}}
+            </strong>
+            for person</p>
+          <hr>
+          <h3>Instagram photos</h3>
+          <div id="instagram">
+            <div class="row">
+              <div class="col-md-2 col-sm-3">
+                <img src="{{singlePackage.img1}}">
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <img src="{{singlePackage.img2}}">
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <img src="{{singlePackage.img3}}">
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <img src="{{singlePackage.img4}}">
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <img src="{{singlePackage.img5}}">
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <img src="{{singlePackage.img6}}">
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr>
+      </div>
+      <aside class="col-lg-4 pt-5" id="sidebar">
+        <div class="tour-img">
+          <img src="{{singlePackage.countryImg}}" class="img-fluid">
+        </div>
+         <div class="box_detail booking">
+          <div class="price">
+            <span>{{singleTourData.price}} <small>/person</small></span>
+            <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{singleTourData.rate}}</strong></div>
+          </div>
+          <a routerLink="/user-trip" class="add-to-my-trip" (click)="addToMyTrip($event)"
+            class="btn_1 full-width outline wishlist">
+            <i class="far fa-heart"></i>
+            Add To My Trip
+          </a>
+        </div>
+         <ul class="share-buttons">
+          <li><a class="fb-share" href="#0"><i class="fab fa-facebook-f"></i>Share</a></li>
+          <li><a class="twitter-share" href="#0"><i class="fab fa-twitter"></i> Tweet</a></li>
+          <li><a class="gplus-share" href="#0"><i class="far fa-envelope-open"></i> Share</a></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</div> -->
+
+<section class="package-details">
+  <div class="container">
+    <h2 class="pt-5 pb-5">Tour to {{singlePackage.country}} city</h2>
+    <div class="trip-img">
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <img src="{{singlePackage.countryImg}}" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-6">
+          <div class="small-img">
+            <div class="row">
+              <div class="col-lg-6 mb-4">
+                <img src="{{singlePackage.img1}}" alt="" class="img-fluid">
+              </div>
+              <div class="col-lg-6 mb-4">
+                <img src="{{singlePackage.img2}}" alt="" class="img-fluid">
+              </div>
+              <div class="col-lg-6 mb-4">
+                <img src="{{singlePackage.img3}}" alt="" class="img-fluid">
+              </div>
+              <div class="col-lg-6 mb-4">
+                <img src="{{singlePackage.img4}}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row package-details-content">
+        <div class="col-lg-9">
+          <h3 class="pb-3">Program</h3>
+          <p>{{singlePackage.fullDisc}}</p>
+          <p class="date">From :<span class="date-number"> {{singlePackage.depatureDate}}</span></p>
+          <p class="date">To :<span class="date-number"> {{singlePackage.arrivalDate}}</span></p>
+          <p class="price pb-1">
+            <strong>
+              {{singlePackage.price}}
+            </strong>
+            per person
+          </p>
+          <!-- <div *ngFor="let company of Compdata" class="company-content">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="company-img">
+                  <img src="{{company.companyLogo}}" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <p></p>
+              </div>
+            </div>
+          </div> -->
+          <a href="" class="btn btn-primary mb-5">Book</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -13,6 +13,7 @@ export class UsersService {
 
   constructor(private http: HttpClient) { }
   putuserdata(id,obj){
+    
     return this.http.put(`http://localhost:3000/users/${id}`,obj)
   }
   getTour(){
@@ -42,8 +43,6 @@ export class UsersService {
   gettourguide(id) {
     return this.http.get(`http://localhost:3000/users/${id}`);
   }
-// Ayaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-
   // thses methodes to get  user favorite trip and send it in his profile 
   postUserFavoriteTrip(obj) {
     const headers = { 'Content-Type': 'application/json ; charset=UTF-8' };
