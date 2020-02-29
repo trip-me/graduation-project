@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+; import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
@@ -15,17 +15,20 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 export class MyTripComponent implements OnInit {
 
   userFavorite;
-  userTrips = [];
   users: any[];
   user;
   userId;
-  url: string;
   myForm: FormGroup;
 
-  // userIdInUrl
+
   userObj;
   userName;
   userid
+  userTripsVisits = [];
+  userTripsRestaurants = [];
+  userTripsHotels = [];
+
+  userTrips = [];
   constructor(
     private http: HttpClient,
     private route: ActivatedRoute,
@@ -34,7 +37,10 @@ export class MyTripComponent implements OnInit {
     private formbuilder: FormBuilder,
     private userService: UsersService) {
 
+
     //to get user from local storage and use his data to show it in  profile
+
+
 
     this.userObj = JSON.parse(localStorage.getItem('currentUser'))
     this.userName = this.userObj.userName;
@@ -44,25 +50,41 @@ export class MyTripComponent implements OnInit {
       this.userFavorite = data;
       for (let i in this.userFavorite) {
         if (this.userFavorite[i].userId == this.userid) {
-          this.userTrips.push(this.userFavorite[i]);
+          if (this.userFavorite[i].category == 'visit') {
+            this.userTripsVisits.push(this.userFavorite[i]);
+          } else if (this.userFavorite[i].category == 'hotel') {
+            this.userTripsHotels.push(this.userFavorite[i]);
+          } else if (this.userFavorite[i].category == 'restaurant') {
+            this.userTripsRestaurants.push(this.userFavorite[i]);
+          }
         }
       }
     })
-
-
+    // console.log(this.userTripsHotels)
+    // console.log(this.userTripsRestaurants)
+    // console.log(this.userTripsVisits)
+    
+    setTimeout(() => {
+      let add = this.userTripsVisits.concat(this.userTripsRestaurants);
+      this.userTrips = add.concat(this.userTripsHotels)
+    }, 1000);
+    
+    
+    console.log(this.userTrips)
   }
+  
+  
   // user share post in guide me page 
-
-  onSubmit(form) {
+  onSubmit(form, favorite) {
     form.value.userName = this.userName
     this.userService.postUserPost(form.value).subscribe(data => {
       form.value = data;
-      console.log(form.value)
+      form.reset()
     })
   }
   // to make user delete any favorite trip he add it in his profile 
-  cancelTrip(id, parent) {
-    this.userService.cancelUserFavoriteTrip(id).subscribe(data => {
+  deleteTrip(id, parent) {
+    this.userService.deleteUserFavoriteTrip(id).subscribe(data => {
       id = data
       //this to delete post  immediately form html with out refresh 
       parent.remove()
@@ -74,7 +96,8 @@ export class MyTripComponent implements OnInit {
 
   ngOnInit() {
     this.myForm = this.formbuilder.group({
-      message: ['', [Validators.required, Validators.minLength(3)]]
+      title: ['', [Validators.required, Validators.minLength(5)]],
+      message: ['', [Validators.required, Validators.minLength(10)]]
     });
   }
 

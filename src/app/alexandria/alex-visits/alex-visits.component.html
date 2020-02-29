@@ -1,38 +1,44 @@
-<section id="visits">
+<section class="all-restaurant wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
     <div class="container">
-        <div class="visits__title text-center">
-            <span>
-                <em></em>
+        <div class="section-head text-left ">
+            <span >
+                <span></span>
             </span>
-            <h2 class="h1">Popular Visits</h2>
-            <p>Most visits in the City</p>
+            <h3>Popular Visits</h3>
+            <p>Most recommended restaurants in the City.</p>
         </div>
         <div class="row">
-            <div *ngFor="let popvisit of popularVisits " class="col-md-6 mb-3">
-                <div class="card visits__item m-3">
+            <div class="col-md-12 col-lg-6" *ngFor="let popvisit of popularVisits">
+                <div class="card  all-restaurant__details">
                     <div class="row no-gutters">
-                        <a routerLink="/Alexandria/visits/{{popvisit.id}}">
-                        <figure class="figure col-md-6 visits__item-img ">
-                            <img class="card-img-top  img-fluid " src="{{popvisit.img}}"
+                       
+                        <div class="col-lg-5  col-12 all-restaurant__details--img">
+                            <figure>
+                                <a routerLink="/Alexandria/visits/{{popvisit.id}}">
+                                <small>   <div class="score"><strong class="rate">{{popvisit.rate}}</strong></div></small>
+                                <img class="card-img-top  img-fluid " [src]="popvisit.img"
                                 alt="alexandria tour {{popvisit.name}}">
-                        </figure>
-                        <figcaption>
-                            <span>{{popvisit.rate}}</span>
-                        </figcaption>
-                        <div class="card-body col-md-6 visits__item-info pl-3 mb-md-0 mb-sm-3 align-items-end">
-                            <h5 class="card-title visits__item-info--title">{{popvisit.name}}</h5>
-                            <p class="card-text visits__item-info--description mb-5">{{popvisit.shortDescription}}
-                            </p>
-                            <div class="visits__item-btn  m-3">
-                                <div class="row no-gutters justify-content-between  ">
-                                    <!-- <a (click)="onSelect(popvisit)" >More info</a> -->
-                                    <a routerLink="/Alexandria/visits/{{popvisit.id}}">More info</a>
-                                    <a class="btn btn-primary ">Add to my trip</a>
+                                    <div class="read_more">
+                                        <span>Read more</span>
+                                    </div>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-lg-7 col-12 all-restaurant__details--content">
+                            <div class="card-body">
+                                <div class="card-body-info">
+                                   
+                                    <h4><a routerLink="/Alexandria/visits/{{popvisit.id}}"> {{popvisit.name}} </a></h4>
+                                    <p>{{popvisit.shortDescription}}</p>
+                                    
                                 </div>
+                                <ul>
+                                    <li><a >Add To My Trip</a> </li>
+                                </ul>
                             </div>
                         </div>
-                        </a>
                     </div>
+                
                 </div>
             </div>
             <div  *ngIf="myvisits" class="view-all__hotels">

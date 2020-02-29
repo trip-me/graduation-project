@@ -14,7 +14,7 @@ export class ViewAllRestaurantsComponent implements OnInit {
   constructor(private http: HttpClient,
     private userService: UsersService
   ) {
- 
+
 
   }
 
@@ -25,9 +25,10 @@ export class ViewAllRestaurantsComponent implements OnInit {
       let user = JSON.parse(localStorage.getItem('currentUser'))
       myFavorite.userId = user.id;
       myFavorite.userName = user.userName;
-
       this.userService.postUserFavoriteTrip(myFavorite).subscribe(data => {
-        myFavorite = data
+        // myFavorite = data;
+        console.log(data);
+
       })
     }
   }

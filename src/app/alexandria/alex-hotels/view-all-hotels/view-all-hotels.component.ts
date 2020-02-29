@@ -11,15 +11,16 @@ export class ViewAllHotelsComponent implements OnInit {
   allHotels;
   constructor(private http: HttpClient, private userService: UsersService) {
 
-    
-   }
+
+  }
 
   addToMyTrip(myFavorite) {
+
     if (localStorage != null) {
       let user = JSON.parse(localStorage.getItem('currentUser'))
       myFavorite.userId = user.id;
       myFavorite.userName = user.userName;
-      
+
       this.userService.postUserFavoriteTrip(myFavorite).subscribe(data => {
         myFavorite = data
         console.log(myFavorite);
