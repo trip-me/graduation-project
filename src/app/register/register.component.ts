@@ -16,8 +16,9 @@ export class RegisterComponent implements OnInit {
   comingData;
   foundedEmail
   constructor(private fb: FormBuilder, private service: UsersService, private router: Router) { }
-
+Uid;
   onSubmit(registerForm) {
+    this.Uid=JSON.parse(localStorage.getItem("currentUser"));
     if (registerForm.valid) {
       this.userInfo = registerForm.value;
       this.foundedEmail = this.comingData.find(element => element.email == this.userInfo.email);
@@ -32,7 +33,8 @@ export class RegisterComponent implements OnInit {
             this.router.navigate(['/my-trip']);
             
           } else if (this.userInfo.role == "tourguide") {
-            this.router.navigate(['/tourguid']);
+            this.router.navigate(['/tourguid', this.Uid.id]);
+            // this.router.navigate(['/tourguid',]);
           }
         })
       }

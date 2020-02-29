@@ -1,60 +1,64 @@
 {
   "users": [
     {
-      "userName": "Mustafa Amin",
-      "email": "aa@yahoo.com",
-      "password": "aaAA@@66",
-      "confirmPassword": "aaAA@@66",
-      "role": "tourist",
+      "userName": "Dina",
       "id": 1
     },
     {
-      "userName": "dina",
-      "email": "dina@yahoo.com",
-      "password": "Dina6^",
-      "confirmPassword": "Dina6^",
-      "role": "tourist",
+      "lname": "dina salman",
+      "date": "6-10-1994",
       "id": 2
     },
     {
-      "userName": "shahd",
-      "email": "shahd@gmail.com",
-      "password": "Shahd1!",
-      "confirmPassword": "Shahd1!",
-      "role": "tourguide",
+      "guideDiscription": "dina",
       "id": 3
     },
     {
-      "userName": "shahd",
-      "email": "shahd@gmail.com",
-      "password": "Shahd1!",
-      "confirmPassword": "Shahd1!",
-      "role": "tourguide",
-      "id": 4
-    },
-    {
       "userName": "dina",
-      "email": "dina@gmail.com",
-      "password": "Dina1!",
-      "confirmPassword": "Dina1!",
+      "userMail": "dinaSa@gmail.com",
+      "password": "Dinaa1!",
+      "confirmPassword": "Dinaa1!",
       "role": "tourguide",
-      "id": 5
-    },
-    {
-      "userName": "dina",
-      "email": "dina@gmail.com",
-      "password": "Dina1!",
-      "confirmPassword": "Dina1!",
-      "role": "tourguide",
+      "aboutUserName": "I am a tour-guide all over Egypt since 2002. I guide and organize ",
+      "experience": "tour guide",
+      "language": "english",
+      "OtherGuiding": "aswan",
+      "PrivateGuide": "",
       "id": 6
     },
     {
-      "userName": "alaa",
-      "email": "alaa@yahoo.com",
-      "password": "Dina1!",
-      "confirmPassword": "Dina1!",
+      "userName": "sa",
+      "userMail": "sa@yahoo.com",
+      "password": "Aamsms1@",
+      "confirmPassword": "Aamsms1@",
       "role": "tourguide",
+      "aboutUserName": "",
+      "experience": "",
+      "language": "",
+      "OtherGuiding": "",
+      "PrivateGuide": "",
       "id": 7
+    },
+    {
+      "userName": "asma",
+      "email": "as@gmail.com",
+      "password": "Asas1@",
+      "confirmPassword": "Asas1@",
+      "role": "tourguide",
+      "id": 8
+    },
+    {
+      "userName": "asma",
+      "userMail": "as@gmail.com",
+      "password": "Asas1@",
+      "confirmPassword": "Asas1@",
+      "role": "tourguide",
+      "aboutUserName": "I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
+      "experience": "2002",
+      "language": "english",
+      "OtherGuiding": "aswan",
+      "PrivateGuide": "cairo",
+      "id": 9
     }
   ],
   "user-favorite-trip": [
@@ -199,7 +203,7 @@
       "fullDescription": "is a historical archaeological site located in Alexandria, Egypt, and is considered one of the Seven Wonders of the Middle Ages.The necropolis consists of a series of Alexandrian tombs, statues and archaeological objects of the Pharaonic funeral cult with Hellenistic and early Imperial Roman influences. Due to the time period, many of the features of the catacombs of Kom El Shoqafa merge Roman, Greek and Egyptian cultural points; some statues are Egyptian in style, yet bear Roman clothes and hair style whilst other features share a similar style. A circular staircase, which was often used to transport deceased bodies down the middle of it, leads down into the tombs that were tunneled into the bedrock during the age of the Antonine emperors (2nd century AD).The facility was then used as a burial chamber from the 2nd century to the 4th century, before being rediscovered in 1900 when a donkey accidentally fell into the access shaft. To date, three sarcophagi have been found, along with other human and animal remains which were added later. It is believed that the catacombs were only intended for a single family, but it is unclear why the site was expanded in order to house numerous other individuals.",
       "img": "https://lh5.googleusercontent.com/p/AF1QipMtAlvjOS5uf-mOElYJ9hVUZqf24Adnv-88otI8=w408-h306-k-no",
       "rate": 9.1,
-      "price": "16$",      
+      "price": "16$",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3413.506613916758!2d29.89088791447356!3d31.178963571041535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c39a2a19a397%3A0x6cc09f316aeb7191!2sCatacombs%20of%20Kom%20el%20Shoqafa!5e0!3m2!1sen!2seg!4v1581655542988!5m2!1sen!2seg"
     },
     {

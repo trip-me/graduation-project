@@ -12,6 +12,9 @@ export class UsersService {
   //End variables
 
   constructor(private http: HttpClient) { }
+  putuserdata(id,obj){
+    return this.http.put(`http://localhost:3000/users/${id}`,obj)
+  }
   getTour(){
     return this.http.get("http://localhost:3000/tours");
   }
@@ -35,6 +38,9 @@ export class UsersService {
 
   getUser() {
     return this.http.get("http://localhost:3000/users");
+  }
+  gettourguide(id) {
+    return this.http.get(`http://localhost:3000/users/${id}`);
   }
 // Ayaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 

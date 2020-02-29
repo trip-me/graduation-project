@@ -1,197 +1,221 @@
-<section class="tourGuide-profile">
-        <div class="container">
-            <div class="card" *ngIf="guidData">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-6 col-md-6 isotope-item popular">
-                        <div class="box_grid">
-                            <figure>
+<section class="tourGuide-profile" *ngIf="usersGuide">
+    <div class="container" >
+        <div class="card">
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6 isotope-item popular">
+                    <div class="box_grid">
+                        <figure>
 
-                                <a><img [src]="guidData.tourGuideImg" class="img-fluid" >
+                            <a>
+                                <!-- <img [src]="guidData.tourGuideImg" class="img-fluid"> -->
 
-                                </a>
-                                <small>{{guidData.job}}</small>
-                            </figure>
-                            <div class="wrapper">
-                                <h2>{{guidData.name}}</h2>
-                                <p class="card-text"><small class="text-muted">{{guidData.job}}</small></p>
-                            </div>
-                            <div class="rating">
-                                <h6>Guide Rating</h6>
-                                <div class="reviews-container">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="row">
-                                                <div class="col-lg-9 col-9">
-                                                    <p> Excellent
-
-                                                        
-                                                    </p>
-                                                    <div class="progress">
-
-                                                        <div class="progress-bar bg-success" role="progressbar"
-                                               [style.width]="guidData.rate[0].Excellentwidth" aria-valuenow="90" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
+                            </a>
+                            <!-- <small>{{guidData.job}}</small> -->
+                        </figure>
+                        <div class="wrapper">
+                            <h2>{{usersGuide.userName}}</h2>
+                            <!-- <p class="card-text"><small class="text-muted">{{guidData.job}}</small></p> -->
+                        </div>
+                        <div class="rating">
+                            <h6>Guide Rating</h6>
+                            <div class="reviews-container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-9">
+                                                <p> Excellent
+                                                </p>
+                                                <div class="progress">
+                                                    <!-- <div class="progress-bar bg-success" role="progressbar"
+                                                        [style.width]="guidData.rate[0].Excellentwidth" aria-valuenow="90"
+                                                        aria-valuemin="0" aria-valuemax="100"></div> -->
                                                 </div>
-                                                <div class="col-lg-3 col-3"><small><strong>({{guidData.rate[0].ExcellentNum}})</strong></small></div>
                                             </div>
-                                            <!-- /row -->
-                                            <div class="row">
-                                                <div class="col-lg-9 col-9">
-                                                    <p> Very Good</p>
-                                                    <div class="progress">
-                                                        <div class="progress-bar bg-success" role="progressbar"
-                                                        [style.width]="guidData.rate[0].VeryGoodwidth" aria-valuenow="95" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-3"><small><strong>({{guidData.rate[0].VeryGoodNum}})</strong></small></div>
-                                            </div>
-                                            <!-- /row -->
-                                            <div class="row">
-                                                <div class="col-lg-9 col-9">
-                                                    <p> Average</p>
-                                                    <div class="progress">
-                                                        <div class="progress-bar bg-success" role="progressbar"
-                                                        [style.width]="guidData.rate[0].Averagewidth" aria-valuenow="60" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-3"><small><strong>({{guidData.rate[0].AverageNum}})</strong></small></div>
-                                            </div>
-                                            <!-- /row -->
-                                            <div class="row">
-
-                                                <div class="col-lg-9 col-9">
-                                                    <p> Poor</p>
-                                                    <div class="progress">
-                                                        <div class="progress-bar bg-success" role="progressbar"
-                                                        [style.width]="guidData.rate[0].Poorwidth"  aria-valuenow="20" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-3"><small><strong>({{guidData.rate[0].PoortNum}})</strong></small></div>
-                                            </div>
-                                            <!-- /row -->
-                                            <div class="row">
-                                                <div class="col-lg-9 col-9">
-                                                    <p>Terrible</p>
-                                                    <div class="progress">
-                                                        <div class="progress-bar bg-success" role="progressbar"
-                                                        [style.width]="guidData.rate[0].Terriblewidth" aria-valuenow="0" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-3"><small><strong>({{guidData.rate[0].TerribleNum}})</strong></small></div>
-                                            </div>
-                                            <!-- /row -->
+                                            <div class="col-lg-3 col-3"><small><strong>
+                                                <!-- ({{guidData.rate[0].ExcellentNum}}) -->
+                                            </strong></small></div>
                                         </div>
+                                        <!-- /row -->
+                                        <div class="row">
+                                            <div class="col-lg-9 col-9">
+                                                <p> Very Good</p>
+                                                <div class="progress">
+                                                    <!-- <div class="progress-bar bg-success" role="progressbar"
+                                                        [style.width]="guidData.rate[0].VeryGoodwidth" aria-valuenow="95"
+                                                        aria-valuemin="0" aria-valuemax="100"></div> -->
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-3"><small><strong>
+                                                <!-- ({{guidData.rate[0].VeryGoodNum}}) -->
+                                            </strong></small></div>
+                                        </div>
+                                        <!-- /row -->
+                                        <div class="row">
+                                            <div class="col-lg-9 col-9">
+                                                <p> Average</p>
+                                                <div class="progress">
+                                                    <!-- <div class="progress-bar bg-success" role="progressbar"
+                                                        [style.width]="guidData.rate[0].Averagewidth" aria-valuenow="60"
+                                                        aria-valuemin="0" aria-valuemax="100"></div> -->
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-3"><small><strong>
+                                                <!-- ({{guidData.rate[0].AverageNum}}) -->
+                                            </strong></small></div>
+                                        </div>
+                                        <!-- /row -->
+                                        <div class="row">
+
+                                            <div class="col-lg-9 col-9">
+                                                <p> Poor</p>
+                                                <div class="progress">
+                                                    <!-- <div class="progress-bar bg-success" role="progressbar"
+                                                        [style.width]="guidData.rate[0].Poorwidth" aria-valuenow="20"
+                                                        aria-valuemin="0" aria-valuemax="100"></div> -->
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-3"><small><strong>
+                                                <!-- ({{guidData.rate[0].PoortNum}}) -->
+                                            </strong></small></div>
+                                        </div>
+                                        <!-- /row -->
+                                        <div class="row">
+                                            <div class="col-lg-9 col-9">
+                                                <p>Terrible</p>
+                                                <div class="progress">
+                                                    <!-- <div class="progress-bar bg-success" role="progressbar"
+                                                        [style.width]="guidData.rate[0].Terriblewidth" aria-valuenow="0"
+                                                        aria-valuemin="0" aria-valuemax="100"></div> -->
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-3"><small><strong>
+                                                <!-- ({{guidData.rate[0].TerribleNum}}) -->
+                                            </strong></small></div>
+                                        </div>
+                                        <!-- /row -->
                                     </div>
-                                    <!-- /row -->
                                 </div>
+                                <!-- /row -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-8 col-lg-6 col-md-6 isotope-item popular">
+                </div>
+                <div class="col-xl-8 col-lg-6 col-md-6 isotope-item popular">
+                    <div class="card-body">
+                        <h5 class="card-title">About me</h5>
+                        <hr>
+                        <form [formGroup]="guideUser" (ngSubmit)="tourGuideUser(guideUser)">
+                            <!-- user name -->
+                            <textarea disabled class="form-control " [value]="usersGuide.aboutUserName" formControlName="aboutUserName">{{usersGuide.aboutUserName}} </textarea>
+                            <!-- <button type="submit">click</button> -->
 
-                        <div class="card-body">
-                            <h5 class="card-title">About me</h5>
-                            <hr>
-                            
-                            <p class="card-text">{{guidData.guideDiscription}} </p>
+                            <!-- </form> -->
+                            <!-- </form> -->
+                            <!-- <textarea #content name="" id="" cols="30" rows="10">{{guidData.guideDiscription}}</textarea> -->
+                            <p class="card-text">
+                                <!-- {{guidData.guideDiscription}}  -->
+                            </p> <a>add</a>
                             <hr>
                             <div class="container">
+                                <!-- <form [formGroup]="guideUser" (ngSubmit)="tourGuideUser(guideUser)"> -->
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label">expereince</label>
+                                    <div class="col-sm-6">
+                                        <input  [value]="usersGuide.experience" disabled="true"
+                                         formControlName="experience" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label">language</label>
+                                    <div class="col-sm-6">
+                                        <input [value]="usersGuide.language" disabled="true"
+                                         formControlName="language" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label">Private tour guide in</label>
+                                    <div class="col-sm-6">
+                                        <input [value]="usersGuide.PrivateGuide" disabled="true"
+                                         formControlName="PrivateGuide" class="form-control">
+                                    </div>
+                                </div>
+                                <div class=" row">
+                                    <label class="col-sm-6 col-form-label">other guiding area </label>
+                                    <div class="col-sm-6">
+                                        <input [value]="usersGuide.OtherGuiding"  disabled="true"
+                                        formControlName="OtherGuiding" class="form-control">
+                                    </div>
+                                </div>
+                                <button id="save" type="submit">save</button>
+                                <a id="edit" (click)="editData(guideUser)">edit</a>
+                                <div class="contact">
+                                    <a href="#" class="btn-success">Contact</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="tour-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 ">
+                            <div class="box_grid">
+                                <figure >
+                                    <!-- <img [src]="guidData.imgTrip" class="img-fluid h-100"> -->
+
+                                    <small>About Trip</small>
+                                </figure>
+
+
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 col-md-7 ">
+
+                            <div class="card-body" *ngIf="guidData">
+                                <h5 class="card-title">About Trip</h5>
+                                <hr>
+
+                                <p class="card-text">
+                                    <!-- {{guidData.tripDiscription}} -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4" *ngIf="guidData">
+                <div class="booking">
+                    <div class="card">
+                        <h5 class="card-header bg-success">Book Guide</h5>
+                        <div class="card-body">
                             <ul class="list-unstyled rating">
                                 <li>
-                                    <p>TourHQ ID:<span>{{guidData.TourHQID}}</span> </p>
+                                    <p>Half Day Tour -<span>USD 
+                                        <!-- {{guidData.halfDayPrice}} -->
+                                    </span> </p>
+                                </li>
+                                <li class="bord">
+                                    <p>Full Day Tour -<span>USD 
+                                        <!-- {{guidData.fullDayPrice}} -->
+                                    </span> </p>
                                 </li>
                                 <li>
-                                    <p>experience:<span>{{guidData.Experience}}</span> </p>
-                                </li>
-                                <li>
-                                    <p>gender:<span>{{guidData.Gender}}</span></p>
-                                </li>
-                                <li>
-                                    <p>Private Tour Guide in : <span>
-                                            {{guidData.PrivateTour}}</span></p>
-                                </li>
-                                <li>
-                                    <p>
-                                        Other Guiding Areas:
-
-                                        <span>{{guidData.GuidingAreas[0].first}} , {{guidData.GuidingAreas[0].second}}</span>
-
-
-                                    </p>
-                                </li>
-                                <li>
-                                    <p> Languages:<span>
-                                           {{guidData.Languages[0].first}} , {{guidData.Languages[0].second}} 
-                                        </span>
-                                    </p>
+                                    <p>Multi Day Tour -<span>On Request</span></p>
                                 </li>
                             </ul>
-                            <div class="contact">
-                                <a href="#" class="btn-success">Contact</a>
-                            </div>
+                            <a href="#" class="btn btn-success">Book Now</a>
                         </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="tour-info">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 col-lg-8 col-md-8">
-                    <div class="card">
-                        <div class="row">
-                            <div class="col-xl-5 col-lg-5 col-md-5 ">
-                                <div class="box_grid">
-                                    <figure>
-                                        <img [src]="guidData.imgTrip"  class="img-fluid h-100">
-                                       
-                                        <small>About Trip</small>
-                                    </figure>
-
-
-                                </div>
-                            </div>
-                            <div class="col-xl-7 col-lg-7 col-md-7 ">
-
-                                <div class="card-body">
-                                    <h5 class="card-title">About Trip</h5>
-                                    <hr>
-                                  
-                                    <p class="card-text">{{guidData.tripDiscription}}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4">
-                    <div class="booking">
-                        <div class="card">
-                            <h5 class="card-header bg-success">Book Guide</h5>
-                            <div class="card-body">
-                                <ul class="list-unstyled rating">
-                                    <li>
-                                        <p>Half Day Tour -<span>USD  {{guidData.halfDayPrice}}</span> </p>
-                                    </li>
-                                    <li class="bord">
-                                        <p>Full Day Tour -<span>USD   {{guidData.fullDayPrice}}</span> </p>
-                                    </li>
-                                    <li>
-                                        <p>Multi Day Tour -<span>On Request</span></p>
-                                    </li>
-                                </ul>
-                              <a href="#" class="btn btn-success">Book Now</a>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>

@@ -23,7 +23,20 @@ margin: .5rem auto;
 
 }
 
-
+.form-check{
+  text-align: start;
+}
+.form-check input{
+  float: right;
+  position: relative;
+}
+input.search{
+  background: #fafafa
+}
+.form-check {
+   padding-left: 0;
+}
+ul li{text-align: left;}
 .all-restaurant__details--img figure {
 margin-bottom: 0;
 overflow: hidden;

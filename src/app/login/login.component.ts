@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
       
     }
   }
-
+  Uid;
   onSubmit(loginForm) {
     this.userEmail = loginForm.get('email').value;
     this.userPassword = loginForm.get('password').value;
@@ -44,10 +44,11 @@ export class LoginComponent implements OnInit {
 
     if (loginForm.valid) {
       for (let i = 0; i < this.comingData.length; i++) {
-        if (this.userEmail == this.comingData[i].email && this.userPassword == this.comingData[i].password) {
+        if (this.userEmail == this.comingData[i].email ||this.userPassword == this.comingData[i].password) {
           let userObj = this.comingData[i];
           console.log(userObj);
           localStorage.setItem("currentUser", JSON.stringify(userObj));
+          this.Uid=JSON.parse(localStorage.getItem("currentUser"));
           this.router.navigate(['/my-trip', this.comingData[i].id]);
           // console.log(this.comingData[i].role);
           this.currentuser = this.comingData[i].email;
@@ -55,7 +56,9 @@ export class LoginComponent implements OnInit {
             this.router.navigate(['/my-trip']);
           }
           else if (this.comingData[i].role === "tourguide") {
-            this.router.navigate(['/tourguid']);
+            
+            this.router.navigate(['/tourguid', this.Uid.id]);
+            console.log(this.Uid.id);
           }
           else {
             this.router.navigate(['/Home']);
@@ -68,7 +71,6 @@ export class LoginComponent implements OnInit {
         emailError.innerHTML = "email is not exist";
       }
     }
-
     if (this.logedinAdmin === "admin") {
       document.getElementById("dashboard").style.display = "inline";
     }
