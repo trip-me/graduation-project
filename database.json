@@ -1,68 +1,8 @@
 {
-  "users": [
-    {
-      "userName": "dina",
-      "userMail": "dinaSa@gmail.com",
-      "password": "Dinaa1!",
-      "confirmPassword": "Dinaa1!",
-      "role": "tourguide",
-      "aboutUserName": "I am a tour-guide all over Egypt since 2002. I guide and organize ",
-      "experience": "tour guide",
-      "language": "english",
-      "OtherGuiding": "aswan",
-      "PrivateGuide": "",
-      "id": 6
-    },
-    {
-      "userName": "sa",
-      "userMail": "sa@yahoo.com",
-      "password": "Aamsms1@",
-      "confirmPassword": "Aamsms1@",
-      "role": "tourguide",
-      "aboutUserName": "",
-      "experience": "",
-      "language": "",
-      "OtherGuiding": "",
-      "PrivateGuide": "",
-      "id": 7
-    },
-    {
-      "userName": "asma",
-      "email": "as@gmail.com",
-      "password": "Asas1@",
-      "confirmPassword": "Asas1@",
-      "role": "tourguide",
-      "id": 8
-    },
-    {
-      "userName": "asma",
-      "userMail": "as@gmail.com",
-      "password": "Asas1@",
-      "confirmPassword": "Asas1@",
-      "role": "tourguide",
-      "aboutUserName": "I am a tour-guide all over Egypt since 2002. I guide and organize tours, cultural and safari soy guia de turistas desde 2002",
-      "experience": "2002",
-      "language": "english",
-      "OtherGuiding": "aswan",
-      "PrivateGuide": "cairo",
-      "id": 9
-    },
-    {
-      "userName": "Mustafa Amin",
-      "email": "aa@yahoo.com",
-      "password": "aaAA@@66",
-      "confirmPassword": "aaAA@@66",
-      "role": "tourist",
-      "id": 10
-    }
-  ],
-  "user-favorite-trip": [
-  ],
-  "user-post": [
-   
-  ],
+  "users": [],
+  "user-favorite-trip": [],
+  "user-post": [],
   "guide-reply": [],
-
   "cities": [
     {
       "id": 1,
@@ -86,7 +26,7 @@
   "tours": [
     {
       "city": "alex",
-      "id": 1,
+      "id": 1.1,
       "category": "visit",
       "title": "Alexandria",
       "tour_category": "libraries",
@@ -101,7 +41,7 @@
     },
     {
       "city": "alex",
-      "id": 2,
+      "id": 1.2,
       "category": "visit",
       "title": "Alexandria",
       "name_tag": "Alexandria_tours",
@@ -116,7 +56,7 @@
     },
     {
       "city": "alex",
-      "id": 3,
+      "id": 1.3,
       "category": "visit",
       "title": "Alexandria",
       "tour_category": "Alexandria_tours",
@@ -131,7 +71,7 @@
     },
     {
       "city": "alex",
-      "id": 4,
+      "id": 1.4,
       "category": "visit",
       "tour_category": "Alex_",
       "tourType": "sites",
@@ -146,7 +86,7 @@
     },
     {
       "city": "alex",
-      "id": 5,
+      "id": 1.5,
       "category": "visit",
       "tour_category": "Alex_",
       "tourType": "sites",
@@ -161,7 +101,7 @@
     },
     {
       "city": "alex",
-      "id": 6,
+      "id": 1.6,
       "category": "visit",
       "tour_category": "Alex_",
       "tourType": "museums",
@@ -176,7 +116,7 @@
     },
     {
       "city": "alex",
-      "id": 7,
+      "id": 1.7,
       "category": "visit",
       "tour_category": "Alex_",
       "tourType": "sites",
@@ -191,7 +131,7 @@
     },
     {
       "city": "alex",
-      "id": 8,
+      "id": 1.8,
       "category": "visit",
       "tour_category": "sites",
       "tourType": "sites",
@@ -208,7 +148,7 @@
   "restaurants": [
     {
       "city": "alex",
-      "id": 1,
+      "id": 2.1,
       "category": "restaurant",
       "title": "Alexandria",
       "service": "eat",
@@ -222,7 +162,7 @@
     },
     {
       "city": "alex",
-      "id": 2,
+      "id": 2.2,
       "category": "restaurant",
       "img": "../../../assets/images/restaurants/Alexandria/2.jpg",
       "name": "Carlos Cafe",
@@ -236,7 +176,7 @@
     },
     {
       "city": "alex",
-      "id": 3,
+      "id": 2.3,
       "category": "restaurant",
       "img": "../../../assets/images/restaurants/Alexandria/3.jpg",
       "name": "4x4 Cafe",
@@ -250,7 +190,7 @@
     },
     {
       "city": "alex",
-      "id": 4,
+      "id": 2.4,
       "category": "restaurant",
       "img": "../../../assets/images/restaurants/Alexandria/7.jpg",
       "name": "Holmes Burgers",
@@ -264,7 +204,7 @@
     },
     {
       "city": "alex",
-      "id": 5,
+      "id": 2.5,
       "category": "restaurant",
       "img": "../../../assets/images/restaurants/Alexandria/Beano's Cafe.jpg",
       "name": "Beano's Cafe",
@@ -278,7 +218,7 @@
     },
     {
       "city": "alex",
-      "id": 6,
+      "id": 2.6,
       "category": "restaurant",
       "img": "../../../assets/images/restaurants/Alexandria/6.jpg",
       "name": "China House",
@@ -292,7 +232,7 @@
     },
     {
       "city": "aswan",
-      "id": 7,
+      "id": 2.7,
       "category": "restaurant",
       "title": "Aswan",
       "name": "Mezze",
@@ -307,7 +247,7 @@
     },
     {
       "city": "aswan",
-      "id": 8,
+      "id": 2.8,
       "category": "restaurant",
       "title": "Aswan",
       "name": "‪El Masry‬",
@@ -322,7 +262,7 @@
     },
     {
       "city": "cairo",
-      "id": 9,
+      "id": 2.9,
       "category": "restaurant",
       "title": "Cairo",
       "name": "‪‪El Dokka‬",
@@ -337,7 +277,7 @@
     },
     {
       "city": "cairo",
-      "id": 10,
+      "id": 2.1,
       "category": "restaurant",
       "title": "Cairo",
       "name": "The Terrace‬",
@@ -354,7 +294,7 @@
   "hotels": [
     {
       "city": "alex",
-      "id": 1,
+      "id": 3.1,
       "category": "hotel",
       "img": "../../../assets/images/hotels/Alexandria/forseason/forseason.jpg",
       "name": "Four Seasons",
@@ -367,7 +307,7 @@
     },
     {
       "city": "alex",
-      "id": 2,
+      "id": 3.2,
       "category": "hotel",
       "img": "../../../assets/images/hotels/Alexandria/amoun/amoun.jpg",
       "name": "Amoun Hotel",
@@ -379,7 +319,7 @@
     },
     {
       "city": "alex",
-      "id": 3,
+      "id": 3.3,
       "category": "hotel",
       "img": "../../../assets/images/hotels/Alexandria/hilton/hilton.jpg",
       "name": "Hilton Alexandria Green Plaza",
@@ -392,7 +332,7 @@
     },
     {
       "city": "alex",
-      "id": 4,
+      "id": 3.4,
       "category": "hotel",
       "img": "../../../assets/images/hotels/Alexandria/tolipp/tolip.jpg",
       "name": "TOLIP Hotel Alexandria",
@@ -405,7 +345,7 @@
     },
     {
       "city": "cairo",
-      "id": 5,
+      "id": 3.5,
       "category": "hotel",
       "img": "../../../assets/images/hotels/Alexandria/hotel_list_1.jpg",
       "name": "Steigenberger Cecil Alexandria",
@@ -418,7 +358,7 @@
     },
     {
       "city": "alex",
-      "id": 6,
+      "id": 3.6,
       "category": "hotel",
       "img": "../../../assets/images/hotels/Alexandria/paradise/paradise.jpg",
       "name": "Paradise Inn",
@@ -431,7 +371,7 @@
     },
     {
       "city": "alex",
-      "id": 7,
+      "id": 3.7,
       "category": "hotel",
       "img": "../../../assets/images/hotels/Alexandria/san/san.jpg",
       "name": "San Giovanni Hotel",
@@ -444,7 +384,7 @@
     },
     {
       "city": "alex",
-      "id": 8,
+      "id": 3.8,
       "category": "hotel",
       "img": "../../../assets/images/hotels/Alexandria/hotel_list_2.jpg",
       "name": "Eatabe Hotel",
@@ -456,7 +396,7 @@
     },
     {
       "city": "aswan",
-      "id": 9,
+      "id": 3.9,
       "category": "hotel",
       "img": "../../../assets/images/hotels/Alexandria/hotel_list_1.jpg",
       "name": "Romance Hotel",
@@ -468,7 +408,7 @@
     },
     {
       "city": "alex",
-      "id": 10,
+      "id": 3.1,
       "category": "hotel",
       "img": "../../../assets/images/hotels/Alexandria/hotel_list_1.jpg",
       "name": "Lotus Hotel",
@@ -480,7 +420,7 @@
     },
     {
       "city": "cairo",
-      "id": 11,
+      "id": 3.11,
       "category": "hotel",
       "img": "../../../assets/images/hotels/Alexandria/hotel_list_1.jpg",
       "name": "President Hotel",
@@ -492,7 +432,7 @@
     },
     {
       "city": "alex",
-      "id": 12,
+      "id": 3.12,
       "category": "hotel",
       "img": "../../../assets/images/hotels/Alexandria/hotel_list_2.jpg",
       "name": "Nile Plaza Hotel",
@@ -504,7 +444,7 @@
     },
     {
       "city": "aswan",
-      "id": 13,
+      "id": 3.13,
       "category": "hotel",
       "img": "../../../assets/images/hotels/Alexandria/hotel_list_1.jpg",
       "name": "Horizon Hotel",

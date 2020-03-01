@@ -30,7 +30,7 @@
                         <!-- start a tour guide reply -->
 
                         <div *ngFor=" let reply of  guideReplies" class="tour-guide-reply my-4">
-                            <div *ngIf="userpost.id == reply.postUserId" #DelReply class="d-flex">
+                            <div *ngIf="userpost.userid == reply.postUserId" #DelReply class="d-flex">
                                 <figure class="mr-5">
                                     <img src="./../../assets/images/avatar/avatar.png" class="img-fluid">
                                 </figure>
@@ -53,7 +53,7 @@
                         </div>
 
                         <div class="p-0">
-                            <form [id]="userpost.id" [formGroup]="myForm" (ngSubmit)="onSubmit($event,myForm,btn)">
+                            <form id="{{userpost.userid}}" [formGroup]="myForm" (ngSubmit)="onSubmit($event,myForm,btn)">
                                 <input (input)="makeBtnAbled($event)" formControlName="message"
                                     placeholder="Your Comment" class="mr-3 mb-4 pl-3">
                                 <button type="submit" #btn disabled class="btn text-white">Reply</button>

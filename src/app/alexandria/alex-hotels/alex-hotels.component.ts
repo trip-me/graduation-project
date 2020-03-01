@@ -22,7 +22,7 @@ export class AlexHotelsComponent implements OnInit {
     public hotelsService: HotelsService) {
     this.wowService.init();
    }
-   popularVisits = [] // contains popular visits rate >= 4
+   popularVisits = [] // contains popular visits rate >= 9
 
   ngOnInit() {
     this.hotelsService.getToursData().subscribe(resp => {

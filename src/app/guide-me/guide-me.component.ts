@@ -16,6 +16,8 @@ export class GuideMeComponent implements OnInit {
   userFavoriteTrips = [];
   postUser = [];
   userName;
+  cuttentUserId;
+  
 
   constructor(
     private wowService: NgwWowService,
@@ -24,10 +26,11 @@ export class GuideMeComponent implements OnInit {
     private userService: UsersService
   ) {
     this.wowService.init();
-
     // get user post and display it here in guide me page 
     this.userService.getUserPost().subscribe(data => {
       this.usersPosts = data;
+      console.log(data);
+      
     })
 
     // get a tour guide  reply  and display it here in guide me page 
@@ -41,6 +44,7 @@ export class GuideMeComponent implements OnInit {
 
     let user = JSON.parse(localStorage.getItem('currentUser'))
     this.userName = user.userName;
+    this.cuttentUserId = user.id
     console.log(this.userName)
 
     this.userService.getUserFavoriteTrip().subscribe((data: any) => {
@@ -84,6 +88,7 @@ export class GuideMeComponent implements OnInit {
 
   onSubmit(event, form, btn) {
     form.value.postUserId = event.target.id;
+    form.value.replierId = this.cuttentUserId
     this.userService.postTourGuideReply(form.value).subscribe(data => {
       this.guideReplies.push(data);
       // this make value apear without refresh page  
@@ -117,18 +122,31 @@ export class GuideMeComponent implements OnInit {
 
 
   deleteUserPost(deleteUserPost) {
-    let user = JSON.parse(localStorage.getItem('currentUser'))
-    console.log(user.id)
-    console.log(deleteUserPost.id)
-     if (deleteUserPost.id == user.id) {
-    this.userService.cancelUserPost(deleteUserPost.id).subscribe(data =>
-      deleteUserPost.id = data
-    )
-    // remove post from html
-    deleteUserPost.remove()
-    }
-// console.log(this.usersPosts);
+    //get user id from local storage
+    let user = JSON.parse(localStorage.getItem('currentUser')) 
 
+     if (deleteUserPost.id == user.id) {
+       //delete post from guid me page
+      for(let item of this.usersPosts){
+        if(item['userid'] == user.id){
+          this.userService.cancelUserPost(item['id']).subscribe(data =>{
+            item['id'] = data
+            console.log(data);
+          })
+        }
+      }
+
+      //delete post replies from db
+      for(let item of this.guideReplies){
+        if(item["postUserId"] == deleteUserPost.id )
+        this.userService.deleteTourGuideReply(item["id"]).subscribe(data =>{
+          console.log(data);
+        })
+        
+      }
+      //delete post from html
+      deleteUserPost.remove()
+    }
   }
 
 
@@ -139,4 +157,5 @@ export class GuideMeComponent implements OnInit {
     });
   }
 
+  
 }

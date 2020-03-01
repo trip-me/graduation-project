@@ -1,11 +1,11 @@
 <nav class="secondary_nav ">
     <div class="container-fulid">
         <ul class="clearfix">
-       <div class="container">
-            <li><a href="#description" >Description</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#sidebar">Booking</a></li>
-        </div>
+            <div class="container">
+                <li><a href="#description">Description</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#sidebar">Booking</a></li>
+            </div>
         </ul>
     </div>
 </nav>
@@ -13,75 +13,81 @@
     <div class="container " *ngIf="singleTourData">
         <div class="row">
             <div class="col-lg-8">
-            
+
                 <section id="description">
                     <ul class="list-unstyled">
                         <li>
                             <h1> {{singleTourData.name}} </h1>
                         </li>
-                        <li class="d-block d-sm-none"><span >Add To My Trip</span></li>
+                        <li class="d-block d-sm-none"><span>Add To My Trip</span></li>
                     </ul>
                     <h2>Description</h2>
-                    <p>{{singleTourData.shortDescription}}</p> 
-                
+                    <p>{{singleTourData.shortDescription}}</p>
+
                     <!-- /row -->
                     <hr>
                     <h3>Instagram photos feed</h3>
-                    <div id="instagram-feed-restuarent" >
-                     <div class="row">
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img}}"class="img-fluid">
+                    <div id="instagram-feed-restuarent">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-3">
+                                <img src="{{singleTourData.img}}" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3">
+                                <img src="{{singleTourData.img}}" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3">
+                                <img src="{{singleTourData.img}}" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3">
+                                <img src="{{singleTourData.img}}" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3">
+                                <img src="{{singleTourData.img}}" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3">
+                                <img src="{{singleTourData.img}}" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3">
+                                <img src="{{singleTourData.img}}" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3">
+                                <img src="{{singleTourData.img}}" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3">
+                                <img src="{{singleTourData.img}}" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3">
+                                <img src="{{singleTourData.img}}" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3">
+                                <img src="{{singleTourData.img}}" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3">
+                                <img src="{{singleTourData.img}}" class="img-fluid">
+                            </div>
                         </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img}}" class="img-fluid">
-                        </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img}}"class="img-fluid" >
-                        </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img}}"class="img-fluid" >
-                        </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img}}" class="img-fluid">
-                        </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img}}" class="img-fluid">
-                        </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img}}" class="img-fluid">
-                        </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img}}" class="img-fluid">
-                        </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img}}"class="img-fluid" >
-                        </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img}}" class="img-fluid">
-                        </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img}}"class="img-fluid" >
-                        </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img}}"class="img-fluid" >
-                        </div>
-                     </div>
                     </div>
                     <hr>
                     <div class="room_type first">
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="{{singleTourData.img}}"class="img-fluid" >
+                                <img src="{{singleTourData.img}}" class="img-fluid">
                             </div>
                             <div class="col-md-8">
                                 <h4>Single Room</h4>
-                                <p>Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.</p>
+                                <p>Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam
+                                    vulputate pertinacia eum at.</p>
                                 <ul class="hotel_facilities">
-                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_2.svg" alt="">Single Bed</li>
-                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_4.svg" alt="">Free Wifi</li>
-                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_5.svg" alt="">Shower</li>
-                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_7.svg" alt="">Air Condition</li>
-                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_8.svg" alt="">Hairdryer</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_2.svg"
+                                            alt="">Single Bed</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_4.svg"
+                                            alt="">Free Wifi</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_5.svg"
+                                            alt="">Shower</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_7.svg"
+                                            alt="">Air Condition</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_8.svg"
+                                            alt="">Hairdryer</li>
                                 </ul>
                             </div>
                         </div>
@@ -91,17 +97,23 @@
                     <div class="room_type gray">
                         <div class="row">
                             <div class="col-md-4">
-                                <img  src="{{singleTourData.img}}" class="img-fluid" alt="">
+                                <img src="{{singleTourData.img}}" class="img-fluid" alt="">
                             </div>
                             <div class="col-md-8">
                                 <h4>Double Room</h4>
-                                <p>Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.</p>
+                                <p>Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam
+                                    vulputate pertinacia eum at.</p>
                                 <ul class="hotel_facilities">
-                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_2.svg" alt="">Single Bed</li>
-                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_4.svg" alt="">Free Wifi</li>
-                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_5.svg" alt="">Shower</li>
-                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_7.svg" alt="">Air Condition</li>
-                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_8.svg" alt="">Hairdryer</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_2.svg"
+                                            alt="">Single Bed</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_4.svg"
+                                            alt="">Free Wifi</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_5.svg"
+                                            alt="">Shower</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_7.svg"
+                                            alt="">Air Condition</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_8.svg"
+                                            alt="">Hairdryer</li>
                                 </ul>
                             </div>
                         </div>
@@ -111,17 +123,23 @@
                     <div class="room_type last">
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="{{singleTourData.img}}"class="img-fluid" >
+                                <img src="{{singleTourData.img}}" class="img-fluid">
                             </div>
                             <div class="col-md-8">
                                 <h4>Suite Room</h4>
-                                <p>Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.</p>
+                                <p>Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam
+                                    vulputate pertinacia eum at.</p>
                                 <ul class="hotel_facilities">
-                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_2.svg" alt="">Single Bed</li>
-                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_4.svg" alt="">Free Wifi</li>
-                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_5.svg" alt="">Shower</li>
-                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_7.svg" alt="">Air Condition</li>
-                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_8.svg" alt="">Hairdryer</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_2.svg"
+                                            alt="">Single Bed</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_4.svg"
+                                            alt="">Free Wifi</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_5.svg"
+                                            alt="">Shower</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_7.svg"
+                                            alt="">Air Condition</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_8.svg"
+                                            alt="">Hairdryer</li>
                                 </ul>
                             </div>
                         </div>
@@ -153,7 +171,8 @@
                                 <div class="row">
                                     <div class="col-lg-10 col-9">
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 90%"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-2 col-3"><small><strong>5 stars</strong></small></div>
@@ -162,7 +181,8 @@
                                 <div class="row">
                                     <div class="col-lg-10 col-9">
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 95%"
+                                                aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-2 col-3"><small><strong>4 stars</strong></small></div>
@@ -171,7 +191,8 @@
                                 <div class="row">
                                     <div class="col-lg-10 col-9">
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 60%"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-2 col-3"><small><strong>3 stars</strong></small></div>
@@ -180,7 +201,8 @@
                                 <div class="row">
                                     <div class="col-lg-10 col-9">
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 20%"
+                                                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-2 col-3"><small><strong>2 stars</strong></small></div>
@@ -189,7 +211,8 @@
                                 <div class="row">
                                     <div class="col-lg-10 col-9">
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 0" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 0"
+                                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-2 col-3"><small><strong>1 stars</strong></small></div>
@@ -202,73 +225,21 @@
 
                     <hr>
 
-                    <div class="reviews-container">
-
-                        <div class="review-box clearfix">
-                            <figure class="rev-thumb">  <img src="{{singleTourData.img}}" >
-                            </figure>
-                            <div class="rev-content">
-                                
-                                    <div class="rating">
-                                        <i class="fas fa-star voted"></i>
-                                        <i class="fas fa-star voted"></i>
-                                        <i class="fas fa-star voted"></i>
-                                        <i class="fas fa-star voted"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    
-                                
-                                <div class="rev-info">
-                                    Admin â€“ April 03, 2016:
-                                </div>
-                                <div class="rev-text">
-                                    <p>
-                                        Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit. Cum sociis natoque penatibus et magnis dis
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /review-box -->
-                      
-                        <div class="review-box clearfix">
-                            <figure class="rev-thumb">  <img src="{{singleTourData.img}}" >
-                            </figure>
+                    <div class="reviews-container" *ngIf="reviews">
+                        <h2>Comments</h2>
+                        <div class="review-box clearfix" *ngFor="let item of reviews">
+                            <!-- <figure class="rev-thumb"> <img src="{{singleTourData.img}}">
+                            </figure> -->
                             <div class="rev-content">
                                 <div class="rating">
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star"></i>
+                                    <ngb-rating [rate]=[item.rate]></ngb-rating>
                                 </div>
                                 <div class="rev-info">
-                                    Ahsan â€“ April 01, 2016:
+                                    {{item.name}}
                                 </div>
                                 <div class="rev-text">
                                     <p>
-                                        Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit. Cum sociis natoque penatibus et magnis dis
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /review-box -->
-                        <div class="review-box clearfix">
-                            <figure class="rev-thumb">  <img src="{{singleTourData.img}}" >
-                            </figure>
-                            <div class="rev-content">
-                                <div class="rating">
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <div class="rev-info">
-                                    Sara â€“ March 31, 2016:
-                                </div>
-                                <div class="rev-text">
-                                    <p>
-                                        Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit. Cum sociis natoque penatibus et magnis dis
+                                        {{item.message}}
                                     </p>
                                 </div>
                             </div>
@@ -279,66 +250,67 @@
                 </section>
                 <!-- /section -->
                 <hr>
+                <div class="add-review">
+                    <h5>Leave a Review</h5>
+                    <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label>Name and Lastname *</label>
+                                <input formControlName="name" placeholder="Your name" class="form-control"> <br>
 
-                    <div class="add-review">
-                        <h5>Leave a Review</h5>
-                        <form>
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <label>Name and Lastname *</label>
-                                    <input type="text" name="name_review" id="name_review" placeholder="" class="form-control">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label>Email *</label>
-                                    <input type="email" name="email_review" id="email_review" class="form-control">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label>Rating </label>
-                                    <div class="custom-select-form">
-                                    <select name="rating_review" id="rating_review" class="wide">
-                                        <option value="1">1 (lowest)</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5" selected>5 (medium)</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10 (highest)</option>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Email *</label>
+                                <input formControlName="email" type="email" class="form-control">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Rating </label>
+                                <div class="custom-select-form ">
+                                    <select (change)="selectChangeHandler($event)" class="wide">
+                                        <option [ngValue]="1">1</option>
+                                        <option [ngValue]="2">2</option>
+                                        <option [ngValue]="3">3</option>
+                                        <option [ngValue]="4">4</option>
+                                        <option [ngValue]="5" selected>5</option>
+                                        <option [ngValue]="6">6</option>
+                                        <option [ngValue]="7">7</option>
+                                        <option [ngValue]="8">8</option>
+                                        <option [ngValue]="9">9</option>
+                                        <option [ngValue]="10">10</option>
                                     </select>
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <label>Your Review</label>
-                                    <textarea name="review_text" id="review_text" class="form-control" style="height:130px;"></textarea>
-                                </div>
-                                <div class="form-group col-md-12 submit">
-                                    <input type="submit" value="Submit" class="btn_1" id="submit-review">
+
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                            <div class="form-group col-md-6">
+                                <label>Your Review</label>
+                                <textarea formControlName="message" placeholder="Your message" class="form-control"
+                                    class="form-control" style="height:130px;"></textarea>
+                            </div>
+                            <div class="form-group col-md-12 submit">
+                                <button type="submit" [disabled]="myForm.invalid" class="btn_1">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
             <!-- /col -->
-            
+
             <aside class="col-lg-4 d-none d-lg-block" id="sidebar">
                 <div class="tour-img">
-                    <img src="{{singleTourData.img}}" >
+                    <img src="{{singleTourData.img}}">
                 </div>
                 <div class="box_detail booking">
                     <div class="price">
                         <span>{{singleTourData.price}} <small>/person</small></span>
-                        <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{singleTourData.rate}}</strong></div>
+                        <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{singleTourData.rate}}</strong>
+                        </div>
                     </div>
-                  
-                    
-                   
-                    <a  routerLink="/user-trip" class="add-to-my-trip" (click) ="addToMyTrip($event)" class="btn_1 full-width outline wishlist">
+                    <a routerLink="/user-trip" class="add-to-my-trip" (click)="addToMyTrip($event)"
+                        class="btn_1 full-width outline wishlist">
                         <i class="far fa-heart"></i>
                         Add To My Trip
-                       </a>
-                   
+                    </a>
+
                 </div>
                 <ul class="share-buttons">
                     <li><a class="fb-share" href="#0"><i class="fab fa-facebook-f"></i>Share</a></li>

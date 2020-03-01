@@ -285,7 +285,7 @@
                         <span>{{singleTourData.price}}<small>person</small></span>
                         <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{singleTourData.rate}}</strong></div>
                     </div>
-                    <a  routerLink="/user-trip" class="add-to-my-trip" (click) ="addToMyTrip($event)" class="btn_1 full-width outline wishlist">
+                    <a   class="add-to-my-trip" (click)="addToMyTrip(singleTourData)" class="btn_1 full-width outline wishlist">
                         <i class="far fa-heart"></i>
                         Add To My Trip</a>
                 </div>
