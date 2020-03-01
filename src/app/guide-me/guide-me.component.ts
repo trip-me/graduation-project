@@ -87,8 +87,21 @@ export class GuideMeComponent implements OnInit {
   }
 
   onSubmit(event, form, btn) {
-    form.value.postUserId = event.target.id;
+    // document.getElementById('{{userP}}')
+    // form.value.postUserId = event.target.id;
     form.value.replierId = this.cuttentUserId
+    console.log(event.target);
+    
+    for(let item of this.usersPosts){
+      if(item['id'] == event.target.id ){
+      form.value.postUserId = item['userid'];
+      form.value.postId = item['id'];
+        
+      }
+    }
+    console.log(this.usersPosts);
+    
+
     this.userService.postTourGuideReply(form.value).subscribe(data => {
       this.guideReplies.push(data);
       // this make value apear without refresh page  
@@ -121,7 +134,7 @@ export class GuideMeComponent implements OnInit {
   }
 
 
-  deleteUserPost(deleteUserPost) {
+  deleteUserPost(deleteUserPost,userPost) {
     //get user id from local storage
     let user = JSON.parse(localStorage.getItem('currentUser')) 
 
@@ -129,7 +142,7 @@ export class GuideMeComponent implements OnInit {
        //delete post from guid me page
       for(let item of this.usersPosts){
         if(item['userid'] == user.id){
-          this.userService.cancelUserPost(item['id']).subscribe(data =>{
+          this.userService.cancelUserPost(userPost.id).subscribe(data =>{
             item['id'] = data
             console.log(data);
           })
@@ -137,15 +150,18 @@ export class GuideMeComponent implements OnInit {
       }
 
       //delete post replies from db
+      
       for(let item of this.guideReplies){
-        if(item["postUserId"] == deleteUserPost.id )
+        if(item["postUserId"] == deleteUserPost.id ){
+          if(item["postId"] == userPost.id ){
         this.userService.deleteTourGuideReply(item["id"]).subscribe(data =>{
           console.log(data);
         })
-        
+      }
+    }
       }
       //delete post from html
-      deleteUserPost.remove()
+      userPost.remove()
     }
   }
 

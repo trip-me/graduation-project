@@ -1,6 +1,71 @@
 {
-  "users": [],
-  "user-favorite-trip": [],
+  "users": [
+    {
+      "userName": "Ahmed",
+      "email": "ahmed@yahoo.com",
+      "password": "aaAA@@66",
+      "confirmPassword": "aaAA@@66",
+      "role": "tourist",
+      "id": 1
+    },
+    {
+      "userName": "mahmoud",
+      "email": "bb@yahoo.com",
+      "password": "aaAA@@66",
+      "confirmPassword": "aaAA@@66",
+      "role": "tourist",
+      "id": 2
+    }
+  ],
+  "user-favorite-trip": [
+    {
+      "city": "alex",
+      "id": 3.1,
+      "category": "hotel",
+      "img": "../../../assets/images/hotels/Alexandria/forseason/forseason.jpg",
+      "name": "Four Seasons",
+      "title": "Alexandria",
+      "rate": "9.2",
+      "price": "174$",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.1033390952925!2d29.964572614320016!3d31.245562481461317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c52e30aaf1df%3A0xc9d2d428ea2ba3d2!2sFour%20Seasons%20Hotel%20Alexandria%20at%20San%20Stefano%2C%20Egypt!5e0!3m2!1sen!2seg!4v1582032525857!5m2!1sen!2seg",
+      "shortDescription": "Set on a busy roundabout, this low-key hotel is 1 km from the nearest beach, 2 km from the Citadel of Qaitbay",
+      "fullDescription": "Set on a busy roundabout, this low-key hotel is 1 km from the nearest beach, 2 km from the Citadel of Qaitbay, a 15th-century seafront fortress, and 9 km from Alexandria International Airport.The straightforward rooms have wood floors and balconies, and offer Wi-Fi access, flat-screen TVs and minibars. Some have sitting areas.Amenities include an airy restaurant, and a down-to-earth cafe featuring outdoor seating.",
+      "userId": 2,
+      "userName": "mahmoud"
+    },
+    {
+      "city": "alex",
+      "id": 2.3,
+      "category": "restaurant",
+      "img": "../../../assets/images/restaurants/Alexandria/3.jpg",
+      "name": "4x4 Cafe",
+      "service": "drink",
+      "rate": 9.3,
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.8637264719446!2d29.969286314475607!3d31.25219556746336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c534f6c5ec57%3A0x85c8af596d756400!2s4x4%20Cafe!5e0!3m2!1sen!2seg!4v1582027943648!5m2!1sen!2seg",
+      "title": "Alexandria",
+      "price": "8$",
+      "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
+      "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.",
+      "userId": 2,
+      "userName": "mahmoud"
+    },
+    {
+      "city": "alex",
+      "id": 2.1,
+      "category": "restaurant",
+      "title": "Alexandria",
+      "service": "eat",
+      "img": "../../../assets/images/restaurants/Alexandria/1.jpg",
+      "name": "Potasta",
+      "price": "25$",
+      "rate": 9.2,
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.8680133362673!2d29.90000051447403!3d31.196672770176903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e8655eff5d%3A0x5a5908a5e8f225f8!2sPotasta!5e0!3m2!1sen!2seg!4v1582010070848!5m2!1sen!2seg",
+      "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
+      "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.",
+      "userId": 2,
+      "userName": "mahmoud"
+    }
+  ],
   "user-post": [],
   "guide-reply": [],
   "cities": [

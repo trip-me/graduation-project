@@ -8,8 +8,8 @@
         <div class="row no-gutters justify-content-between tour-guide__content">
             <div class="col-sm-12 col-md-8 mb-5">
                 <!-- start  user post -->
-                <div *ngFor="let userpost of usersPosts">
-                    <div class="userpost mb-5" #delUserPost id="{{userpost.userid}}">
+                <div *ngFor="let userpost of usersPosts" #userPost id="{{userpost.id}}" class="userpost mb-5" >
+                    <div   #delUserPost id="{{userpost.userid}}">
                         <h6 class=" userpost__title px-5 py-1 mb-4 text-capitalize font-weight-bold">
                             {{userpost.title}}
                         </h6>
@@ -30,7 +30,7 @@
                         <!-- start a tour guide reply -->
 
                         <div *ngFor=" let reply of  guideReplies" class="tour-guide-reply my-4">
-                            <div *ngIf="userpost.userid == reply.postUserId" #DelReply class="d-flex">
+                            <div *ngIf="userpost.userid == reply.postUserId && userpost.id == reply.postId" #DelReply class="d-flex">
                                 <figure class="mr-5">
                                     <img src="./../../assets/images/avatar/avatar.png" class="img-fluid">
                                 </figure>
@@ -53,13 +53,13 @@
                         </div>
 
                         <div class="p-0">
-                            <form id="{{userpost.userid}}" [formGroup]="myForm" (ngSubmit)="onSubmit($event,myForm,btn)">
+                            <form id="{{userpost.id}}" [formGroup]="myForm" (ngSubmit)="onSubmit($event,myForm,btn)">
                                 <input (input)="makeBtnAbled($event)" formControlName="message"
                                     placeholder="Your Comment" class="mr-3 mb-4 pl-3">
                                 <button type="submit" #btn disabled class="btn text-white">Reply</button>
                             </form>
                         </div>
-                        <span class="float-right text-danger delPost" (click)="deleteUserPost(delUserPost)">Delete
+                        <span class="float-right text-danger delPost" (click)="deleteUserPost(delUserPost,userPost)">Delete
                             Post
                         </span>
                     </div>

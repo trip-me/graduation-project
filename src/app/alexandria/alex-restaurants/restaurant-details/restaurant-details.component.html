@@ -150,82 +150,30 @@
 
                     <div class="reviews-container">
 
-                        <div class="review-box clearfix">
-                            <figure class="rev-thumb"> <img
-                                    src="../../../../assets/images/restaurants/Alexandria/5.jpg">
-                            </figure>
-                            <div class="rev-content">
-
-                                <div class="rating">
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-
-
-                                <div class="rev-info">
-                                    Admin â€“ April 03, 2016:
-                                </div>
-                                <div class="rev-text">
-                                    <p>
-                                        Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar
-                                        hendrerit. Cum sociis natoque penatibus et magnis dis
-                                    </p>
+                        <div class="reviews-container" *ngIf="reviews">
+                            <h2>Comments</h2>
+                            <div class="review-box clearfix" *ngFor="let item of reviews">
+                                <!-- <figure class="rev-thumb"> <img src="{{singleTourData.img}}">
+                                </figure> -->
+                                <div class="rev-content">
+                                    <div class="rating">
+                                        <ngb-rating [rate]=[item.rate]></ngb-rating>
+                                    </div>
+                                    <div class="rev-info">
+                                        {{item.name}}
+                                    </div>
+                                    <div class="rev-text">
+                                        <p>
+                                            {{item.message}}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- /review-box -->
                         </div>
                         <!-- /review-box -->
 
-                        <div class="review-box clearfix">
-                            <figure class="rev-thumb"> <img
-                                    src="../../../../assets/images/restaurants/Alexandria/5.jpg">
-                            </figure>
-                            <div class="rev-content">
-                                <div class="rating">
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <div class="rev-info">
-                                    Ahsan â€“ April 01, 2016:
-                                </div>
-                                <div class="rev-text">
-                                    <p>
-                                        Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar
-                                        hendrerit. Cum sociis natoque penatibus et magnis dis
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /review-box -->
-                        <div class="review-box clearfix">
-                            <figure class="rev-thumb"> <img
-                                    src="../../../../assets/images/restaurants/Alexandria/5.jpg">
-                            </figure>
-                            <div class="rev-content">
-                                <div class="rating">
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star voted"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <div class="rev-info">
-                                    Sara â€“ March 31, 2016:
-                                </div>
-                                <div class="rev-text">
-                                    <p>
-                                        Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar
-                                        hendrerit. Cum sociis natoque penatibus et magnis dis
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /review-box -->
+                       
                     </div>
                     <!-- /review-container -->
                 </section>
@@ -234,41 +182,42 @@
 
                 <div class="add-review">
                     <h5>Leave a Review</h5>
-                    <form>
+                    <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label>Name and Lastname *</label>
-                                <input type="text" name="name_review" id="name_review" placeholder=""
-                                    class="form-control">
+                                <input formControlName="name" placeholder="Your name" class="form-control"> <br>
+
                             </div>
                             <div class="form-group col-md-6">
                                 <label>Email *</label>
-                                <input type="email" name="email_review" id="email_review" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label>Rating </label>
-                                <div class="custom-select-form">
-                                    <select name="rating_review" id="rating_review" class="wide">
-                                        <option value="1">1 (lowest)</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5" selected>5 (medium)</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10 (highest)</option>
-                                    </select>
-                                </div>
+                                <input formControlName="email" type="email" class="form-control">
                             </div>
                             <div class="form-group col-md-12">
+                                <label>Rating </label>
+                                <div class="custom-select-form ">
+                                    <select (change)="selectChangeHandler($event)" class="wide">
+                                        <option [ngValue]="1">1</option>
+                                        <option [ngValue]="2">2</option>
+                                        <option [ngValue]="3">3</option>
+                                        <option [ngValue]="4">4</option>
+                                        <option [ngValue]="5" selected>5</option>
+                                        <option [ngValue]="6">6</option>
+                                        <option [ngValue]="7">7</option>
+                                        <option [ngValue]="8">8</option>
+                                        <option [ngValue]="9">9</option>
+                                        <option [ngValue]="10">10</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
                                 <label>Your Review</label>
-                                <textarea name="review_text" id="review_text" class="form-control"
-                                    style="height:130px;"></textarea>
+                                <textarea formControlName="message" placeholder="Your message" class="form-control"
+                                    class="form-control" style="height:130px;"></textarea>
                             </div>
                             <div class="form-group col-md-12 submit">
-                                <input type="submit" value="Submit" class="btn_1" id="submit-review">
+                                <button type="submit" [disabled]="myForm.invalid" class="btn_1">Send</button>
                             </div>
                         </div>
                     </form>

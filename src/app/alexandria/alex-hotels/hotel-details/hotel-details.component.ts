@@ -84,7 +84,8 @@ export class HotelDetailsComponent implements OnInit {
 
     });
   }
-
+  
+//on submit review form
   onSubmit(form) {
     this.reviews.push({ ...form.value,rate: this.selectedLevel})
     console.log(this.reviews);

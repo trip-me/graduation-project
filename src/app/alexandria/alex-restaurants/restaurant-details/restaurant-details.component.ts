@@ -4,6 +4,8 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
 import { RestaurantsService } from 'src/app/restaurants.service';
 import { UsersService } from 'src/app/users.service';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-restaurant-details',
@@ -12,6 +14,11 @@ import { UsersService } from 'src/app/users.service';
 })
 export class RestaurantDetailsComponent implements OnInit {
   allvisits;
+
+  reviews = []
+  myForm: FormGroup;
+  currentRate = 0;
+  selectedLevel;
   // start mapurl code
   MapurlSafe: SafeResourceUrl;
   // end mapurl code
@@ -26,7 +33,9 @@ export class RestaurantDetailsComponent implements OnInit {
     private http: HttpClient,
     private restaurantsService: RestaurantsService,
     private activroute: ActivatedRoute,
-    private userService: UsersService
+    private userService: UsersService,
+    private fb: FormBuilder,
+    config: NgbRatingConfig
   ) {
     // Start get id from url
     this.activroute.params.subscribe(param => {
@@ -40,6 +49,9 @@ export class RestaurantDetailsComponent implements OnInit {
         this.MapurlSafe= this.sanitizer.bypassSecurityTrustResourceUrl(mapurl);
       })
     })
+
+    //form rate
+    config.readonly = true;
   }
 
   getSigleTour() {
@@ -66,6 +78,26 @@ export class RestaurantDetailsComponent implements OnInit {
     }
   }
   ngOnInit() {
-  }
+     //review form 
+     this.myForm = this.fb.group({
+      name: ['', [Validators.minLength(3), Validators.required]],
+      message: ['', Validators.required],
+      email: ["", [Validators.required, Validators.pattern('^[a-zA-Z0-9._-]+@gmail|yahoo\.[a-zA-Z]{2,}$')]],
+      // rate: ["hello", [Validators.required]]
 
+    });
+  }
+//on submit review form
+onSubmit(form) {
+  this.reviews.push({ ...form.value,rate: this.selectedLevel})
+  console.log(this.reviews);
+  
+}
+
+selectChangeHandler (event: any) {
+  //update the ui
+ this.selectedLevel= event.target.value;
+  console.log(this.selectedLevel);
+  
+}
 }

@@ -6,6 +6,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { VisitsService } from '../../../visits.service';
 import { UsersService } from 'src/app/users.service';
+import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -18,6 +19,10 @@ import { UsersService } from 'src/app/users.service';
 export class VisitsDetailsComponent implements OnInit {
 
   allvisits;
+  reviews = []
+  myForm: FormGroup;
+  currentRate = 0;
+  selectedLevel;
   // start mapurl code
   MapurlSafe: SafeResourceUrl;
   // end mapurl code
@@ -32,7 +37,9 @@ export class VisitsDetailsComponent implements OnInit {
     private http: HttpClient,
     private visitsService: VisitsService,
     private activroute: ActivatedRoute,
-    private userService: UsersService
+    private userService: UsersService,
+    private fb: FormBuilder,
+    config: NgbRatingConfig
 
   ) {
 
@@ -50,6 +57,9 @@ export class VisitsDetailsComponent implements OnInit {
         this.MapurlSafe= this.sanitizer.bypassSecurityTrustResourceUrl(mapurl);
       })
     })
+
+    //form rate
+    config.readonly = true;
   }
 
   getSigleTour() {
@@ -77,9 +87,28 @@ export class VisitsDetailsComponent implements OnInit {
     }
 
   ngOnInit() {
+ //review form 
+ this.myForm = this.fb.group({
+  name: ['', [Validators.minLength(3), Validators.required]],
+  message: ['', Validators.required],
+  email: ["", [Validators.required, Validators.pattern('^[a-zA-Z0-9._-]+@gmail|yahoo\.[a-zA-Z]{2,}$')]],
+  // rate: ["hello", [Validators.required]]
 
+});
   }
+//on submit review form
+onSubmit(form) {
+  this.reviews.push({ ...form.value,rate: this.selectedLevel})
+  console.log(this.reviews);
+  
+}
 
+selectChangeHandler (event: any) {
+  //update the ui
+ this.selectedLevel= event.target.value;
+  console.log(this.selectedLevel);
+  
+}
 
 
 
