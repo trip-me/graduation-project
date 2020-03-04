@@ -417,3 +417,47 @@ a.btn_1.full-width, .btn_1.full-width {
     line-height: 17px;
     font-weight: 500;
 }
+
+
+
+.reviews-container .review-box {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 100px;
+    min-height: 100px;
+}
+.reviews-container .rev-thumb {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 80px;
+    height: 80px;
+    background: #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.reviews-container .rev-content {
+    position: relative;
+    padding: 25px 25px 0 25px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    font-size: 13px;
+    box-shadow: 5px 5px  20px #b8b7b7c7;
+}
+
+.rev-info{
+    font-size: 1.5rem ;
+    color: #333;
+}
+.rev-text{
+    font-size: 1rem;
+    color: gray;
+}
+.rating {
+    color: #32a067;
+    font-size: 13px;
+}

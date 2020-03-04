@@ -15,6 +15,7 @@ img {
 
 h2 {
   text-transform: capitalize;
+  padding-top: 9rem;
 }
 
 .package-details-content {
@@ -38,6 +39,32 @@ h2 {
 
 .price strong {
   color: #0e843c;
+}
+
+.package-details-content .separat {
+  background: #ccc;
+  width: 18rem;
+  height: 1px;
+  display: block;
+  opacity: 0.5;
+}
+
+.company-content p {
+  font-weight: bold;
+}
+
+rating {
+  color: gold;
+  font-size: 1.3rem;
+}
+
+.company-img{
+  width: 60%;
+}
+
+.company-img img {
+  width: 100%;
+  border-radius: 50%;
 }
 
 .btn {

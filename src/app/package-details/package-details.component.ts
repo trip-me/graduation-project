@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../users.service';
 import { ActivatedRoute } from '@angular/router';
+import { element } from 'protractor';
 
 @Component({
   selector: 'app-package-details',
@@ -9,9 +10,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PackageDetailsComponent implements OnInit {
   PackageDetails;
-  Compdata: any;
+  Compdata;
   allPackages = [];
-  singlePackage = {};
+  singlePackage;
+  singlePackageCompany;
+  max;
+  rate = 3;
+  isReadonly: boolean = true;
 
   constructor(private packageDetail: UsersService, private activeRoute: ActivatedRoute) { }
 
@@ -25,6 +30,7 @@ export class PackageDetailsComponent implements OnInit {
         }
       }
     });
+
     setTimeout(() => {
       this.activeRoute.params.subscribe(param => {
         for (let item of this.allPackages) {
@@ -32,7 +38,12 @@ export class PackageDetailsComponent implements OnInit {
             this.singlePackage = item
           }
         }
-        console.log(this.singlePackage);
+        for (let item of this.Compdata) {
+          console.log(this.singlePackage.companyID);
+          if (item.id == this.singlePackage.companyID) {
+            this.singlePackageCompany = item;
+          }
+        }
       })
     }, 500);
   }

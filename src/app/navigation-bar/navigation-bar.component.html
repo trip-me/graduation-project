@@ -1,7 +1,9 @@
 <nav class="nav bg-white">
     <div class="container-fluid">
         <div class="logo">
-            <a href="#">Trip me</a>
+            <a routerLink="Home">
+                <img src="../../assets/logo.png" alt="">
+            </a>
         </div>
         <div id="mainListDiv" class="main_list ml-auto">
             <ul class="navlinks">
@@ -9,22 +11,25 @@
                     <a routerLink="/" class="active">home</a>
                 </li>
                 <li>
-                    <a href="#">tours</a>
+                    <a  routerLink="/AllVisits">places</a>
                 </li>
                 <li>
                     <a routerLink="/AllHotels">hotels</a>
                 </li>
                 <li>
-                    <a routerLink="/AllRestaurants">resturant</a>
+                    <a routerLink="/AllRestaurants">resturants</a>
                 </li>
-                <!-- <li>
-                    <a href="#">adventure</a>
-                </li> -->
                 <li>
-                    <a routerLink="/guide-me">guide me</a>
+                    <a routerLink="/companyPackage">Packages</a>
+                </li>
+                <li>
+                    <a (click)="guideMe()">guide me</a>
                 </li>
                 <li id="user__myTrip">
                     <a routerLink="/my-trip">my trip</a>
+                </li>
+                <li id="tourguide__profile">
+                    <a routerLink="/tourguid">tour guide</a>
                 </li>
                 <li id="login-btn">
                     <a routerLink="/login">login</a>

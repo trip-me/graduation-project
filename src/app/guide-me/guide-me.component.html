@@ -1,18 +1,20 @@
-<section class="tour-guide-page">
+<section class="guide-me-page">
     <div class="container py-5">
         <div class="row">
-            <div class="col-12 tour-guide__title text-center text-white">
-                <h2 class="h3   text-dark font-weight-bold"> Private Tours </h2>
+            <div class="col-12 guide-me__title text-center text-white">
+                <h2 class="h3 text-dark font-weight-bold"> Private Tours </h2>
             </div>
         </div>
-        <div class="row no-gutters justify-content-between tour-guide__content">
+        <div class="row no-gutters justify-content-between guide-me__content">
             <div class="col-sm-12 col-md-8 mb-5">
                 <!-- start  user post -->
-                <div *ngFor="let userpost of usersPosts" #userPost id="{{userpost.id}}" class="userpost mb-5" >
-                    <div   #delUserPost id="{{userpost.userid}}">
-                        <h6 class=" userpost__title px-5 py-1 mb-4 text-capitalize font-weight-bold">
+                <!-- <h4 class="mb-4">Tourists Posts</h4> -->
+                <div *ngFor="let userpost of usersPosts" #userPost id="{{userpost.id}}" class="userpost mb-5">
+                    <div #delUserPost id="{{userpost.userid}}">
+                        <h6 class=" userpost__title  py-1 mb-4 text-capitalize font-weight-bold">
                             {{userpost.title}}
                         </h6>
+                        <!-- start user info name and img   -->
                         <div class="d-flex  userpost__info">
                             <figure class="mr-3">
                                 <img src="./../../assets/images/avatar/avatar.jfif" alt="" class="img-fluid">
@@ -21,21 +23,60 @@
                                 <a class="user-name text-muted">{{userpost.userName}}</a>
                             </div>
                         </div>
+                        <hr>
+                        <!-- end user info name and img   -->
+                        <!--  start show  places the user choose them in his favorite trip -->
+
+                        <div class="userPost__favorite-trips">
+                            <h5 class="text-center  font-weight-bold mb-4">My trip places </h5>
+                            <div class="row justify-content-baseline">
+                                <div *ngIf="userTripsHotels.length>0" class="col-md-4 fvourit__list">
+                                    <p>Hotels:</p>
+                                    <ng-container *ngFor="let userFavorite of userTripsHotels">
+                                        <ul *ngIf="userFavorite.category == 'hotel'&& userFavorite.userId == userpost.userid">
+                                            <li >{{userFavorite.name}}</li>
+                                        </ul>
+                                    </ng-container>
+                                </div>
+                                <div *ngIf="userTripsVisits.length>0" class="col-md-4 fvourit__list">
+                                    <p>Visits:</p>
+                                    <ng-container *ngFor="let userFavorite of allUserFavoriteTrip">
+                                        <ul *ngIf="userFavorite.category == 'visit' && userFavorite.userId == userpost.userid">
+                                            <li>{{userFavorite.name}}</li>
+                                        </ul>
+                                    </ng-container>
+                                </div>
+                                <div *ngIf="userTripsRestaurants.length > 0" class="col-md-4 fvourit__list">
+                                    <p>Restaurants:</p>
+                                    <ng-container *ngFor="let userFavorite of allUserFavoriteTrip">
+                                        <ul *ngIf="userFavorite.category == 'restaurant' && userFavorite.userId == userpost.userid">
+
+                                            <li>{{userFavorite.name}}</li>
+                                        </ul>
+                                    </ng-container>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--  end t show  places the user choose them in his favorite trip -->
+
+                        <!--  start user message (more detail to descripe his trip and what he want)-->
                         <div class="userpost__message my-3">
                             <p class="font-weight-bold">Details:</p>
                             <p class="text-dark"> {{userpost.message}}</p>
                         </div>
                         <hr>
-                        <!-- end  user post  -->
+                        <!--  end user message (more detail to descripe his trip and what he want)-->
                         <!-- start a tour guide reply -->
-
                         <div *ngFor=" let reply of  guideReplies" class="tour-guide-reply my-4">
-                            <div *ngIf="userpost.userid == reply.postUserId && userpost.id == reply.postId" #DelReply class="d-flex">
-                                <figure class="mr-5">
-                                    <img src="./../../assets/images/avatar/avatar.png" class="img-fluid">
-                                </figure>
+                            <div *ngIf="userpost.userid == reply.postUserId && userpost.id == reply.postId" #DelReply
+                                class="d-flex row">
+                                <figure class="mr-5 col-md-1 d-flex align-items-center" >
+                                    <img src="./../../assets/images/avatar/avatar.png" class="img-fluid mr-2">
+                                    <span>{{reply.replierName}}</span>
+                                </figure >
                                 <!-- reply tour guide  -->
-                                <div class="tour-message">
+                                <div class="tour-message col-md-8">
                                     <p class="px-5 py-2 mr-3">{{reply.message}}
                                         <i class="fas fa-heart like-icon heart"></i>
                                     </p>
@@ -54,66 +95,45 @@
 
                         <div class="p-0">
                             <form id="{{userpost.id}}" [formGroup]="myForm" (ngSubmit)="onSubmit($event,myForm,btn)">
+                                <div class="row">
                                 <input (input)="makeBtnAbled($event)" formControlName="message"
-                                    placeholder="Your Comment" class="mr-3 mb-4 pl-3">
-                                <button type="submit" #btn disabled class="btn text-white">Reply</button>
+                                    placeholder="Your Comment" class="mr-3 mb-4 pl-3 col-sm-6 col-md-8">
+                                <button type="submit" #btn disabled class="btn text-white col-sm-6 col-md-2  align-self-center">Reply</button>
+                            </div>
                             </form>
                         </div>
-                        <span class="float-right text-danger delPost" (click)="deleteUserPost(delUserPost,userPost)">Delete
+                        <span class="float-right font-weight-bold text-danger delPost"
+                            (click)="deleteUserPost(delUserPost,userPost)">Delete
                             Post
                         </span>
                     </div>
-
                 </div>
-                <ng-container *ngIf="usersPosts.length === 0 ">
-                    <div class="noUsersPost text-center  text-capitalize font-weight-bold" >
-                        <h3>make your trip real by sharing post <br><br> to let our best tour guide helping you</h3>
+                <ng-container *ngIf="usersPosts.length == 0 ">
+                    <div class="noUsersPost text-center  text-capitalize font-weight-bold">
+                        <h3>make your trip real by sharing post <br><br> to let our best tour guides helping you</h3>
                     </div>
                 </ng-container>
             </div>
-
             <!-- sponsors -->
             <aside class=" sponsors-ads col-sm-12 col-md-3 ">
-                <p class=" sponsors-ads__title font-weight-bold">sponsored</p>
-                <!-- first -->
-                <div class="sponsors-ads__content mb-3">
-                    <figure class="d-flex">
-                        <img src="./../../assets/images/avatar/avatar.png" alt="">
-                        <p>Name</p>
-                    </figure>
-                    <figcaption>
-                        <div class="sponsors-info">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing.
-                            Lorem, ipsum dolor sit amet consectetur adipisicing.
+                <h6 class=" sponsors-ads__title font-weight-bold mb-5">sponsored</h6>
+                <!-- //tour guide  -->
+                <ng-container *ngFor="let tourGuide of allTourGuides">
+                    <div class="sponsors-ads__content  mb-4">
+                        <div class="name-img " class="d-flex">
+                            <figure class="mr-3">
+                                <img [src]="tourGuide.tourGuideImg" alt="tour-guide" class="">
+                            </figure>
+                            <h5 class="font-weight-bold">{{tourGuide.name}}</h5>
                         </div>
-                    </figcaption>
-                </div>
-                <!-- //second  -->
-                <div class="sponsors-ads__content mb-3">
-                    <figure class="d-flex">
-                        <img src="./../../assets/images/avatar/user_review_photo.png" alt="">
-                        <p>Name</p>
-                    </figure>
-                    <figcaption>
-                        <div class="sponsors-info">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing.
-                            Lorem, ipsum dolor sit amet consectetur adipisicing.
-                        </div>
-                    </figcaption>
-                </div>
-                <!-- third -->
-                <div class="sponsors-ads__content">
-                    <figure class="d-flex">
-                        <img src="./../../assets/images/avatar/avatar.jpg" alt="">
-                        <p>Name</p>
-                    </figure>
-                    <figcaption>
-                        <div class="sponsors-info">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing.
-                            Lorem, ipsum dolor sit amet consectetur adipisicing.
-                        </div>
-                    </figcaption>
-                </div>
+                        <figcaption>
+                            <p class="sponsors-info">
+                                {{tourGuide.guideDiscription |slice : 0 :124}}
+                                <!-- {{tourGuide.guideDiscription |summary :124}} -->
+                            </p>
+                        </figcaption>
+                    </div>
+                </ng-container>
             </aside>
         </div>
     </div>

@@ -4,7 +4,11 @@
             <h1>Egypt</h1>
             <p>Expolore top rated tours, hotels and restaurants in Egypt</p>
             <form>
-                <input type="text" class="w-50" [(ngModel)]="searchname" name="search" placeholder="search">
+                <select class=" w-50" #mySelect (change)="filterSearch(mySelect.value)">
+                    <option disabled>Search</option>
+                    <option value="resturant">resturant</option>
+                    <option value="hotel">hotel</option>
+                </select>                
                 <a  (click)="filterSearch()">search</a>
             </form>
         </div>

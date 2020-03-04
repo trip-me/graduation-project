@@ -8,12 +8,14 @@ import { Router } from '@angular/router';
 })
 export class HeroSectionComponent implements OnInit {
   searchname;
-  constructor(private router:Router) { 
-    
+  constructor(private router:Router) {     
   }
-      filterSearch(){
-        if(this.searchname == "resturant"){
-        this.router.navigate(['/AllRestaurants',{country:"cairo"}]);
+      filterSearch(searchname){
+        if(searchname == "resturant"){
+        this.router.navigate(['/AllRestaurants']);
+      }else{
+        this.router.navigate(['/AllHotels']);
+        
         }
     
       }
@@ -21,3 +23,4 @@ export class HeroSectionComponent implements OnInit {
   }
 
 }
+

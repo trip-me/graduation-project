@@ -95,11 +95,13 @@ export class VisitsDetailsComponent implements OnInit {
   // rate: ["hello", [Validators.required]]
 
 });
+
   }
 //on submit review form
 onSubmit(form) {
   this.reviews.push({ ...form.value,rate: this.selectedLevel})
   console.log(this.reviews);
+  form.reset()
   
 }
 
@@ -109,7 +111,5 @@ selectChangeHandler (event: any) {
   console.log(this.selectedLevel);
   
 }
-
-
-
 }
+

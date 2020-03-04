@@ -29,8 +29,6 @@
     width: 100%;
     height: 100%;
 }
-
-
 .box_grid figure small {
     position: absolute;
     background-color: rgba(0,0,0,0.6);
@@ -54,8 +52,6 @@
     font-size: 1.5rem;
     margin-top: 0;
 }
-
-
 .box_grid .rating{
     padding: 20px 15px;
     border-top: 1px solid #ededed;
@@ -76,28 +72,38 @@
     color: #4d5153;
     padding: 0px;
     font-weight: bold;
-    color:green;
+    color:#03a241;
 }
  .rating  li {
     padding: 10px 0;
     position: relative;
     text-transform: capitalize;
-  
 }
  .rating  li  p  span  {
     font-size: 14px ;
-    color: #4d5153;
-   
+    color: #4d5153;  
     float: right;
     font-weight: 500;
 }
 .contact{
-    margin-top: 2rem;
+    text-align: center
 }
-.contact a{
-padding: 10px 30px ;
-border-radius: 20px;
+button{
+    border: none;
+}
 
+.contact a,
+button{
+    padding: 7px 20px ;
+    border-radius: 20px;
+    background: #03a241;
+    margin-right: 15px;
+    color: #fff;
+    font-weight: bold;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 .tour-info{
     padding-bottom: 5rem;
@@ -108,13 +114,13 @@ border-radius: 20px;
 }
 .tour-info figure img{
     width: 100%;
+    height: 100%;
 }
 .tour-info .rating  li  p  span  {
     font-size: 13px ;
     color: #4d5153;
     margin-right: 0px;
     font-weight: 500;
-  
 }
 .tour-info  .rating  li {
     padding: 6px 0px;
@@ -126,10 +132,44 @@ border-radius: 20px;
     color: #ffffff;
 }
 .booking .bord{
-
     border-bottom: .025rem solid #c9c9c9;
     border-top: .025rem solid #c9c9c9;
 }
+.form-control{
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    background: none
+}
+
+textarea{
+    resize: none;
+    overflow: hidden;
+}
+
+#edit:hover,
+#save:hover{
+    cursor: pointer;
+}
 #edit,#save{
-    display: none
+    border: 2px solid #03a241
+}
+#edit:hover
+{
+    color: #03a241;
+    background: none;
+}
+i{
+    color: #03a241;
+    position: absolute;
+    z-index: 4;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.3rem;
+}
+
+.images{
+    position: absolute;
+    z-index: 6;
+    top: 1rem;
+    opacity: 0;
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -8,7 +8,10 @@ import { Router } from '@angular/router';
 })
 export class NavigationBarComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(
+    private router:Router,
+    private activeRoute: ActivatedRoute
+    ) { }
 toggleNav(){
   document.getElementsByClassName('navTrigger')[0].classList.toggle('active');
   document.getElementById('mainListDiv').classList.toggle('show_list');
@@ -27,7 +30,18 @@ toggleNav(){
     document.getElementById('logout-btn').style.display = "none";
     document.getElementById('dashboard').style.display = "none";
     document.getElementById("user__myTrip").style.display="none";
+    document.getElementById("tourguide__profile").style.display="none";
     this.router.navigate(['/Home'])
   }
+  guideMe(){
+    if(localStorage.getItem("currentUser") !== null){
+      this.router.navigate(['/guide-me']);
+          
+    }else{
+    if(localStorage.getItem("currentUser")  === null){
+      this.router.navigate(['/login']);
+    }
+    }
+  } 
 
 }

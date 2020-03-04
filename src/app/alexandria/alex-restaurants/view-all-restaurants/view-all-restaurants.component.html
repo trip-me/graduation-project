@@ -1,22 +1,8 @@
-<!-- 
-
 
 <section class="all-restaurant wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-12"  *ngFor="let restaurent of allRestaurant">
-                <div class="card  all-restaurant__details">
-                    <div class="row no-gutters">
-                       
-                        <div class="col-lg-5 all-restaurant__details--img">
-                            <figure>
-                                <a routerLink="/Alexandria/restaurants/{{restaurent.id}}">
-                                <small>Restaurant</small>
-                                    <img [src]="restaurent.img" class="card-img img-fluid">
-                                     -->
-<section class="all-restaurant wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
-    <div class="container">
-        <div class="row">
+            <!-- start filter -->
             <div class="col-md-3">
                 <div class="text-center mb-5">
                     <div class="card">
@@ -74,6 +60,7 @@
                     </div>
                 </div>
             </div>
+            <!-- end filter -->
             <div class="col-sm-12 col-md-9">
                 <div class="card  all-restaurant__details" *ngFor="let restaurent of allRestaurant">
                     <div class="row no-gutters">
@@ -81,26 +68,23 @@
                         <div class="col-lg-5 all-restaurant__details--img">
                             <figure>
                                 <a routerLink="/Alexandria/restaurants/{{restaurent.id}}">
-                                    <small>Hotils</small>
-                                    <img [src]="restaurent.img" class="card-img img-fluid">
-                                    <div class="read_more">
-                                        <span>Read more</span>
-                                    </div>
+                                    <small>Restaurant</small>
+                                    <img [src]="restaurent.img" class="card-img img-fluid">   
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-7 col-sm-12 all-restaurant__details--content">
                             <div class="card-body">
                                 <div class="card-body-info">
-                                    <a  class="wish_bt">
+                                   
                                         <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{ restaurent.rate}}</strong></div>
-                                    </a>
+                                  
                                     <h3><a routerLink="Alexandria/restaurants/{{restaurent.id}}"> {{ restaurent.name}} </a></h3>
                                     <p>{{restaurent.shortDescription}}</p>
                                     <span class="price">From <strong>{{restaurent.price}}</strong> /per person</span>
                                 </div>
                                 <ul>
-                                    <li ><a class="add-to-my-trip" (click)="addToMyTrip(restaurent)">Add to my trip</a></li>
+                                    <li ><a class="add-to-my-trip read-more_button" (click)="addToMyTrip(restaurent)">Add to my trip</a></li>
                                 </ul>
                             </div>
                         </div>

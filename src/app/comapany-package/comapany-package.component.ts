@@ -11,7 +11,7 @@ export class ComapanyPackageComponent implements OnInit {
   companyPackage;
   Compdata;
   max;
-  rate = 2;
+  rate = 4;
   isReadonly: boolean = true;
   constructor(private activeRoute: ActivatedRoute, private servicePackage: UsersService) {
     //companies
@@ -19,7 +19,6 @@ export class ComapanyPackageComponent implements OnInit {
       this.companyPackage = data;
       console.log(this.companyPackage);
     })
-
   }
   
   ngOnInit() {

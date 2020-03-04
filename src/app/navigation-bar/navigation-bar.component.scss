@@ -19,9 +19,11 @@ html, body {
 }
 .nav div.logo {
   float: left;
-  width: auto;
   height: auto;
   padding-left: 3rem;
+  img{
+    width: 7rem;
+  }
 }
 .nav div.logo a {
   text-decoration: none;
@@ -85,6 +87,7 @@ a.active{
   -ms-transform: scaleX(1);
   -o-transform: scaleX(1);
 }
+#tourguide__profile,
 #dashboard{
   display: none;
 }

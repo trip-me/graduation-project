@@ -1,9 +1,6 @@
 ; import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-
-import { Router } from '@angular/router';
-import { Location } from '@angular/common';
 import { UsersService } from './../users.service'
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 
@@ -13,7 +10,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms'
   styleUrls: ['./my-trip.component.scss']
 })
 export class MyTripComponent implements OnInit {
-
   userFavorite;
   users: any[];
   user;
@@ -24,23 +20,38 @@ export class MyTripComponent implements OnInit {
   userObj;
   userName;
   userid
+
   userTripsVisits = [];
   userTripsRestaurants = [];
   userTripsHotels = [];
-
   userTrips = [];
+
+  usersImg = [
+    {
+      img: './../../assets/images/avatar/avatar.png'
+
+    },
+
+    // {
+    //   img: './../../assets/images/avatar/avatar.jfif'
+
+    // },
+    // {
+    //   img: './../../assets/images/avatar/avatar.jpg'
+
+    // },
+
+  ]
+
   constructor(
     private http: HttpClient,
     private route: ActivatedRoute,
-    private router: Router,
-    private location: Location,
     private formbuilder: FormBuilder,
-    private userService: UsersService) {
+    private userService: UsersService,
+  ) {
 
 
     //to get user from local storage and use his data to show it in  profile
-
-
 
     this.userObj = JSON.parse(localStorage.getItem('currentUser'))
     this.userName = this.userObj.userName;
@@ -60,22 +71,11 @@ export class MyTripComponent implements OnInit {
         }
       }
     })
-    // console.log(this.userTripsHotels)
-    // console.log(this.userTripsRestaurants)
-    // console.log(this.userTripsVisits)
-    
-    setTimeout(() => {
-      let add = this.userTripsVisits.concat(this.userTripsRestaurants);
-      this.userTrips = add.concat(this.userTripsHotels)
-    }, 1000);
-    
-    
-    console.log(this.userTrips)
   }
-  
-  
+
+
   // user share post in guide me page 
-  onSubmit(form, favorite) {
+  onSubmit(form) {
     form.value.userName = this.userName
     form.value.userid = this.userid
     // console.log(this.userid);

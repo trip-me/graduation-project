@@ -6,30 +6,72 @@
         <div class="row">
             <div class="col-12">
                 <div class="card py-5">
-                    <div class="image">
-                        <img src="./../../assets/images/avatar/avatar.jpg">
+                    <div class="image " *ngFor="let userImg of usersImg">
+                        <img [src]="userImg.img">
                     </div>
                     <div class="card-body">
-                        <h2 class="card-title text-center">{{userName}}</h2>
+                        <h2 class="card-title text-center mb-5">{{userName}}</h2>
                         <div class="row justify-content-center">
                             <div class="col-3">
                                 <a href="#">
                                     <i class="far fa-address-card"></i>
-                                    <p class="d-none d-sm-block">about</p>
+                                    <p class="d-none d-sm-block">Follower</p>
                                 </a>
                             </div>
                             <div class="col-3">
                                 <a href="#">
                                     <i class="far fa-heart"></i>
-                                    <p class="d-none d-sm-block">like</p>
+                                    <p class="d-none d-sm-block">Following</p>
                                 </a>
                             </div>
-                            <div class="col-3">
-                                <a href="#">
+                            <!-- start user message  -->
+                            <div class="col-3 btn-group" dropdown>
+                                <a id="button-animated" dropdownToggle type="button" aria-controls="dropdown-animated">
+                                    <span class="message-count">3</span>
                                     <i class="far fa-comment"></i>
                                     <p class="d-none d-sm-block">message</p>
                                 </a>
+                                <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu" role="menu"
+                                    aria-labelledby="button-animated">
+                                    <li role="menuitem">
+                                        <figure>
+                                            <img src="../../assets/images/avatar/avatar.jfif" alt="">
+                                            <span>Jone Divid</span>
+                                        </figure>
+                                        <a class="dropdown-item" href="#">
+                                            Hello... Depending on what we
+                                        </a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <figure>
+                                            <img src="../../assets/images/avatar/avatar.jpg" alt="">
+                                            <span>Fady Nour</span>
+                                        </figure>
+                                        <a class="dropdown-item" href="#">
+                                            that's great
+                                        </a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <figure>
+                                            <img src="../../assets/images/avatar/avatar.png" alt="">
+                                            <span>Jone Divid</span>
+                                        </figure>
+                                        <a class="dropdown-item" href="#">
+                                            I am sorry
+                                        </a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <figure>
+                                            <img src="../../assets/images/avatar/user_review_pic.png" alt="">
+                                            <span>Smith Noe</span>
+                                        </figure>
+                                        <a class="dropdown-item" href="#">
+                                            that's great
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
+                            <!-- end user message  -->
                         </div>
                     </div>
                 </div>
@@ -37,6 +79,7 @@
         </div>
     </div>
 </div>
+
 <!-- end user info  -->
 <!--  start user trip -->
 <section class="trip-map">
@@ -45,32 +88,29 @@
             <div class="col-12 text-center">
                 <h2 class="user-trip-title"
                     *ngIf="userTripsVisits.length == 0 && userTripsRestaurants.length == 0 && userTripsHotels.length == 0 ">
-                    Your Favorite Trip is empty
+                    Your Trip Plan is empty
                 </h2>
             </div>
             <div class="col-12 text-center">
                 <h2 class="user-trip-title"
                     *ngIf="userTripsVisits.length >=1 || userTripsRestaurants.length >= 1 || userTripsHotels.length >=1 ">
-                    Your Favorite Trips
+                    Your Trips Plan
                 </h2>
             </div>
         </div>
         <!-- visits -->
         <div class="row">
             <div class="col-12">
-                <h4 class="category">Visits</h4>
+                <h4 class="category">Places</h4>
             </div>
             <div #parent *ngFor="let userFavoriteTrip of userTripsVisits" class="col-sm-6 col-md-3">
                 <div class="card">
-                    <figure class="figure">
+                    <figure class="figure mb-0">
                         <img [src]="userFavoriteTrip.img" class="card-img-top img-fluid">
                     </figure>
                     <div class="card-body">
-                        <p class="card-title py-3">Place Name: {{userFavoriteTrip.name}}</p>
-                        <p> City : {{userFavoriteTrip.title}} </p>
-                        <p class="card-text">
-                            <span class="price"><strong>Price:{{userFavoriteTrip.price}}</strong></span>
-                        </p>
+                        <h5 class="card-title py-3">{{userFavoriteTrip.name}}</h5>
+                        <p>{{userFavoriteTrip.title}} </p>
                         <button class="btn btn-danger text text-center" type="button"
                             (click)="deleteTrip(userFavoriteTrip.id,parent)">Delete</button>
                     </div>
@@ -83,19 +123,18 @@
                 <h4 class="category">Hotels</h4>
             </div>
             <div #parent *ngFor="let userFavoriteTrip of userTripsHotels" class="col-sm-6 col-md-6 col-lg-3">
-                <div class="card" style="height:450px;">
-                    <figure class="figure">
+                <div class="card">
+                    <figure class="figure mb-0">
                         <img [src]="userFavoriteTrip.img" class="card-img-top img-fluid">
                     </figure>
                     <div class="card-body">
-                        <p class="card-title">Hotel Name :{{userFavoriteTrip.name}}</p>
-                        <p> City : {{userFavoriteTrip.title}} </p>
-                        <div class="card-text d-flex justify-content-between align-items-center my-3" style="border: 1px solid red;">
-                            <p class="price"><strong>Price:{{userFavoriteTrip.price}}</strong></p>
-
-                            <button class="btn btn-danger text text-center" type="button"
-                                (click)="deleteTrip(userFavoriteTrip.id,parent)">Delete</button>
+                        <h5 class="card-title">{{userFavoriteTrip.name}}</h5>
+                        <p>{{userFavoriteTrip.title}} </p>
+                        <div class="card-text my-3">
+                            <span class="price"><strong>{{userFavoriteTrip.price}}</strong>/night</span>
                         </div>
+                        <button class="btn btn-danger text text-center" type="button"
+                            (click)="deleteTrip(userFavoriteTrip.id,parent)">Delete</button>
                     </div>
                 </div>
                 <!-- </div> -->
@@ -108,15 +147,15 @@
             </div>
             <div #parent *ngFor="let userFavoriteTrip of userTripsRestaurants" class="col-sm-6 col-md-3">
                 <div class="card">
-                    <figure class="figure">
+                    <figure class="figure mb-0">
                         <img [src]="userFavoriteTrip.img" class="card-img-top img-fluid">
                     </figure>
                     <div class="card-body">
-                        <p class="card-title">Restaurant Name : {{userFavoriteTrip.name}}</p>
-                        <p> City : {{userFavoriteTrip.title}} </p>
-                        <p class="card-text">
-                            <span class="price"><strong>Price:{{userFavoriteTrip.price}}</strong></span>
-                        </p>
+                        <h5 class="card-title">{{userFavoriteTrip.name}}</h5>
+                        <p>{{userFavoriteTrip.title}} </p>
+                        <div class="card-text mb-3">
+                            <span class="price"><strong>{{userFavoriteTrip.price}}</strong>/meal</span>
+                        </div>
                         <button class="btn btn-danger text text-center" type="button"
                             (click)="deleteTrip(userFavoriteTrip.id,parent)">Delete</button>
                     </div>
@@ -127,48 +166,39 @@
 </section>
 <!--  end  user  favorite trip -->
 
-<!--  start  user shareing  post  to  see tour guide helping  -->
-
-<!-- <ng-container *ngFor="let userFavorite of userTrips"></ng-container> -->
+<!--  start  user sharing  post on guid me page  to  get  a tour guide helping  -->
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
             <div class="post">
-                <h4 class="pt-4 pb-4">Need a help ? <br>
-                    share a post to let a tour guide help you</h4>
+                <h4 class="pt-4 pb-4">Share Your Trip Plan <br>
+                    to allow the best tourist guides to help you...</h4>
                 <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm,userFavorite)">
                     <div class="form-group">
-                        <input type='text' formControlName="title" placeholder="title"> <br>
-                        <textarea formControlName="message" placeholder="Your message description" rows="3"></textarea>
+                        <input type='text' formControlName="title" placeholder="Trip Title"> <br>
+                        <textarea formControlName="message" placeholder=" Trip Description" rows="3"></textarea>
                         <br>
-                        <span class="alert alert-danger" role="alert" *ngIf="myForm.touched &&myForm.invalid">
+                        <span class="alert alert-danger mt-3" role="alert" *ngIf="myForm.toucheFd &&myForm.invalid">
                             <span
                                 *ngIf="userTripsVisits.length == 0 && userTripsRestaurants.length == 0 && userTripsHotels.length == 0">
                                 You don't have trip yet..
                             </span>
                             <span *ngIf="myForm.get('message').value ===''">
-                                please write description and to make tour guides help you faster and better..
+                                please write description ..
                             </span>
                             <span *ngIf="myForm.get('title').value ===''">
-                                title!!
+                               please  write title!!
                             </span>
                         </span>
                     </div>
                     <button type="submit"
                         [disabled]="myForm.invalid || userTripsVisits.length == 0 && userTripsRestaurants.length == 0 && userTripsHotels.length == 0"
-                        class="mb-4">Send
+                        class="mb-4">Share
                     </button>
                 </form>
             </div>
         </div>
     </div>
 </div>
-
-<!-- end share post  -->
-
-<!-- //////////////////////////// -->
-
-
-
 
 <!-- end share post  -->

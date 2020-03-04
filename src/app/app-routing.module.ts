@@ -19,6 +19,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { TourGuidProfileComponent } from './tour-guid-profile/tour-guid-profile.component';
 import { ComapanyPackageComponent } from './comapany-package/comapany-package.component';
 import { PackageDetailsComponent } from './package-details/package-details.component';
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 
 
 const routes: Routes = [
@@ -66,7 +67,8 @@ const routes: Routes = [
   { path: "AllHotels", component: ViewAllHotelsComponent },
   { path: "AllVisits", component: ViewAllVisitsComponent },
   { path: "companyPackage", component: ComapanyPackageComponent },
-  {path:"companyPackage/:id",component:PackageDetailsComponent}
+  {path:"companyPackage/:id",component:PackageDetailsComponent},
+  {path:"**",component:NotFoundPageComponent},
   // {path:"",component:},
 
 ];

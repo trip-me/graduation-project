@@ -1,19 +1,4 @@
-<!-- 
-<section class="all-restaurant wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-12"   *ngFor="let hotel of allHotels">
-                <div class="card  all-restaurant__details">
-                    <div class="row no-gutters">
-                       
-                        <div class="col-lg-5 all-restaurant__details--img">
-                            <figure>
-                                <a routerLink="/Alexandria/hotels/{{hotel.id}}">
-                                <small>Hotils</small>
-                                    <img [src]="hotel.img" class="card-img img-fluid">
-                                    <p class="read-more" >
-                                        <span class="wow fadeInUp" data-wow-delay="0.5s">{{hotel.city}}</span>
-                                    </p> -->
+
 <section class="all-restaurant wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
     <div class="container">
         <div class="row">
@@ -88,11 +73,8 @@
                         <div class="col-lg-5 all-restaurant__details--img">
                             <figure>
                                 <a routerLink="/Alexandria/hotels/{{hotel.id}}">
-                                    <small>Hotils</small>
+                                    <small>Hotels</small>
                                     <img [src]="hotel.img" class="card-img img-fluid">
-                                    <div class="read_more">
-                                        <span>Read more</span>
-                                    </div>
                                 </a>
                             </figure>
                         </div>
@@ -108,7 +90,7 @@
                                 </div>
                                 <ul>
                                     <!-- <li ><a class="add-to-my-trip"  (click)="addToMyTrip(hotel)">Add to my trip</a></li> -->
-                                    <li ><a class="add-to-my-trip" (click)="addToMyTrip(hotel)">Add to my trip</a></li>
+                                    <li ><a class="add-to-my-trip read-more_button" (click)="addToMyTrip(hotel)">Add to my trip</a></li>
                                 </ul>
                             </div>
                         </div>

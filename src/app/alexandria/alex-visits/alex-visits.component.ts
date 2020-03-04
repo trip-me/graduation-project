@@ -38,9 +38,9 @@ export class AlexVisitsComponent implements OnInit {
       for (let pop of this.myvisits) {
         if (pop.city === "alex") {
           if (pop.rate >= 9) {
-            if(pop.id<=5){
+            if(pop.id<1.6){
               this.popularVisits.push(pop)
-
+              console.log(pop);
             }
           }
         }
