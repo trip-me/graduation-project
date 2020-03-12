@@ -67,12 +67,12 @@
             </div>
 
             <div class="col-sm-12 col-md-9">
-                <div class="card  all-restaurant__details" *ngFor="let hotel of allHotels">
+                <div class="card  all-restaurant__details  " *ngFor="let hotel of allHotels">
+                <div class="overlay"></div>                
                     <div class="row no-gutters">
-
                         <div class="col-lg-5 all-restaurant__details--img">
                             <figure>
-                                <a routerLink="/Alexandria/hotels/{{hotel.id}}">
+                                <a routerLink="/alexandria/hotels/{{hotel.id}}">
                                     <small>Hotels</small>
                                     <img [src]="hotel.img" class="card-img img-fluid">
                                 </a>
@@ -84,20 +84,18 @@
                                     <a  class="wish_bt">
                                         <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{hotel.rate}}</strong></div>
                                     </a>
-                                    <h3><a routerLink="/Alexandria/hotels/{{hotel.id}}"> {{hotel.name}} </a></h3>
+                                    <h3><a routerLink="/alexandria/hotels/{{hotel.id}}"> {{hotel.name}} </a></h3>
                                     <p>{{hotel.shortDescription}}</p>
                                     <span class="price">From <strong>{{hotel.price}}</strong> /per person</span>
                                 </div>
                                 <ul>
                                     <!-- <li ><a class="add-to-my-trip"  (click)="addToMyTrip(hotel)">Add to my trip</a></li> -->
-                                    <li ><a class="add-to-my-trip read-more_button" (click)="addToMyTrip(hotel)">Add to my trip</a></li>
+                                    <li ><a class="add-to-my-trip read-more_button" (click)="addToMyTrip($event,hotel)">Add to my trip</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                
-
-                </div>
+                    </div>
             </div>
         </div>
     </div>

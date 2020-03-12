@@ -9,7 +9,12 @@
                         <li>
                             <h1> {{singleTourData.name}} </h1>
                         </li>
-                        <li class="d-block d-sm-none"><span class="add" >Add To My Trip</span></li>
+                        <li class="d-block d-sm-none">
+                            <a  class="add-to-my-trip" (click)="addToMyTrip(singleTourData)" class="btn_1 full-width outline wishlist add-to-my-trip">
+                                <i id="addicon" class="far fa-heart"></i>
+                                Add To My Trip
+                               </a>
+                        </li>
                     </ul>
                     <h2>Description</h2>
                     <p>{{singleTourData.fullDescription }}</p>
@@ -58,7 +63,7 @@
                      </div>
                     </div>
                     <hr class="d-none d-lg-block">
-                    <!-- <h3 class="d-none d-lg-block">Program <small>(60 minutes)</small></h3>
+                    <h3 class="d-none d-lg-block">Program <small>(60 minutes)</small></h3>
                     <p class="d-none d-lg-block">
                         {{singleTourData.fullDescription}}
                     </p>
@@ -120,7 +125,7 @@
                             </div>
                         </li>
                     </ul>
-                    <hr> -->
+                    <hr>
                     <h3>Location</h3>
                     <!-- start map -->
                     <div *ngIf="MapurlSafe" class="place_details-map col-sm-12 ">
@@ -281,10 +286,13 @@
                         <span>{{singleTourData.price}} <small>/person</small></span>
                         <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{singleTourData.rate}}</strong></div>
                     </div>
-                    <a   class="add-to-my-trip" (click)="addToMyTrip(singleTourData)" class="btn_1 full-width outline wishlist add-to-my-trip">
-                        <i class="far fa-heart"></i>
-                        Add To My Trip
-                       </a>
+                
+                        <a  class="add-to-my-trip" (click)="addToMyTrip(singleTourData)" class="btn_1 full-width outline wishlist add-to-my-trip">
+                            <i id="addicon" class="far fa-heart"></i>
+                            Add To My Trip
+                           </a>
+                    
+                   
                    
                 </div>
                 <ul class="share-buttons">

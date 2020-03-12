@@ -12,9 +12,9 @@ export class HeroSectionComponent implements OnInit {
   }
       filterSearch(searchname){
         if(searchname == "resturant"){
-        this.router.navigate(['/AllRestaurants']);
+        this.router.navigate(['/restaurants']);
       }else{
-        this.router.navigate(['/AllHotels']);
+        this.router.navigate(['/hotels']);
         
         }
     

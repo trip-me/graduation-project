@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { UsersService } from '../users.service';
 
 @Component({
@@ -13,7 +12,7 @@ export class ComapanyPackageComponent implements OnInit {
   max;
   rate = 4;
   isReadonly: boolean = true;
-  constructor(private activeRoute: ActivatedRoute, private servicePackage: UsersService) {
+  constructor( private servicePackage: UsersService) {
     //companies
     this.servicePackage.getCompanyData().subscribe(data => {
       this.companyPackage = data;

@@ -45,12 +45,20 @@ a {
 }
 
 
-#description ul li span{
-    font-size: .7rem;
-    background-color: green;
-    color: #ffffff;
-    padding: .7rem 1.5rem;
-    font-weight: bold;
+#description ul li span a{
+    background: #32a067;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
 
 }
 #description h2, #reviews h2 {
@@ -361,11 +369,9 @@ a.btn_1.full-width, .btn_1.full-width {
     display: block;
     width: 100%;
     text-align: center;
-    margin-bottom: 5px;
+    color: white;
 }
 .btn_1{
-    border: none;
-    color: #fff;
     background: #32a067;
     outline: none;
     cursor: pointer;
@@ -376,14 +382,8 @@ a.btn_1.full-width, .btn_1.full-width {
     font-weight: 600;
     text-align: center;
     line-height: 1;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
     border-radius: 3px;
 }
 

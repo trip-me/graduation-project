@@ -28,7 +28,6 @@ export class RestaurantDetailsComponent implements OnInit {
   singleTourData;
 
   constructor(
-    public router: ActivatedRoute,
     public sanitizer: DomSanitizer,
     private http: HttpClient,
     private restaurantsService: RestaurantsService,
@@ -62,21 +61,30 @@ export class RestaurantDetailsComponent implements OnInit {
     }
   }
 
-  // start add to my trip button
-  addToMyTrip(myFavorite) {
-    console.log(myFavorite)
-    let user = JSON.parse(localStorage.getItem('currentUser'))
-    if(localStorage != null){
-      if(user.role=="tourist"){
+ // start add to my trip button
+ addToMyTrip(myFavorite) {
+  let user = JSON.parse(localStorage.getItem('currentUser'));
+  if (localStorage != null) {
+    if (user.role == "tourist") {
+      if (!myFavorite.userId) {
         myFavorite.userId = user.id;
         myFavorite.userName = user.userName;
-        this.userService.postUserFavoriteTrip(myFavorite).subscribe(data=>{
+        this.userService.postUserFavoriteTrip(myFavorite).subscribe(data => {
           myFavorite = data
+          // start change icon style
+          if (myFavorite) {
+            let icon = document.getElementById("addicon")
+            icon.removeAttribute('class')
+            icon.setAttribute('class', "fas fa-heart")
+            icon.style.color = "red"
+          }
+          // end change icon style
         })
-      }else{alert("u aren't a tourist")}
-
-    }
+      }
+    } else { alert("u aren't a tourist") }
   }
+}
+// End add to my trip button
   ngOnInit() {
      //review form 
      this.myForm = this.fb.group({

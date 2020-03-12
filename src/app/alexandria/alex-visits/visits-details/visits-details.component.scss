@@ -36,12 +36,21 @@
     margin-bottom: 45px;
     padding: 70px 0px 15px;
 }
-#description ul li .add{
-    font-size: .7rem;
-    background-color: green;
-    color: #ffffff;
-    padding: .7rem 1.5rem;
-    font-weight: bold;
+#description ul li span a{
+    background: #32a067;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+
 }
 #description h2, #reviews h2 {
     font-size: 27px;
@@ -310,6 +319,12 @@ height: 361px;
     font-weight: 500;
     height: 45px;
 }
+a.btn_1.full-width, .btn_1.full-width {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
 .booking .form-group i {
     border-radius: 3px;
     font-size: 1.125rem;
@@ -328,17 +343,17 @@ height: 361px;
 }
 
 .btn_1{
-    border: none;
-    color: #fff !important;
     background: #32a067;
     outline: none;
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
     padding: 15px 30px;
+    color: #fff;
     font-weight: 600;
     text-align: center;
     line-height: 1;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     border-radius: 3px;
 }

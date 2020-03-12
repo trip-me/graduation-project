@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { UsersService } from 'src/app/users.service';
 import { HotelsService } from 'src/app/hotels.service';
 
@@ -11,20 +10,19 @@ import { HotelsService } from 'src/app/hotels.service';
 export class ViewAllHotelsComponent implements OnInit {
   allHotels;
 
-  constructor(private http: HttpClient, private service: HotelsService,private userService: UsersService) { }
+  constructor(private service: HotelsService,private userService: UsersService) { }
 
-  addToMyTrip(myFavorite) {
+  addToMyTrip(e,myFavorite) {
     let user = JSON.parse(localStorage.getItem('currentUser'));
+    let overlay = e.target.parentElement.parentElement.parentElement.parentElement.parentElement.previousSibling
     if (localStorage != null) {
       if(user.role=="tourist"){
       myFavorite.userId = user.id;
       myFavorite.userName = user.userName;
-
       this.userService.postUserFavoriteTrip(myFavorite).subscribe(data => {
         myFavorite = data
-        console.log(myFavorite);
-
       })
+      overlay.style.display = "block"
     }else{alert("u aren't a tourist")}
     }
   }

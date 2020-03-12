@@ -41,8 +41,10 @@ export class ViewAllRestaurantsComponent implements OnInit {
     })
    }
   // start add to my trip button
-  addToMyTrip(myFavorite) {
-    console.log(myFavorite)
+  addToMyTrip(e,myFavorite) {
+    let overlay = e.target.parentElement.parentElement.parentElement.parentElement.parentElement.previousSibling
+    console.log(overlay);
+    
     let user = JSON.parse(localStorage.getItem('currentUser'))
     if(localStorage != null){
       if(user.role=="tourist"){
@@ -51,6 +53,7 @@ export class ViewAllRestaurantsComponent implements OnInit {
         this.userService.postUserFavoriteTrip(myFavorite).subscribe(data=>{
           myFavorite = data
         })
+        overlay.style.display = "block"
       }else{alert("u aren't a tourist")}
 
     }

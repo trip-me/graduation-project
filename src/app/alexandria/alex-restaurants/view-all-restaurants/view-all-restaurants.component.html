@@ -63,11 +63,12 @@
             <!-- end filter -->
             <div class="col-sm-12 col-md-9">
                 <div class="card  all-restaurant__details" *ngFor="let restaurent of allRestaurant">
+                <div class="overlay"></div>                
                     <div class="row no-gutters">
 
                         <div class="col-lg-5 all-restaurant__details--img">
                             <figure>
-                                <a routerLink="/Alexandria/restaurants/{{restaurent.id}}">
+                                <a routerLink="/alexandria/restaurants/{{restaurent.id}}">
                                     <small>Restaurant</small>
                                     <img [src]="restaurent.img" class="card-img img-fluid">   
                                 </a>
@@ -79,12 +80,12 @@
                                    
                                         <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{ restaurent.rate}}</strong></div>
                                   
-                                    <h3><a routerLink="Alexandria/restaurants/{{restaurent.id}}"> {{ restaurent.name}} </a></h3>
+                                    <h3><a routerLink="alexandria/restaurants/{{restaurent.id}}"> {{ restaurent.name}} </a></h3>
                                     <p>{{restaurent.shortDescription}}</p>
                                     <span class="price">From <strong>{{restaurent.price}}</strong> /per person</span>
                                 </div>
                                 <ul>
-                                    <li ><a class="add-to-my-trip read-more_button" (click)="addToMyTrip(restaurent)">Add to my trip</a></li>
+                                    <li ><a class="add-to-my-trip read-more_button" (click)="addToMyTrip($event,restaurent)">Add to my trip</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3" *ngFor="let hotel of popularhotels">
-                <a routerLink="Alexandria/hotels/{{hotel.id}}">
+                <a routerLink="alexandria/hotels/{{hotel.id}}">
                 
                 <ng-container>
                     <figure class="hotel-img__content wow fadeInUp" data-wow-delay="0.5s">
@@ -33,7 +33,7 @@
             </div>            
         </div>
         <div class="view-all__hotels" *ngIf="hotels">
-            <a routerLink="/AllHotels">view all ({{hotels.length}})</a>
+            <a routerLink="/hotels">view all ({{hotels.length}})</a>
         </div>
 
     </div>

@@ -48,7 +48,6 @@ text-align: right;
 }
 ul, ol {
 list-style: none;
-margin: 0 0 25px 0;
 padding: 0;
 }
 ul li {
@@ -58,14 +57,14 @@ ul li {
 margin-right: 0;
 
 }
-ul li a{ text-decoration: none;
+ a.add-to-my-trip{
+    text-decoration: none;
    background-color:#0e843c;
     font-size: .9rem;
-     padding:.5rem 1rem; 
      display: inline-block; 
      color: #ffffff;
-      margin-top: 18px;
-       border-radius: 20px; 
+      border-radius: 20px; 
+      margin:0
 }
 .score span {
 display: inline-block;
@@ -91,10 +90,7 @@ font-size: 0.6875rem;
     padding: 8px;
      display: inline-block;
 }
-.card-body{
-padding:10px 20px  0px;
 
-}
 .card-body p{
 margin: 30px 0px;
 }
@@ -114,8 +110,19 @@ border-radius: 3px;
 .card-body-info h3 a{
 color:#0e843c;}
 .card{
-  border: none
+  border: none;
+  position: relative;
 }
+.overlay{
+  background-color: rgba(80, 79, 79, 0.432);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1000000;
+  display: none;
+}
+
 .card-body-info h3  {
 font-size: 20px;
 font-size: 1.25rem;

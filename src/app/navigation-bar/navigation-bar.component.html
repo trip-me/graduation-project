@@ -1,40 +1,41 @@
 <nav class="nav bg-white">
     <div class="container-fluid">
         <div class="logo">
-            <a routerLink="Home">
+            <a routerLink="home">
                 <img src="../../assets/logo.png" alt="">
             </a>
         </div>
         <div id="mainListDiv" class="main_list ml-auto">
-            <ul class="navlinks">
+            <ul id="navlinks">
                 <li>
-                    <a routerLink="/" class="active">home</a>
+                    <a routerLink="/" (click)="activeLink()" class="navLink active">home</a>
                 </li>
                 <li>
-                    <a  routerLink="/AllVisits">places</a>
+                    <a  routerLink="/places" (click)="activeLink()" class="navLink">places</a>
                 </li>
                 <li>
-                    <a routerLink="/AllHotels">hotels</a>
+                    <a routerLink="/hotels" (click)="activeLink()" class="navLink">hotels</a>
                 </li>
                 <li>
-                    <a routerLink="/AllRestaurants">resturants</a>
+                    <a routerLink="/restaurants" (click)="activeLink()" class="navLink">resturants</a>
                 </li>
                 <li>
-                    <a routerLink="/companyPackage">Packages</a>
+                    <a routerLink="/companypackage" (click)="activeLink()" class="navLink">Packages</a>
                 </li>
                 <li>
-                    <a (click)="guideMe()">guide me</a>
+                    <a (click)="guideMe()" (click)="activeLink()" class="navLink">guide me</a>
                 </li>
                 <li id="user__myTrip">
-                    <a routerLink="/my-trip">my trip</a>
+                    <a routerLink="/my-trip" (click)="activeLink()" class="navLink">my trip</a>
                 </li>
                 <li id="tourguide__profile">
-                    <a routerLink="/tourguid">tour guide</a>
+                    <a routerLink="/tourguid" (click)="activeLink()" class="navLink">tour guide</a>
                 </li>
                 <li id="login-btn">
-                    <a routerLink="/login">login</a>
+                    <a routerLink="/login" (click)="activeLink()">login/register</a>
                 </li>
                 <li id="logout-btn">
+                    <span class="pr-2  d-md-inline d-none">{{userName}}</span>
                     <a role="button" (click)="logOut()">logout</a>
                 </li>
                 <li id="dashboard">

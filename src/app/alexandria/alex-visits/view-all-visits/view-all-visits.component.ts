@@ -108,17 +108,21 @@ export class ViewAllVisitsComponent implements OnInit {
     }
   }
   // 
-  addToMyTrip( myFavorite) {
-    if (localStorage != null) {
-      let user = JSON.parse(localStorage.getItem('currentUser'));
+  addToMyTrip(e,myFavorite) {
+    let overlay = e.target.parentElement.parentElement.parentElement.parentElement.parentElement.previousSibling
+    console.log(overlay);
+    
+    let user = JSON.parse(localStorage.getItem('currentUser'))
+    if(localStorage != null){
+      if(user.role=="tourist"){
+        myFavorite.userId = user.id;
+        myFavorite.userName = user.userName;
+        this.userService.postUserFavoriteTrip(myFavorite).subscribe(data=>{
+          myFavorite = data
+        })
+        overlay.style.display = "block"
+      }else{alert("u aren't a tourist")}
 
-      myFavorite.userId = user.id;
-      myFavorite.userName = user.userName;
-      
-      this.userService.postUserFavoriteTrip(myFavorite).subscribe(data => {
-        myFavorite = data
-        console.log(myFavorite)
-      })
     }
   }
 

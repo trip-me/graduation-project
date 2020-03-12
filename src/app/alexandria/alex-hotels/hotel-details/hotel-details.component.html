@@ -21,7 +21,13 @@
                         <li>
                             <h1> {{singleTourData.name}}</h1>
                         </li>
-                        <li class="d-block d-sm-none"><span>Add To My Trip</span></li>
+                        <li class="d-block d-sm-none">
+                            <a  class="add-to-my-trip" (click)="addToMyTrip(singleTourData)" class="btn_1 full-width outline wishlist add-to-my-trip">
+                                <i id="addicon" class="far fa-heart"></i>
+                                Add To My Trip
+                               </a>
+
+                        </li>
                     </ul>
                     <h2>Description</h2>
                     <p>{{singleTourData.shortDescription}}</p>
@@ -321,8 +327,8 @@
                         <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{singleTourData.rate}}</strong>
                         </div>
                     </div>
-                    <a routerLink="/user-trip" class="add-to-my-trip" (click)="addToMyTrip($event)" class="btn_1 full-width outline wishlist">
-                        <i class="far fa-heart"></i>
+                    <a  class="add-to-my-trip" (click)="addToMyTrip(singleTourData)" class="btn_1 full-width outline wishlist">
+                        <i id="addicon" class="far fa-heart"></i>
                         Add To My Trip
                     </a>
 

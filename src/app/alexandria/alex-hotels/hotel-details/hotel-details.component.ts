@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { HttpClient } from '@angular/common/http';
 import { HotelsService } from 'src/app/hotels.service';
 import { UsersService } from 'src/app/users.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -25,25 +24,23 @@ export class HotelDetailsComponent implements OnInit {
   toursData;
   singleTourData;
   constructor(
-    public router: ActivatedRoute,
     public sanitizer: DomSanitizer,
-    private http: HttpClient,
     private hotelsService: HotelsService,
     private activroute: ActivatedRoute,
-    private userService :UsersService,
+    private userService: UsersService,
     private fb: FormBuilder,
     config: NgbRatingConfig
-  ) { 
-     // Start get id from url
-     this.activroute.params.subscribe(param => {
+  ) {
+    // Start get id from url
+    this.activroute.params.subscribe(param => {
       this.id = param["id"];
       this.hotelsService.getToursData().subscribe(data => {
         // console.log(data);
         this.toursData = data;
         this.singleTourData = this.getSigleTour();
         console.log(this.singleTourData);
-        let mapurl= this.singleTourData.map;
-        this.MapurlSafe= this.sanitizer.bypassSecurityTrustResourceUrl(mapurl);
+        let mapurl = this.singleTourData.map;
+        this.MapurlSafe = this.sanitizer.bypassSecurityTrustResourceUrl(mapurl);
       })
     })
 
@@ -58,21 +55,31 @@ export class HotelDetailsComponent implements OnInit {
       }
     }
   }
+  // start add to my trip button
   addToMyTrip(myFavorite) {
     let user = JSON.parse(localStorage.getItem('currentUser'));
     if (localStorage != null) {
-      if(user.role=="tourist"){
-      myFavorite.userId = user.id;
-      myFavorite.userName = user.userName;
-
-      this.userService.postUserFavoriteTrip(myFavorite).subscribe(data => {
-        myFavorite = data
-        console.log(myFavorite);
-
-      })
-    }else{alert("u aren't a tourist")}
+      if (user.role == "tourist") {
+        if (!myFavorite.userId) {
+          myFavorite.userId = user.id;
+          myFavorite.userName = user.userName;
+          this.userService.postUserFavoriteTrip(myFavorite).subscribe(data => {
+            myFavorite = data
+            // start change icon style
+            if (myFavorite) {
+              let icon = document.getElementById("addicon")
+              icon.removeAttribute('class')
+              icon.setAttribute('class', "fas fa-heart")
+              icon.style.color = "red"
+            }
+            // end change icon style
+          })
+        }
+      } else { alert("u aren't a tourist") }
     }
   }
+  // End add to my trip button
+
   ngOnInit() {
 
     //review form 
@@ -80,22 +87,20 @@ export class HotelDetailsComponent implements OnInit {
       name: ['', [Validators.minLength(3), Validators.required]],
       message: ['', Validators.required],
       email: ["", [Validators.required, Validators.pattern('^[a-zA-Z0-9._-]+@gmail|yahoo\.[a-zA-Z]{2,}$')]],
-      // rate: ["hello", [Validators.required]]
 
     });
   }
-  
-//on submit review form
+
+  //on submit review form
   onSubmit(form) {
-    this.reviews.push({ ...form.value,rate: this.selectedLevel})
+    this.reviews.push({ ...form.value, rate: this.selectedLevel })
     console.log(this.reviews);
     form.reset()
   }
- 
-  selectChangeHandler (event: any) {
+  selectChangeHandler(event: any) {
     //update the ui
-   this.selectedLevel= event.target.value;
+    this.selectedLevel = event.target.value;
     console.log(this.selectedLevel);
-    
+
   }
 }

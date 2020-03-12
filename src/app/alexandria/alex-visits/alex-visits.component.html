@@ -20,11 +20,11 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        <a routerLink="/Alexandria/visits/{{popvisit.id}}"> {{popvisit.name}} </a>
+                                        <a routerLink="/alexandria/places/{{popvisit.id}}"> {{popvisit.name}} </a>
                                     </h5>
                                     <p class="card-text">{{popvisit.shortDescription}}.</p>
                                     <ul>
-                                        <li><a >Add To My Trip</a></li>
+                                        <li><a>Add To My Trip</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@
                 </div>
             </div>
                 <div *ngIf="myvisits" class="view-all__hotels">
-                    <a routerLink="/AllVisits">view all ({{myvisits.length}})</a>
+                    <a routerLink="/places">view all ({{myvisits.length}})</a>
                 </div>
         </div>
     </div>

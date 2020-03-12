@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgwWowService } from 'ngx-wow';
-import { Router } from '@angular/router';
 import { AlexandriaService } from '../../alexandria.service';
-import { HttpClient } from '@angular/common/http';
 import { HotelsService } from 'src/app/hotels.service';
 
 @Component({
@@ -16,9 +14,7 @@ export class AlexHotelsComponent implements OnInit {
 
   constructor(
     private wowService: NgwWowService,
-    public router: Router,
     public alexService: AlexandriaService,
-    private http: HttpClient,
     public hotelsService: HotelsService) {
     this.wowService.init();
    }

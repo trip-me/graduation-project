@@ -24,7 +24,7 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
-  { path: "Home", component: HomeComponent },
+  { path: "home", component: HomeComponent },
   { path: "register", component: RegisterComponent },
   { path: "login", component: LoginComponent },
   {
@@ -40,36 +40,34 @@ const routes: Routes = [
     component: GuideMeComponent
   },
   {
-    path: "Alexandria",
+    path: "alexandria",
     component: AlexandriaComponent
   }
   ,
   {
-    path: "Alexandria/visits/:id",
+    path: "alexandria/places/:id",
     component: VisitsDetailsComponent
   },
   {
-    path: "Alexandria/restaurants/:id",
+    path: "alexandria/restaurants/:id",
     component: RestaurantDetailsComponent
   },
   {
-    path: "Alexandria/hotels/:id",
+    path: "alexandria/hotels/:id",
     component: HotelDetailsComponent
   },
-  
-  {path:"aboutUs",component:AboutUsComponent},
-  {path:"tourguid/:id",component:TourGuidProfileComponent},
-  {path:"tourguid",component:TourGuidProfileComponent},
+  { path:"aboutus",component:AboutUsComponent},
+  { path:"tourguid/:id",component:TourGuidProfileComponent},
+  { path:"tourguid",component:TourGuidProfileComponent},
   { path: "tour", component: PopularTourComponent },
-  { path: "tourDetail", component: TourDetailsComponent },
-  { path: "AllTours", component: ViewAllToursComponent },
-  { path: "AllRestaurants", component: ViewAllRestaurantsComponent },
-  { path: "AllHotels", component: ViewAllHotelsComponent },
-  { path: "AllVisits", component: ViewAllVisitsComponent },
-  { path: "companyPackage", component: ComapanyPackageComponent },
-  {path:"companyPackage/:id",component:PackageDetailsComponent},
-  {path:"**",component:NotFoundPageComponent},
-  // {path:"",component:},
+  { path: "tourdetail", component: TourDetailsComponent },
+  { path: "tours", component: ViewAllToursComponent },
+  { path: "restaurants", component: ViewAllRestaurantsComponent },
+  { path: "hotels", component: ViewAllHotelsComponent },
+  { path: "places", component: ViewAllVisitsComponent },
+  { path: "companypackage", component: ComapanyPackageComponent },
+  { path:"companypackage/:id",component:PackageDetailsComponent},
+  { path:"**",component:NotFoundPageComponent},
 
 ];
 

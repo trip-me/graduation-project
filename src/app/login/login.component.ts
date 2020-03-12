@@ -60,7 +60,7 @@ export class LoginComponent implements OnInit {
             this.router.navigate(['/tourguid']);
           }
           else {
-            this.router.navigate(['/Home']);
+            this.router.navigate(['/home']);
             this.logedinAdmin = this.comingData[i].role;
           }
         }

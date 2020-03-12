@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlexandriaService } from '../../alexandria.service';
-import { HttpClient } from '@angular/common/http';
 import { RestaurantsService } from 'src/app/restaurants.service';
 
 @Component({
@@ -18,7 +17,6 @@ export class AlexRestaurantsComponent implements OnInit {
 
   constructor(public router: Router,
     public alexService: AlexandriaService,
-    private http: HttpClient,
     public restaurantsService: RestaurantsService) {
       
   }

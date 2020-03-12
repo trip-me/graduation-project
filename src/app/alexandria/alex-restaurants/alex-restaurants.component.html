@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div *ngFor="let popvisit of popularVisits " class="col-lg-3 col-md-6">
-                <a routerLink="/Alexandria/restaurants/{{popvisit.id}}">
+                <a routerLink="/alexandria/restaurants/{{popvisit.id}}">
                 <figure class="resturant-img__content wow fadeInUp" data-wow-delay="0.5s">
                     <span class="rate">{{popvisit.rate}}</span>
                         <img src="{{popvisit.img}}" class="w-100" alt="">
@@ -26,7 +26,7 @@
             </div>
          
             <div  *ngIf="myvisits" class="view-all__hotels">
-                <a routerLink="/AllRestaurants">view all ({{myvisits.length}})</a>
+                <a routerLink="/restaurants">view all ({{myvisits.length}})</a>
             </div>
         </div>
     </div>
