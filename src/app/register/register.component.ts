@@ -29,12 +29,18 @@ Uid;
         this.service.postUser(this.userInfo).subscribe(data => {
           this.userInfo = data;
           localStorage.setItem("currentUser", JSON.stringify(this.userInfo));
-          if (this.userInfo.role == "tourist") {
+          if (this.userInfo.role === "tourist") {
             this.router.navigate(['/my-trip']);
-            
-          } else if (this.userInfo.role == "tourguide") {
-            this.router.navigate(['/tourguid', this.Uid.id]);
-            // this.router.navigate(['/tourguid',]);
+            document.getElementById("login-btn").style.display = "none";
+            document.getElementById("logout-btn").style.display = "inline";
+            document.getElementById("user__myTrip").style.display = "inline";
+          } else {
+            if (this.userInfo.role === "tourguide") {
+              this.router.navigate(['/tourguid', this.userInfo.id]);
+              document.getElementById("login-btn").style.display = "none";
+              document.getElementById("logout-btn").style.display = "inline";
+              document.getElementById("user__myTrip").style.display = "inline";
+            }
           }
         })
       }
@@ -42,7 +48,11 @@ Uid;
     if (localStorage.getItem("currentUser") !== null) {
       document.getElementById("login-btn").style.display = "none";
       document.getElementById("logout-btn").style.display = "inline";
-      document.getElementById("user__myTrip").style.display="inline";
+      if( (JSON.parse(localStorage.getItem("currentUser"))).role==="tourist" ){
+        document.getElementById("user__myTrip").style.display="inline";
+      } else if( (JSON.parse(localStorage.getItem("currentUser"))).role==="tourguide" ){
+        document.getElementById("tourguide__profile").style.display="inline";
+      }    
     }else{
     if (localStorage.getItem("currentUser") === null) 
       document.getElementById("user__myTrip").style.display="none";

@@ -10,14 +10,7 @@ import { HotelsService } from 'src/app/hotels.service';
 })
 export class ViewAllHotelsComponent implements OnInit {
   allHotels;
-  // ngOnInit() {
-  //   this.http.get('http://localhost:3000/hotels').subscribe(data => {
-  //     this.allHotels = data;
-  //   })
-  // }
-  // addToMyTrip(e) {
-  //   console.log(e)
-  // }
+
   constructor(private http: HttpClient, private service: HotelsService,private userService: UsersService) { }
 
   addToMyTrip(myFavorite) {
@@ -37,10 +30,9 @@ export class ViewAllHotelsComponent implements OnInit {
   }
 
   ngOnInit() {
-
-    this.http.get('http://localhost:3000/hotels').subscribe(data => {
-      this.allHotels = data;
-    })
+    // this.http.get('http://localhost:3000/hotels').subscribe(data => {
+    //   this.allHotels = data;
+    // })
     this.service.getToursData().subscribe(data => {
       this.allHotels = data;
     })
@@ -77,7 +69,6 @@ export class ViewAllHotelsComponent implements OnInit {
           this.priceSearch.push(dataprice[i]);
           this.allHotels = this.priceSearch;
           console.log([this.priceSearch]);
-          
         }
       } else {
         for (let i = 0; i < (this.priceSearch).length; i++) {
@@ -86,9 +77,9 @@ export class ViewAllHotelsComponent implements OnInit {
             this.priceSearch.splice(this.priceSearch.indexOf(this.priceSearch[i]), 1);
             console.log("price=" + this.priceSearch);
             this.allHotels = this.priceSearch;
-            if ((this.priceSearch).length == 0) {
-              this.allHotels = this.city
-            }
+            // if ((this.priceSearch).length == 0) {
+            //   this.allHotels = this.city
+            // }
           }
         }
       }

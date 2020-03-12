@@ -36,6 +36,13 @@
     margin-bottom: 45px;
     padding: 70px 0px 15px;
 }
+#description ul li .add{
+    font-size: .7rem;
+    background-color: green;
+    color: #ffffff;
+    padding: .7rem 1.5rem;
+    font-weight: bold;
+}
 #description h2, #reviews h2 {
     font-size: 27px;
     
@@ -90,7 +97,6 @@ margin: 5px auto;
     font-weight: 500;
     background-color: #fff;
     text-transform: none;
-    font-size: 24px;
     font-size: 1.5rem;
     line-height: 50px;
     position: absolute;
@@ -107,8 +113,6 @@ margin: 5px auto;
     background: #eef3f7;
     padding: 20px;
     position: relative;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
 }
 @media screen and (max-width: 330px){
@@ -145,13 +149,9 @@ margin: 5px auto;
     background-color: #0054a6;
     color: #fff;
     padding: 20px 10px;
-    -webkit-border-radius: 5px 5px 5px 0;
-    -moz-border-radius: 5px 5px 5px 0;
-    -ms-border-radius: 5px 5px 5px 0;
     border-radius: 5px 5px 5px 0;
 }
 #review_summary strong {
-    font-size: 42px;
     font-size: 2.625rem;
     display: block;
     line-height: 1;
@@ -165,7 +165,6 @@ margin: 5px auto;
     margin-bottom: 12px;
 }
 .progress {
-    display: -ms-flexbox;
     display: flex;
     height: 1rem;
     overflow: hidden;
@@ -174,6 +173,7 @@ margin: 5px auto;
     border-radius: .25rem;
     margin: 5px auto;
 }
+
 .reviews-container .review-box {
     position: relative;
     margin-bottom: 25px;
@@ -193,26 +193,26 @@ margin: 5px auto;
     border-radius: 5px;
     overflow: hidden;
 }
-.reviews-container .rev-thumb img {
-    width: 80px;
-    height: auto;
-}
+
 .reviews-container .rev-content {
     position: relative;
     padding: 25px 25px 0 25px;
     border: 1px solid #ededed;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
     border-radius: 5px;
     font-size: 13px;
+    box-shadow: 5px 5px  20px #b8b7b7c7;
 }
+
 .rev-info{
-    font-size: 11px ;
+    font-size: 1.5rem ;
+    color: #333;
+}
+.rev-text{
+    font-size: 1rem;
     color: gray;
 }
 .rating {
-    color: #ccc;
+    color: #32a067;
     font-size: 13px;
 }
 .form-group {
@@ -229,10 +229,7 @@ label {
 .form-control {
     padding: 10px;
     height: 42px;
-    font-size: 14px;
     font-size: 0.875rem;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     border-radius: 3px;
     border: 1px solid #d2d8dd;
@@ -275,7 +272,6 @@ height: 361px;
     font-weight: 600;
 }
 .box_detail .price > span > small {
-    font-size: 11px;
     font-size: 0.6875rem;
     font-weight: 500;
 }
@@ -289,7 +285,6 @@ height: 361px;
     position: relative;
     top: 7px;
     margin-right: 8px;
-    font-size: 12px;
     font-size: 0.75rem;
     text-align: right;
     line-height: 1.1;
@@ -298,16 +293,12 @@ height: 361px;
 .score span em {
     display: block;
     font-weight: normal;
-    font-size: 11px;
     font-size: 0.6875rem;
 }
 .score strong {
     background-color: #32a067;
     color: #fff;
     line-height: 1;
-    -webkit-border-radius: 5px 5px 5px 0;
-    -moz-border-radius: 5px 5px 5px 0;
-    -ms-border-radius: 5px 5px 5px 0;
     border-radius: 5px 5px 5px 0;
     padding: 10px;
     display: inline-block;
@@ -320,11 +311,7 @@ height: 361px;
     height: 45px;
 }
 .booking .form-group i {
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
     border-radius: 3px;
-    font-size: 18px;
     font-size: 1.125rem;
     position: absolute;
     background-color: #fff;
@@ -340,51 +327,19 @@ height: 361px;
     color: #999;
 }
 
-.booking .panel-dropdown {
-    background-color: #fff;
-    font-size: 14px;
-    font-size: 0.875rem;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    border-radius: 3px;
-    border: 1px solid #d2d8dd;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0 0 10px 0;
-}
-
-
-a.btn_1.full-width.purchase, .btn_1.full-width.purchase {
-    background-color: #32a067;
-}
-a.btn_1.full-width, .btn_1.full-width {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 5px;
-}
 .btn_1{
     border: none;
-    color: #fff;
+    color: #fff !important;
     background: #32a067;
     outline: none;
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
     padding: 15px 30px;
-    color: #fff;
     font-weight: 600;
     text-align: center;
     line-height: 1;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
     border-radius: 3px;
 }
 

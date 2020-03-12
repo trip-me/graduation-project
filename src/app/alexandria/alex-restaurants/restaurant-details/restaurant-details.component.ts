@@ -91,6 +91,7 @@ export class RestaurantDetailsComponent implements OnInit {
 onSubmit(form) {
   this.reviews.push({ ...form.value,rate: this.selectedLevel})
   console.log(this.reviews);
+  form.reset()
   
 }
 

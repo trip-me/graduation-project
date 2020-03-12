@@ -1,27 +1,15 @@
-<nav class="secondary_nav ">
-    <div class="container-fulid">
-        <ul class="clearfix">
-            <div class="container">
-                <li><a href="#description">Description</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#sidebar">Booking</a></li>
-            </div>
-        </ul>
-    </div>
-</nav>
 
-<!--/main-->
 
 <div class="tour-details">
     <div class="container "*ngIf="singleTourData">
         <div class="row">
             <div class="col-lg-8">
-                <section id="description">
+                <section id="description" >
                     <ul class="list-unstyled">
                         <li>
                             <h1> {{singleTourData.name}} </h1>
                         </li>
-                        <li class="d-block d-sm-none"><span >Add To My Trip</span></li>
+                        <li class="d-block d-sm-none"><span class="add" >Add To My Trip</span></li>
                     </ul>
                     <h2>Description</h2>
                     <p>{{singleTourData.fullDescription }}</p>
@@ -31,50 +19,50 @@
                     <h3>Instagram photos feed</h3>
                     <div id="instagram-feed-restuarent" >
                      <div class="row">
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img }}">
+                        <div class="col-md-2 col-sm-3 col-6 mb-3">
+                            <img src="../../../../assets/images/image instgram/tours/images (1).jpg">
                         </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img }}">
+                        <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="../../../../assets/images/image instgram/tours/images (2).jpg">
                         </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img }}">
+                        <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="../../../../assets/images/image instgram/tours/images (3).jpg">
                         </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img }}">
+                        <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="../../../../assets/images/image instgram/tours/images (4).jpg">
                         </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img }}">
+                        <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="../../../../assets/images/image instgram/tours/images (5).jpg">
                         </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img }}">
+                        <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="../../../../assets/images/image instgram/tours/images (6).jpg">
                         </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img }}">
+                        <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="../../../../assets/images/image instgram/tours/images (7).jpg">
                         </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img }}">
+                        <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="../../../../assets/images/image instgram/tours/images (8).jpg">
                         </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img }}">
+                        <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="../../../../assets/images/image instgram/tours/images (9).jpg">
                         </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img }}">
+                        <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="../../../../assets/images/image instgram/tours/images (1).jpg">
                         </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img }}">
+                        <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="../../../../assets/images/image instgram/tours/images.jpg">
                         </div>
-                        <div class="col-md-2 col-sm-3">
-                            <img src="{{singleTourData.img }}">
+                        <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="../../../../assets/images/image instgram/tours/download (5).jpg">
                         </div>
                      </div>
                     </div>
-                    <hr>
-                    <h3>Program <small>(60 minutes)</small></h3>
-                    <p>
+                    <hr class="d-none d-lg-block">
+                    <!-- <h3 class="d-none d-lg-block">Program <small>(60 minutes)</small></h3>
+                    <p class="d-none d-lg-block">
                         {{singleTourData.fullDescription}}
                     </p>
-                    <ul class="tour-plans ">
+                    <ul class="tour-plans d-none d-lg-block">
                         <li>
                             <time class="tour-time" datetime="09:30"><span>30 min.</span><span>09:30</span>
                             </time>
@@ -132,7 +120,7 @@
                             </div>
                         </li>
                     </ul>
-                    <hr>
+                    <hr> -->
                     <h3>Location</h3>
                     <!-- start map -->
                     <div *ngIf="MapurlSafe" class="place_details-map col-sm-12 ">
@@ -207,31 +195,32 @@
                     <hr>
 
                     <div class="reviews-container">
-
                         <div class="reviews-container" *ngIf="reviews">
                             <h2>Comments</h2>
                             <div class="review-box clearfix" *ngFor="let item of reviews">
-                                <!-- <figure class="rev-thumb"> <img src="{{singleTourData.img}}">
-                                </figure> -->
-                                <div class="rev-content">
-                                    <div class="rating">
-                                        <ngb-rating [rate]=[item.rate]></ngb-rating>
-                                    </div>
-                                    <div class="rev-info">
-                                        {{item.name}}
-                                    </div>
-                                    <div class="rev-text">
-                                        <p>
-                                            {{item.message}}
-                                        </p>
+                                <div class="row">
+                                    <figure class="figure col-md-2 col-sm-1">
+                                        <img src="../../../../assets/images/avatar/avatar.png" style="width: 100%; border-radius: 50%;"class="img-fluid">
+                                    </figure>
+                                    <div class="rev-content col-md-10 col-sm-11">
+                                        <div class="rating">
+                                            <ngb-rating [rate]=[item.rate]></ngb-rating>
+                                        </div>
+                                        <div class="rev-info">
+                                            {{item.name}}
+                                        </div>
+                                        <div class="rev-text">
+                                            <p>
+                                                {{item.message}}
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
+                             
                             </div>
                             <!-- /review-box -->
                         </div>
                         <!-- /review-box -->
-                      
-                   
                     </div>
                     <!-- /review-container -->
                 </section>
@@ -283,7 +272,7 @@
             </div>
             <!-- /col -->
             
-            <aside class="col-lg-4" id="sidebar">
+            <aside class="col-lg-4 d-none d-lg-block" id="sidebar">
                 <div class="tour-img">
                     <img src="{{singleTourData.img }}">
                 </div>
@@ -292,7 +281,7 @@
                         <span>{{singleTourData.price}} <small>/person</small></span>
                         <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{singleTourData.rate}}</strong></div>
                     </div>
-                    <a   class="add-to-my-trip" (click)="addToMyTrip(singleTourData)" class="btn_1 full-width outline wishlist">
+                    <a   class="add-to-my-trip" (click)="addToMyTrip(singleTourData)" class="btn_1 full-width outline wishlist add-to-my-trip">
                         <i class="far fa-heart"></i>
                         Add To My Trip
                        </a>

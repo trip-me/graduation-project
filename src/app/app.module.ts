@@ -45,8 +45,8 @@ import { TourGuidComponent } from './tour-guid/tour-guid.component';
 import { TourGuidProfileComponent } from './tour-guid-profile/tour-guid-profile.component';
 import { ComapanyPackageComponent } from './comapany-package/comapany-package.component';
 import { RatingModule } from 'ngx-bootstrap/rating';
-import { ComapanyDataComponent } from './comapany-data/comapany-data.component';
 import { PackageDetailsComponent } from './package-details/package-details.component';
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
@@ -82,8 +82,8 @@ import { PackageDetailsComponent } from './package-details/package-details.compo
     TourGuidProfileComponent,
 
     ComapanyPackageComponent,
-    ComapanyDataComponent,
-    PackageDetailsComponent
+    PackageDetailsComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,

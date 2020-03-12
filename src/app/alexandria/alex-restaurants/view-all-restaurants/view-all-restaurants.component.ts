@@ -123,10 +123,12 @@ export class ViewAllRestaurantsComponent implements OnInit {
           if (parseInt(this.serviceFilter[i].price) >= parseInt(val)
           && parseInt(this.serviceFilter[i].price) < parseInt(val) * 4
           ) {
+            
             this.serviceFilter.splice(this.serviceFilter.indexOf(this.serviceFilter[i]), 1);
             console.log(this.serviceFilter);
+            
             this.allRestaurant = this.serviceFilter;
-            console.log(this.allRestaurant)
+           /* console.log(this.allRestaurant)*/
           //   if ((this.serviceFilter).length == 0) {
           //     this.allRestaurant = this.city
           //   }

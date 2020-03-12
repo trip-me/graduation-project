@@ -7,21 +7,21 @@ import { UsersService } from '../users.service';
   styleUrls: ['./tour-guid.component.scss']
 })
 export class TourGuidComponent implements OnInit {
-  tourGuidData=[];
+  tourGuidData = [];
   FindtourGuide;
   constructor(private service: UsersService) {
-    // this.service.getUser().subscribe(data => {
-    //   this.tourGuidData = data;
-    // })
   }
-
+  counter=0;
   ngOnInit() {
     this.service.getUser().subscribe(data => {
       this.FindtourGuide = data;
       for (let i = 0; i < this.FindtourGuide.length; i++) {
-        if (this.FindtourGuide[i].role == "tourguide" ) {
-          this.tourGuidData.push(this.FindtourGuide[i])
-          console.log(this.tourGuidData);
+        if (this.counter < 4) {
+          if (this.FindtourGuide[i].role == "tourguide") {
+            this.tourGuidData.push(this.FindtourGuide[i])
+            console.log(this.tourGuidData);
+            this.counter++;
+          }
         }
       }
     })

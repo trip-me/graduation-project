@@ -34,7 +34,6 @@ export class LoginComponent implements OnInit {
       document.getElementById("login-btn").style.display = "none";
       document.getElementById("logout-btn").style.display = "inline";
       document.getElementById("user__myTrip").style.display="inline"
-      console.log("loyality");
       
     }
   }
@@ -46,24 +45,19 @@ export class LoginComponent implements OnInit {
 
     if (loginForm.valid) {
       for (let i = 0; i < this.comingData.length; i++) {
-        if (this.userEmail == this.comingData[i].email ||this.userPassword == this.comingData[i].password) {
+        if (this.userEmail == this.comingData[i].email  && this.userPassword == this.comingData[i].password) {
           let userObj = this.comingData[i];
-          console.log(userObj);
-          localStorage.setItem("currentUser", JSON.stringify(userObj));
-          this.router.navigate(['/my-trip']);
-          this.Uid=JSON.parse(localStorage.getItem("currentUser"));
-          
-          // this.router.navigate(['/my-trip', this.comingData[i].id]); // review Dina 
 
-          // console.log(this.comingData[i].role);
+          localStorage.setItem("currentUser", JSON.stringify(userObj));
+          // this.router.navigate(['/my-trip']);
+          this.Uid=JSON.parse(localStorage.getItem("currentUser"));
           this.currentuser = this.comingData[i].email;
           if (this.comingData[i].role === "tourist") {
             this.router.navigate(['/my-trip']);
           }
           else if (this.comingData[i].role === "tourguide") {
             
-            this.router.navigate(['/tourguid', this.Uid.id]);
-            console.log(this.Uid.id);
+            this.router.navigate(['/tourguid']);
           }
           else {
             this.router.navigate(['/Home']);
@@ -82,8 +76,12 @@ export class LoginComponent implements OnInit {
     if(localStorage.getItem("currentUser") !== null){
       document.getElementById("login-btn").style.display = "none";
       document.getElementById("logout-btn").style.display = "inline";
-      document.getElementById("user__myTrip").style.display="inline";
-      console.log("loyality");
+      if( (JSON.parse(localStorage.getItem("currentUser"))).role==="tourist" ){
+        document.getElementById("user__myTrip").style.display="inline";
+      }
+     else if( (JSON.parse(localStorage.getItem("currentUser"))).role==="tourguide" ){
+        document.getElementById("tourguide__profile").style.display="inline";
+      }
     }else{
     if (localStorage.getItem("currentUser") === null) 
       document.getElementById("user__myTrip").style.display="none";

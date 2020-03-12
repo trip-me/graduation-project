@@ -13,94 +13,168 @@ export class TourGuidProfileComponent implements OnInit {
   guidData;
   registerForm: FormGroup;
   guideUser: FormGroup;
-  //type of resisterform is formgroup
-  constructor(private service: UsersService, private activeRoute: ActivatedRoute, private fB: FormBuilder) {
-    
-
-    // form validator 
-    this.registerForm = this.fB.group({
-      aboutUserName: ['', [Validators.required, Validators.pattern(/^[a-z]+$/)]]
-      // aboutName: ['', [Validators.required],
-    })
-    this.guideUser = this.fB.group({
-      aboutUserName: ['', [Validators.required, Validators.pattern(/^[a-z]+$/)]],
-      experience: ['', [Validators.required, Validators.pattern(/^[a-z]+$/)]],
-      language: ['', [Validators.required, Validators.pattern(/^[a-z]+$/)]],
-      OtherGuiding: ['', [Validators.required, Validators.pattern(/^[a-z]+$/)]],
-      PrivateGuide: ['', [Validators.required, Validators.pattern(/^[a-z]+$/)]]
-    })
-
-  }
+  imgSrc;
+  DiscriptionImgTrip;
   putguideData;
   putexperinceUser;
   finalData = { ...this.putguideData, ...this.putexperinceUser }
+  //type of resisterform is formgroup
+  constructor(private service: UsersService, private activeRoute: ActivatedRoute, private fB: FormBuilder) {
+    // form validator 
+
+    this.registerForm = this.fB.group({
+      aboutUserName: ['', [Validators.required, Validators.pattern(/^[a-z]+$/)]]
+    })
+    // form builder group
+    this.guideUser = this.fB.group({
+      aboutUserName: [{value:"", disabled:true}, [Validators.required, Validators.pattern(/^[a-z]+$/)]],
+      experience: [{value:"", disabled:true}, [Validators.required, Validators.pattern(/^[a-z]+$/)]],
+      language: [{value:"", disabled:true}, [Validators.required, Validators.pattern(/^[a-z]+$/)]],
+      OtherGuiding: [{value:"", disabled:true}, [Validators.required, Validators.pattern(/^[a-z]+$/)]],
+      PrivateGuide: [{value:"", disabled:true}, [Validators.required, Validators.pattern(/^[a-z]+$/)]],
+      tripDiscription: [{value:"", disabled:true}, [Validators.required, Validators.pattern(/^[a-z]+$/)]]
+    })
+  }
   guidPackages(id) {
     this.service.gettourguide(id).subscribe(data => {
       this.usersGuide = data;
       console.log(this.usersGuide);
-
     })
   }
   tourGuide = JSON.parse(localStorage.getItem("currentUser"));
-  onSubmit(register) {
-    this.putguideData = {
-      "userName": this.tourGuide.userName,
-      "userMail": this.tourGuide.email,
-      "password": this.tourGuide.password,
-      "confirmPassword": this.tourGuide.confirmPassword,
-      "role": this.tourGuide.role,
-
-    };
-    console.log(this.putguideData, "putguideData=" + this.tourGuide.id);
-
-  }
+  // function of tour guide data
+  userdisc;
+  userlanguage;
+  userExperince;
+  userOtherGuiding;
+  userPrivateGuide;
+  userImgTrip;
+  tourguideimg;
+  usertripDiscription;
+  baseimg;
   tourGuideUser(guideUser) {
+    if(guideUser.get('aboutUserName').value==""){
+      this.userdisc=this.tourGuide.aboutUserName;
+    }else{
+      this.userdisc=guideUser.get('aboutUserName').value;
+    }
+    if(guideUser.get("experience").value==""){
+      this.userExperince= this.tourGuide.experience;
+    }else{
+      this.userExperince=guideUser.get("experience").value;
+    }
+    if(guideUser.get("language").value==""){
+      this.userlanguage= this.tourGuide.language;
+    }else{
+      this.userlanguage=guideUser.get("language").value;
+    }
+    if(guideUser.get("OtherGuiding").value==""){
+      this.userOtherGuiding= this.tourGuide.OtherGuiding;
+    }else{
+      this.userOtherGuiding=guideUser.get("OtherGuiding").value;
+    }
+    if(guideUser.get("PrivateGuide").value==""){
+      this.userPrivateGuide= this.tourGuide.PrivateGuide;
+    }else{
+      this.userPrivateGuide=guideUser.get("PrivateGuide").value;
+    }
+    if(guideUser.get("tripDiscription").value==""){
+      this.usertripDiscription= this.tourGuide.tripDiscription;
+    }else{
+      this.usertripDiscription=guideUser.get("tripDiscription").value;
+    }
+    // if(this.baseimg==""){
+    //   this.userImgTrip=this.tourGuide.tripImg;
+    // }else{
+    //   this.userImgTrip=this.DiscriptionImgTrip
+    // }
+    // if(this.imgSrc!=null){imgSrc
+    //   this.tourguideimg=this.tourGuide.tourGuideImg;
+    // }else{
+    //   this.tourguideimg=this.imgSrc
+    // }
     this.putexperinceUser = {
       "userName": this.tourGuide.userName,
-      "userMail": this.tourGuide.email,
+      "email": this.tourGuide.email,
       "password": this.tourGuide.password,
       "confirmPassword": this.tourGuide.confirmPassword,
       "role": this.tourGuide.role,
-      "aboutUserName": guideUser.get('aboutUserName').value,
-      "experience": guideUser.get("experience").value,
-      "language": guideUser.get("language").value,
-      "OtherGuiding": guideUser.get("OtherGuiding").value,
-      "PrivateGuide": guideUser.get("PrivateGuide").value
+      "id": this.tourGuide.id,
+      "tourGuideImg": this.imgSrc ,//
+      "aboutUserName": this.userdisc,
+      "experience": this.userExperince,
+      "language": this.userlanguage ,
+      "OtherGuiding": this.userOtherGuiding,
+      "PrivateGuide": this.userPrivateGuide,
+      "tripImg": this.DiscriptionImgTrip,
+      "tripDiscription": this.usertripDiscription 
     }
-    // console.log(this.putexperinceUser);
+    let x=localStorage.setItem('currentUser',JSON.stringify(this.putexperinceUser));
     this.service.putuserdata(this.tourGuide.id, this.putexperinceUser).subscribe(data => {
       this.l = [data];
-      // console.log(this.service.putuserdata(this.tourGuide.id ,this.putexperinceUser));
       console.log("l==" + this.l);
+      guideUser.disable();
+      console.log(guideUser.get("PrivateGuide").value);
+      window.location.reload();
     });
   }
-  editData(guideUser){
-    // guideUser.get("OtherGuiding").disabled="false";  
-    // for(let i=0 ; i<(document.getElementsByClassName('form-control')).length ; i++){
-
-    //   document.getElementsByClassName('form-control')[i].setAttribute("disabled","false");
-    // }
-
-    // }   
+// file reader to put tour guide image in json
+  onfilechange(e){
+    let y= new FileReader();
+    y.readAsDataURL(e.target.files[0]);
+    y.onload=(_event)=>{this.imgSrc= y.result;}
+    let x=e.target.files[0];
+    console.log(this.imgSrc);
+    
+  }
+  k;
+// file reader to put tour guide trip image in json  
+  tripImg(event){
+    this.k= new FileReader();
+    this.k.readAsDataURL(event.target.files[0]);
+    this.k.onload=(_event)=>{this.DiscriptionImgTrip= this.k.result;
+      
+    this.baseimg=event.target.files[0];
+    console.log(this.baseimg.name);
+    
+  }}
+  // 
+  
+  // 
+  editData(guideUser,e) {
+    document.getElementById("edit").style.background="none";
+    document.getElementById("edit").style.color="#03a241";
+    let inputform=document.getElementsByClassName("form-control");
+    for(let i=0; i<inputform.length; i++){
+      inputform[i].style.border = "2px solid rgb(214, 214, 214)";
+    }
+    guideUser.enable();
   }
   l;
   FindtourGuide;
-  usersGuide ;
+  usersGuide;
   userLogin;
-  x=[];
+  x = [];
+  eman;
+ 
   ngOnInit() {
+
     // get tour guides user
-    if(localStorage.getItem("currentUser") !== null){
-          // document.getElementById('edit').style.display="block";
-          // document.getElementById('save ').style.display="block";
-          this.userLogin=JSON.parse(localStorage.getItem('currentUser'));
-          this.usersGuide=this.userLogin;
-          console.log("u="+this.usersGuide);
-          
-        }else{
-          this.activeRoute.paramMap.subscribe(param => {
-            this.guidPackages(param.get('id'));
-          })
-        }
+    let storeData = JSON.parse(localStorage.getItem("currentUser"));
+    if (storeData != null) {
+      if (storeData.role == "tourguide") {
+        this.eman = true;
+      } else { this.eman = false }
+      this.userLogin = JSON.parse(localStorage.getItem('currentUser'));
+      this.usersGuide = this.userLogin;
+      console.log("u=" + this.usersGuide);
+    } else {
+      this.activeRoute.paramMap.subscribe(param => {
+        this.guidPackages(param.get('id'));
+      })
+      let but = document.getElementById("edit")
+
+    }
   }
 }
+

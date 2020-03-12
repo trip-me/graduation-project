@@ -15,7 +15,15 @@
                                 <div class="form-check">
                                     <input #checkRatee type="checkbox" class=" form-check-input" value="7" (click)="filterationRate(checkRatee.value,checkRatee.checked)">
                                     <label class="form-check-label" for="defaultCheck1">
-                                        5 -7
+                                        between 5 -7
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input #checkRatee type="checkbox" class=" form-check-input" value="8" (click)="filterationRate(checkRatee.value,checkRatee.checked)">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                       between 8 - 10
                                     </label>
                                 </div>
                             </li>
@@ -28,7 +36,15 @@
                                         between 5$ - 20$
                                     </label>
                                 </div>
-
+                            </li>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input #checkPrice type="checkbox" value="20$" 
+                                    (click)="filterationPrice(checkPrice.value,checkPrice.checked)">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        between 20$ - 100$
+                                    </label>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -42,24 +58,21 @@
                         <div class="col-lg-5 all-restaurant__details--img">
                             <figure>
                                 <a routerLink="/Alexandria/visits/{{visit.id}}">
-                                    <small>tours</small>
+                                    <small>TOURISTIC</small>
                                     <img [src]="visit.img" class="card-img img-fluid">
-
                                 </a>
                             </figure>
                         </div>
                         <div class="col-md-7 all-restaurant__details--content">
                             <div class="card-body ">
                                 <div class="card-body-info">
-                                    <a class="wish_bt">
-                                        <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{visit.rate}}</strong></div>
-                                    </a>
+                                        <div class="score d-none d-lg-block"><span *ngIf="visit.rate >7 ">Good<em>350 Reviews</em></span><strong>{{visit.rate}}</strong></div>
                                     <h3><a routerLink="Alexandria/visits/{{visit.id}}"> {{ visit.name}} </a></h3>
                                     <p>{{visit.shortDescription}}</p>
                                     <span class="price">From <strong>{{visit.price}}</strong> /per person</span>
                                 </div>
                                 <ul>
-                                    <li><a  class="add-to-my-trip" (click)="addToMyTrip(visit)"> Add to my trip</a> </li>
+                                    <li><a  class="add-to-my-trip read-more_button" (click)="addToMyTrip(visit)"> Add to my trip</a> </li>
                                 </ul>
                             </div>
                         </div>
