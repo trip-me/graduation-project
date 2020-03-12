@@ -146,7 +146,7 @@ export class TourGuidProfileComponent implements OnInit {
     document.getElementById("edit").style.color="#03a241";
     let inputform=document.getElementsByClassName("form-control");
     for(let i=0; i<inputform.length; i++){
-      inputform[i].style.border = "2px solid rgb(214, 214, 214)";
+      // inputform[i].style.border = "2px solid rgb(214, 214, 214)";
     }
     guideUser.enable();
   }
