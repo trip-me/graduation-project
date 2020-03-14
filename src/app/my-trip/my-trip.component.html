@@ -24,10 +24,16 @@
                                     <p class="d-none d-sm-block">Following</p>
                                 </a>
                             </div>
+                            <div class="col-3">
+                                <a pageScroll href="#userTrip" (click)="editBtn($event)">
+                                    <i class="fas fa-user-cog"></i>
+                                    <p class="d-none d-sm-block">Edit</p>
+                                </a>
+                            </div>
                             <!-- start user message  -->
                             <div class="col-3 btn-group" dropdown>
                                 <a id="button-animated" dropdownToggle type="button" aria-controls="dropdown-animated">
-                                    <span class="message-count">3</span>
+                                    <span class="message-count">{{repliesCounter}}</span>
                                     <i class="far fa-comment"></i>
                                     <p class="d-none d-sm-block">message</p>
                                 </a>
@@ -85,25 +91,26 @@
 <section class="trip-map">
     <div class="container" *ngIf="userTrips">
         <div class="row">
-            <div class="col-12 text-center">
+            <div id ="userTrip" class="col-12 text-center">
                 <h2 class="user-trip-title"
                     *ngIf="userTripsVisits.length == 0 && userTripsRestaurants.length == 0 && userTripsHotels.length == 0 ">
                     Your Trip Plan is empty
                 </h2>
             </div>
-            <div class="col-12 text-center">
+            <div id ="userTrip" class="col-12 text-center">
                 <h2 class="user-trip-title"
                     *ngIf="userTripsVisits.length >=1 || userTripsRestaurants.length >= 1 || userTripsHotels.length >=1 ">
-                    Your Trips Plan
+                    Your Trip Plan
                 </h2>
             </div>
         </div>
         <!-- visits -->
         <div class="row">
-            <div class="col-12">
-                <h4 class="category">Places</h4>
+            <div  class="category col-12" >
+                <h4  (click)="collapsePlacesSection($event)" [attr.aria-expanded]="!isCollapsed1" aria-controls="Places"  [attr.aria-expanded]="!isCollapsed1">Places</h4>
+                <i  (click)="collapsePlacesSection($event)" class="ti-angle-up ml-1" ></i>
             </div>
-            <div #parent *ngFor="let userFavoriteTrip of userTripsVisits" class="col-sm-6 col-md-3">
+            <div id="Places" [ngbCollapse]="isCollapsed1" #parent *ngFor="let userFavoriteTrip of userTripsVisits" class="wow fadeInRight col-sm-6 col-md-3" data-wow-delay="0.5s">
                 <div class="card">
                     <figure class="figure mb-0">
                         <img [src]="userFavoriteTrip.img" class="card-img-top img-fluid">
@@ -111,18 +118,21 @@
                     <div class="card-body">
                         <h5 class="card-title py-3">{{userFavoriteTrip.name}}</h5>
                         <p>{{userFavoriteTrip.title}} </p>
-                        <button class="btn btn-danger text text-center" type="button"
+                        <button [ngClass]="[btnStyle]" class="btn btn-danger text text-center " type="button"
                             (click)="deleteTrip(userFavoriteTrip.id,parent)">Delete</button>
                     </div>
                 </div>
             </div>
+            <div id="Places" *ngIf="userTripsVisits.length == 0" [ngbCollapse]="isCollapsed1">you didn't add any places to your trip</div>
         </div>
         <!-- hotels -->
         <div class="row">
-            <div class="col-12">
-                <h4 class="category">Hotels</h4>
+            <div class="category col-12">
+                <h4 (click)="collapseHotelsSection($event)" [attr.aria-expanded]="!isCollapsed2" aria-controls="hotels">Hotels</h4>
+                <i class="ti-angle-up ml-1" (click)="collapseHotelsSection($event)"></i>
             </div>
-            <div #parent *ngFor="let userFavoriteTrip of userTripsHotels" class="col-sm-6 col-md-6 col-lg-3">
+            <ng-container *ngIf="userTripsHotels; else emptyMsg">
+            <div id="hotels" [ngbCollapse]="isCollapsed2" #parent *ngFor="let userFavoriteTrip of userTripsHotels" class="col-sm-6 col-md-6 col-lg-3 wow fadeInRight" data-wow-delay="0.5s">
                 <div class="card">
                     <figure class="figure mb-0">
                         <img [src]="userFavoriteTrip.img" class="card-img-top img-fluid">
@@ -133,19 +143,23 @@
                         <div class="card-text my-3">
                             <span class="price"><strong>{{userFavoriteTrip.price}}</strong>/night</span>
                         </div>
-                        <button class="btn btn-danger text text-center" type="button"
+                        <button [ngClass]="[btnStyle]" class="btn btn-danger text text-center" type="button"
                             (click)="deleteTrip(userFavoriteTrip.id,parent)">Delete</button>
                     </div>
                 </div>
                 <!-- </div> -->
             </div>
+            </ng-container>
+            <div id="hotels" *ngIf="userTripsHotels.length == 0" [ngbCollapse]="isCollapsed2">you didn't add any hotels to your trip</div>
         </div>
         <!-- restuarant -->
         <div class="row">
-            <div class="col-12">
-                <h4 class="category">Restaurants</h4>
+            <div class="category col-12" >
+                <h4 (click)="collapseRestaurantsSection($event)" [attr.aria-expanded]="!isCollapsed3" aria-controls="restaurants">Restaurants</h4>
+                <i class="ti-angle-up ml-1" (click)="collapseRestaurantsSection($event)"></i>
             </div>
-            <div #parent *ngFor="let userFavoriteTrip of userTripsRestaurants" class="col-sm-6 col-md-3">
+            <ng-container *ngIf="userTripsRestaurants; else emptyMsg">
+            <div id="restaurants" [ngbCollapse]="isCollapsed3" #parent *ngFor="let userFavoriteTrip of userTripsRestaurants" class="col-sm-6 col-md-3 wow fadeInRight" data-wow-delay="0.5s">
                 <div class="card">
                     <figure class="figure mb-0">
                         <img [src]="userFavoriteTrip.img" class="card-img-top img-fluid">
@@ -156,11 +170,15 @@
                         <div class="card-text mb-3">
                             <span class="price"><strong>{{userFavoriteTrip.price}}</strong>/meal</span>
                         </div>
-                        <button class="btn btn-danger text text-center" type="button"
+                        <button [ngClass]="[btnStyle]" class="btn btn-danger text text-center" type="button"
                             (click)="deleteTrip(userFavoriteTrip.id,parent)">Delete</button>
                     </div>
                 </div>
             </div>
+            </ng-container>
+            <div id="restaurants" *ngIf="userTripsRestaurants.length == 0" [ngbCollapse]="isCollapsed3">you didn't add any restaurants to your trip</div>
+            
+
         </div>
     </div>
 </section>

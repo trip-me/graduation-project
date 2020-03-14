@@ -117,8 +117,10 @@ export class ViewAllVisitsComponent implements OnInit {
       if(user.role=="tourist"){
         myFavorite.userId = user.id;
         myFavorite.userName = user.userName;
+        myFavorite.id = myFavorite.id+user.userName
         this.userService.postUserFavoriteTrip(myFavorite).subscribe(data=>{
           myFavorite = data
+          
         })
         overlay.style.display = "block"
       }else{alert("u aren't a tourist")}

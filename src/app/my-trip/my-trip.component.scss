@@ -103,7 +103,10 @@ button{ border-radius:0 ; -webkit-border-radius:0 ; -moz-border-radius:0 ; -ms-b
   position: absolute;
   width: 18px;
   height: 18px;
-  right: 25px;
+  top: 0;
+  right: 50%;
+  left: 50%;
+  bottom: 100%;
   background-color: #fc1f1f;
   font-size: 12px;
   border-radius: 50%;
@@ -165,7 +168,12 @@ ul.dropdown-menu {
   margin: 25px 0 0 0;
   font-family: Quicksand, sans-serif;
 }
-
+.item-delete{
+  display: none;
+}
+.showDeleteBtn{
+  display: inline;
+}
 @media screen and (min-width: 992px) {
   .user-trip-title::after {
     content: "";
@@ -190,4 +198,12 @@ ul.dropdown-menu {
   border-radius: 10px;
   padding: 0.8rem;
   margin-bottom: 1rem;
+  padding-bottom: 0;
+  h4{
+    display: inline-block;
+    cursor: pointer;
+  }
+  i{
+    cursor: pointer;
+  }
 }

@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { AppRoutingModule } from './app-routing.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-// import {FormsModule } form "@ang"
+import {Ng2PageScrollModule} from 'ng2-page-scroll';
 
 
 
@@ -97,7 +97,8 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    RatingModule.forRoot()
+    RatingModule.forRoot(),
+    Ng2PageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
