@@ -149,7 +149,23 @@
     }
   ],
   "user-favorite-trip": [
-  
+    {
+      "city": "alex",
+      "id": "1.1mostafa",
+      "category": "visit",
+      "title": "Alexandria",
+      "tour_category": "libraries",
+      "name": " Bibliotheca Alexandrina",
+      "name_tag": "Alex",
+      "shortDescription": "  The Bibliotheca Alexandrina is a major library and cultural center located on the shore of the Mediterranean Sea in the Egyptian city of Alexandria",
+      "fullDescription": "is a major library and cultural center located on the shore of the Mediterranean Sea in the Egyptian city of Alexandria. It is both a commemoration of the Library of Alexandria that was lost in antiquity, and an attempt to rekindle something of the brilliance that this earlier center of study and erudition represented. The idea of reviving the old library dates back to 1974, when a committee set up by Alexandria University selected a plot of land for its new library.Construction work began in 1995 and, after some US$220 million had been spent, the complex was officially inaugurated on 16 October 2002.In 2010,the library received a donation of 500,000 books from the Bibliothèque nationale de France (BnF). The gift makes the Bibliotheca Alexandrina the sixth-largest Francophone library in the world.The library has shelf space for eight million books, with the main reading room covering 20,000 square metres (220,000 sq ft). The complex also houses a conference center; specialized libraries for maps, multimedia, the blind and visually impaired, young people, and for children; four museums; four art galleries for temporary exhibitions; 15 permanent exhibitions; a planetarium; and a manuscript restoration laboratory.",
+      "img": "../../../assets/images/visits/alex/bib.jpg",
+      "rate": 9.9,
+      "price": "5$",
+      "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13649.7118753824!2d29.9092012!3d31.2088705!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa34cc632ec23e7!2sBibliotheca%20Alexandrina!5e0!3m2!1sen!2seg!4v1581655284706!5m2!1sen!2seg",
+      "userId": 35,
+      "userName": "mostafa"
+    }
   ],
   "user-post": [
     {
@@ -228,7 +244,7 @@
       "category": "visit",
       "title": "Alexandria",
       "tour_category": "libraries",
-      "name": " Bibliotheca Alexandrina",
+      "name": " Bibliotheca Alexandria",
       "name_tag": "Alex",
       "shortDescription": "  The Bibliotheca Alexandrina is a major library and cultural center located on the shore of the Mediterranean Sea in the Egyptian city of Alexandria",
       "fullDescription": "is a major library and cultural center located on the shore of the Mediterranean Sea in the Egyptian city of Alexandria. It is both a commemoration of the Library of Alexandria that was lost in antiquity, and an attempt to rekindle something of the brilliance that this earlier center of study and erudition represented. The idea of reviving the old library dates back to 1974, when a committee set up by Alexandria University selected a plot of land for its new library.Construction work began in 1995 and, after some US$220 million had been spent, the complex was officially inaugurated on 16 October 2002.In 2010,the library received a donation of 500,000 books from the Bibliothèque nationale de France (BnF). The gift makes the Bibliotheca Alexandrina the sixth-largest Francophone library in the world.The library has shelf space for eight million books, with the main reading room covering 20,000 square metres (220,000 sq ft). The complex also houses a conference center; specialized libraries for maps, multimedia, the blind and visually impaired, young people, and for children; four museums; four art galleries for temporary exhibitions; 15 permanent exhibitions; a planetarium; and a manuscript restoration laboratory.",
