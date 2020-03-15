@@ -146,6 +146,15 @@
       "confirmPassword": "MKdesign01270429563",
       "role": "tourist",
       "id": 35
+    },
+    {
+      "userName": "Mustafa tourguide",
+      "email": "bb@yahoo.com",
+      "password": "aaAA@@66",
+      "confirmPassword": "aaAA@@66",
+      "role": "tourguide",
+      "id": 36,
+      "aboutUserName": "dasdsadsadasdas"
     }
   ],
   "user-favorite-trip": [
@@ -165,6 +174,38 @@
       "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13649.7118753824!2d29.9092012!3d31.2088705!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa34cc632ec23e7!2sBibliotheca%20Alexandrina!5e0!3m2!1sen!2seg!4v1581655284706!5m2!1sen!2seg",
       "userId": 35,
       "userName": "mostafa"
+    },
+    {
+      "city": "alex",
+      "id": "2.2",
+      "category": "restaurant",
+      "img": "../../../assets/images/restaurants/Alexandria/2.jpg",
+      "name": "Carlos Cafe",
+      "service": "drink",
+      "rate": 8.5,
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54605.67631535653!2d29.890162818470703!3d31.197039936955978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4f250ae2659%3A0xbc6b52748eea347a!2sCarlos%20Cafe!5e0!3m2!1sen!2seg!4v1582027887915!5m2!1sen!2seg",
+      "title": "Alexandria",
+      "price": "9$",
+      "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
+      "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.",
+      "userId": 2,
+      "userName": "aya"
+    },
+    {
+      "city": "alex",
+      "id": "2.1aya",
+      "category": "restaurant",
+      "title": "Alexandria",
+      "service": "eat",
+      "img": "../../../assets/images/restaurants/Alexandria/1.jpg",
+      "name": "Potasta",
+      "price": "25$",
+      "rate": 9.2,
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.8680133362673!2d29.90000051447403!3d31.196672770176903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4e8655eff5d%3A0x5a5908a5e8f225f8!2sPotasta!5e0!3m2!1sen!2seg!4v1582010070848!5m2!1sen!2seg",
+      "shortDescription": "- Healthy- Affordable Delicious Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id",
+      "fullDescription": "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at.Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.",
+      "userId": 2,
+      "userName": "aya"
     }
   ],
   "user-post": [
@@ -215,6 +256,22 @@
       "postUserId": 35,
       "postId": 2,
       "id": 4
+    },
+    {
+      "message": "hello iam aya i can help u",
+      "replierId": 2,
+      "replierName": "aya",
+      "postUserId": 1,
+      "postId": 1,
+      "id": 5
+    },
+    {
+      "message": "hello iam aya i can help u ",
+      "replierId": 2,
+      "replierName": "aya",
+      "postUserId": 35,
+      "postId": 2,
+      "id": 6
     }
   ],
   "cities": [

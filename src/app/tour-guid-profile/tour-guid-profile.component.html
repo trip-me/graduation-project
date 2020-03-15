@@ -10,7 +10,7 @@
                                     <img [src]="usersGuide.tourGuideImg" class="img-fluid">
                                     <div *ngIf="eman">
                                             <i class="fa fa-camera"></i>
-                                        <input type="file" class="form-control images" (change)="onfilechange($event)">
+                                        <input type="file"  [ngClass]="[inputstyle]" class="form-control images" (change)="onfilechange($event)">
                                     </div>
                                 </a>
                                 <!-- <small>{{guidData.job}}</small> -->
@@ -109,7 +109,7 @@
                             </div>
                             <hr>
                             <!-- user name -->
-                            <textarea rows="7" class="form-control " [value]="usersGuide.aboutUserName"
+                            <textarea rows="7" [ngClass]="[inputstyle]" class="form-control " [value]="usersGuide.aboutUserName"
                                 formControlName="aboutUserName">{{usersGuide.aboutUserName}} </textarea>
                             <p class="card-text">
                             </p>
@@ -119,28 +119,28 @@
                                     <label class="col-sm-6 col-form-label">expereince</label>
                                     <div class="col-sm-6" *ngIf="usersGuide">
                                         <input [value]="usersGuide.experience"  formControlName="experience"
-                                            class="form-control">
+                                        [ngClass]="[inputstyle]" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-6 col-form-label">language</label>
                                     <div class="col-sm-6" *ngIf="usersGuide">
                                         <input  [value]="usersGuide.language" formControlName="language"
-                                            class="form-control">
+                                        [ngClass]="[inputstyle]" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-6 col-form-label">Private tour guide in</label>
                                     <div class="col-sm-6" *ngIf="usersGuide">
                                         <input [value]="usersGuide.PrivateGuide" formControlName="PrivateGuide"
-                                            class="form-control">
+                                        [ngClass]="[inputstyle]" class="form-control">
                                     </div>
                                 </div>
                                 <div class=" row">
                                     <label class="col-sm-6 col-form-label">other guiding area </label>
                                     <div class="col-sm-6" *ngIf="usersGuide">
                                         <input [value]="usersGuide.OtherGuiding" formControlName="OtherGuiding"
-                                            class="form-control">
+                                        [ngClass]="[inputstyle]"  class="form-control">
                                     </div>
                                 </div>
 
@@ -163,7 +163,7 @@
                                         <img [src]="usersGuide.tripImg" class="img-fluid">
                                         <div *ngIf="eman" >
                                             <i class="fa fa-camera"></i>
-                                            <input type="file" class="form-control images" (change)="tripImg($event)">
+                                            <input type="file" [ngClass]="[inputstyle]" class="form-control images" (change)="tripImg($event)">
                                         </div>
                                     </figure>
                                 </div>
@@ -174,7 +174,7 @@
                                     <h5 class="card-title">About Trip</h5>
                                     <hr>
                                     <p class="card-text">
-                                        <textarea rows="8" class="form-control " [value]="usersGuide.tripDiscription"
+                                        <textarea rows="8" [ngClass]="[inputstyle]" class="form-control " [value]="usersGuide.tripDiscription"
                                             formControlName="tripDiscription">{{usersGuide.aboutUserName}} </textarea>
                                     </p>
                                 </div>

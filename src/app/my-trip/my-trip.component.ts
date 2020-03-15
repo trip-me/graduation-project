@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { UsersService } from './../users.service'
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'
@@ -49,6 +49,7 @@ export class MyTripComponent implements OnInit {
 
   constructor(
     private http: HttpClient,
+    private Router: Router,
     private route: ActivatedRoute,
     private formbuilder: FormBuilder,
     private wowService: NgwWowService,
@@ -117,13 +118,19 @@ export class MyTripComponent implements OnInit {
 
   //Start Edit user trip button
   editBtn(e) {
-    if (e.target.parentElement.lastChild.innerText == "Edit") {
-      e.target.parentElement.lastChild.innerText = "Save";
-      this.btnStyle = 'showDeleteBtn';
-    } else {
-      e.target.parentElement.lastChild.innerText = "Edit";
-      this.btnStyle = 'item-delete';
-    }
+
+      if (e.target.parentElement.lastChild.innerText == "Edit") {
+        e.target.parentElement.lastChild.innerText = "Save";
+        this.btnStyle = 'showDeleteBtn';
+      } else {
+        e.target.parentElement.lastChild.innerText = "Edit";
+        this.btnStyle = 'item-delete';
+        // if(this.userTripsVisits.length == 0 || this.userTripsRestaurants.length == 0 || this.userTripsHotels.length == 0 ){
+          location.reload();
+        // }
+      }   
+    
+
   }
   //end Edit user trip button
 //start collapse sections 

@@ -19,6 +19,10 @@ export class TourGuidProfileComponent implements OnInit {
   putexperinceUser;
   finalData = { ...this.putguideData, ...this.putexperinceUser }
   //type of resisterform is formgroup
+
+  //Start edit user profile Button
+    inputstyle: string;
+  //End edit user profile Button
   constructor(private service: UsersService, private activeRoute: ActivatedRoute, private fB: FormBuilder) {
     // form validator 
 
@@ -52,6 +56,7 @@ export class TourGuidProfileComponent implements OnInit {
   tourguideimg;
   usertripDiscription;
   baseimg;
+  
   tourGuideUser(guideUser) {
     if(guideUser.get('aboutUserName').value==""){
       this.userdisc=this.tourGuide.aboutUserName;
@@ -83,16 +88,6 @@ export class TourGuidProfileComponent implements OnInit {
     }else{
       this.usertripDiscription=guideUser.get("tripDiscription").value;
     }
-    // if(this.baseimg==""){
-    //   this.userImgTrip=this.tourGuide.tripImg;
-    // }else{
-    //   this.userImgTrip=this.DiscriptionImgTrip
-    // }
-    // if(this.imgSrc!=null){imgSrc
-    //   this.tourguideimg=this.tourGuide.tourGuideImg;
-    // }else{
-    //   this.tourguideimg=this.imgSrc
-    // }
     this.putexperinceUser = {
       "userName": this.tourGuide.userName,
       "email": this.tourGuide.email,
@@ -116,6 +111,9 @@ export class TourGuidProfileComponent implements OnInit {
       guideUser.disable();
       console.log(guideUser.get("PrivateGuide").value);
       window.location.reload();
+    //edit button style
+    this.inputstyle = 'editdefault';
+    //edit button style
     });
   }
 // file reader to put tour guide image in json
@@ -145,9 +143,7 @@ export class TourGuidProfileComponent implements OnInit {
     document.getElementById("edit").style.background="none";
     document.getElementById("edit").style.color="#03a241";
     let inputform=document.getElementsByClassName("form-control");
-    for(let i=0; i<inputform.length; i++){
-      // inputform[i].style.border = "2px solid rgb(214, 214, 214)";
-    }
+    this.inputstyle = 'editstyle';
     guideUser.enable();
   }
   l;
@@ -158,6 +154,9 @@ export class TourGuidProfileComponent implements OnInit {
   eman;
  
   ngOnInit() {
+    //edit button style
+    this.inputstyle = 'editdefault';
+    //edit button style
 
     // get tour guides user
     let storeData = JSON.parse(localStorage.getItem("currentUser"));
